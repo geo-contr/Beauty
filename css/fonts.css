@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'ABChanelCorpoRegular';
+    src: url('../fonts/ABChanelCorpoRegular.eot');
+    src: url('../fonts/ABChanelCorpoRegular.eot') format('embedded-opentype'),
+         url('../fonts/ABChanelCorpoRegular.woff2') format('woff2'),
+         url('../fonts/ABChanelCorpoRegular.woff') format('woff'),
+         url('../fonts/ABChanelCorpoRegular.ttf') format('truetype'),
+         url('../fonts/ABChanelCorpoRegular.svg#ABChanelCorpoRegular') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaLt';
+    src: url('../fonts/HelveticaLt.eot');
+    src: url('../fonts/HelveticaLt.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaLt.woff2') format('woff2'),
+         url('../fonts/HelveticaLt.woff') format('woff'),
+         url('../fonts/HelveticaLt.ttf') format('truetype'),
+         url('../fonts/HelveticaLt.svg#HelveticaLt') format('svg');
+}
+/*@font-face {
+    font-family: 'Font Awesome Free';
+    src: url('../webfonts/fa-brands-400.eot');
+    src: url('../webfonts/fa-brands-400.eot') format('embedded-opentype'),
+         url('../webfonts/fa-brands-400.woff2') format('woff2'),
+         url('../webfonts/fa-brands-400.woff') format('woff'),
+         url('../webfonts/fa-brands-400.ttf') format('truetype'),
+         url('../webfonts/fa-brands-400.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome Free';
+    src: url('../webfonts/fa-regular-400.eot');
+    src: url('../webfonts/fa-regular-400.eot') format('embedded-opentype'),
+         url('../webfonts/fa-regular-400.woff2') format('woff2'),
+         url('../webfonts/fa-regular-400.woff') format('woff'),
+         url('../webfonts/fa-regular-400.ttf') format('truetype'),
+         url('../webfonts/fa-regular-400.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome Free';
+    src: url('../webfonts/fa-solid-900.eot');
+    src: url('../webfonts/fa-solid-900.eot') format('embedded-opentype'),
+         url('../webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../webfonts/fa-solid-900.woff') format('woff'),
+         url('../webfonts/fa-solid-900.ttf') format('truetype'),
+         url('../webfonts/fa-solid-900.svg') format('svg');
+}*/
+
+/*@font-face {
+    font-family: 'bodonistditalic';
+    src: url('../fonts/bodonistditalic.eot');
+    src: url('../fonts/bodonistditalic.eot') format('embedded-opentype'),
+         url('../fonts/bodonistditalic.woff2') format('woff2'),
+         url('../fonts/bodonistditalic.woff') format('woff'),
+         url('../fonts/bodonistditalic.ttf') format('truetype'),
+         url('../fonts/bodonistditalic.svg#bodonistditalic') format('svg');
+}*/
+
+/*@font-face {
+    font-family: 'BodoniStd';
+    src: url('../fonts/BodoniStd.eot');
+    src: url('../fonts/BodoniStd.eot') format('embedded-opentype'),
+         url('../fonts/BodoniStd.woff2') format('woff2'),
+         url('../fonts/BodoniStd.woff') format('woff'),
+         url('../fonts/BodoniStd.ttf') format('truetype'),
+         url('../fonts/BodoniStd.svg#BodoniStd') format('svg');
+}*/
+
+/*@font-face {
+    font-family: 'BodoniStdBold';
+    src: url('../fonts/BodoniStdBold.eot');
+    src: url('../fonts/BodoniStdBold.eot') format('embedded-opentype'),
+         url('../fonts/BodoniStdBold.woff2') format('woff2'),
+         url('../fonts/BodoniStdBold.woff') format('woff'),
+         url('../fonts/BodoniStdBold.ttf') format('truetype'),
+         url('../fonts/BodoniStdBold.svg#BodoniStdBold') format('svg');
+}*/
+
+
+/*@font-face {
+    font-family: "FiraGO";
+    src: url("../fonts/FiraGO-Regular.woff2"), url("../fonts/FiraGO-regular.woff"), url("../fonts/FiraGO-regular.eot");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("../fonts/FiraGO-SemiBold.woff2"), url("../fonts/FiraGO-SemiBold.woff"), url("../fonts/FiraGO-SemiBold.eot");
+    font-weight: 600;
+    font-display: swap;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("../fonts/FiraGO-Bold.woff2"), url("../fonts/FiraGO-Bold.woff"), url("../fonts/FiraGO-Bold.eot");
+    font-weight: 700;
+    font-display: swap;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("../fonts/FiraGO-Light.woff2"), url("../fonts/FiraGO-Light.woff"), url("../fonts/FiraGO-Light.eot");
+    font-weight: 300;
+    font-display: swap;
+    font-style: thin;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("../fonts/FiraGO-Medium.woff2"), url("../fonts/FiraGO-Medium.woff"), url("../fonts/FiraGO-Medium.eot");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}*/
