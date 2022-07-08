@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg fill-opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" xmlns="http://www.w3.org/2000/svg" font-family="&apos;Dialog&apos;" font-style="normal" stroke-linejoin="miter" font-size="12" stroke-dashoffset="0" image-rendering="auto">
+  <!--Unicode Character 'LARI SIGN' (U+20BE)-->
+  <defs id="genericDefs" />
+  <g>
+    <g>
+      <path d="M222.1875 263.9531 L207.1406 279 Q206.7188 252.4219 190.9688 230.9062 Q175.6406 209.8125 151.3125 201.0938 L151.3125 263.25 L135 279.5625 L135 197.0156 Q129.2344 196.1719 122.7656 196.1719 Q116.1562 196.1719 110.3906 197.0156 L110.3906 263.25 L94.0781 279.5625 L94.0781 201.2344 Q69.3281 210.2344 54 231.6094 Q38.3906 253.5469 38.3906 280.5469 Q38.3906 315.4219 63.2031 340.25 Q88.0312 365.0625 122.9062 365.0625 L206.2969 365.0625 L189.9844 381.375 L21.9375 381.375 L38.25 365.0625 L67.7812 365.0625 Q46.6875 351.2812 34.4531 329.3438 Q21.9375 306.5625 21.9375 280.5469 Q21.9375 246.6562 42.3281 219.6562 Q62.4375 193.2188 94.0781 183.7969 L94.0781 163.2656 L110.3906 146.9531 L110.3906 180.4219 Q116.1562 179.7188 122.7656 179.7188 Q129.2344 179.7188 135 180.4219 L135 163.2656 L151.3125 146.9531 L151.3125 183.7969 Q178.875 191.9531 198.1406 213.6875 Q217.4062 235.4062 222.1875 263.9531 Z" stroke="none" />
+    </g>
+  </g>
+</svg>
