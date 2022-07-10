@@ -162,8 +162,8 @@ $filterCheckboxes.on('change', function() {
 
 
 var totalPrice = 0;
-var totalPrice1 = 3;
-$("#tots").html(3);
+var totalPrice1 = 4;
+$("#tots").html(4);
 $('.checks').change(function () {
   if ($(this).is(":checked")) {
     totalPrice += parseFloat($(this).attr('data-price'));
