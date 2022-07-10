@@ -2278,9 +2278,6 @@ picture img{
         color: var(--second-color);
         visibility: visible;
     }
-    /*.langswitcher.hide{
-        visibility: hidden;
-    }*/
     .search-item{
         display: block;
         width: 100%;
@@ -2674,6 +2671,16 @@ picture img{
 }
 .bronzer-back img{
     width: 100%;
+}
+.new-div{
+    margin-top: -1.5rem;
+}
+.new-div span{
+    font-family: 'ABChanelCorpoRegular';
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #f1f1f1;
+    padding: 0.125rem 0.625rem;
 }
 @media(min-width: 991px){
     .bronzer-back-title{
