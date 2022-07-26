@@ -1,12 +1,12 @@
 // array of images
 $(document).ready(function(){
     const images2 = [
-        'img/8853578481694.jpg',    // index 0 --> images[0]
-        'img/8845084131358.jpg'    // index 2 --> images[2]
+        'img/8853578481694.webp',    // index 0 --> images[0]
+        'img/8845084131358.webp'    // index 2 --> images[2]
     ];
     const images3 = [
-        'img/8810632282142.jpg',    // index 1 --> images[1]
-        'img/8849829625886.jpg'    // index 3 --> images[3]
+        'img/8810632282142.webp',    // index 1 --> images[1]
+        'img/8849829625886.webp'    // index 3 --> images[3]
     ];
     const firstImage = 0;
     const lastImage = images2.length -1;
