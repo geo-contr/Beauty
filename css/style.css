@@ -953,8 +953,22 @@ button span{
 .small-btn{
         padding: 1rem 1.6rem!important;
 }
-.small-btn1:hover{
+.small-btn1:hover, .small-btn2:hover{
     border-color: var(--second-color);
+}
+.small-btn2{
+    padding: 1rem 0!important;
+    width: 65%!important;
+    background-color: var(--second-color)!important;
+    border-radius: 0;
+    border-color: var(--second-color);
+}
+.small-btn2 h2{
+    position: relative;
+    font-family: 'ABChanelCorpoRegular';
+    font-size: .6875rem;
+    color: var(--first-color);
+    margin-bottom: 0;
 }
 .small-btn1 h2{
     position: relative;
@@ -985,6 +999,16 @@ button span{
     transform: translateX(-50%);
     transition: .7s;
 }
+.small-btn2 h2::after{
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 50%;
+    width: 73px;
+    height: 1px;
+    transform: translateX(-50%);
+    transition: .7s;
+}
 .product-details-btn span::after{
     position: absolute;
     content: "";
@@ -995,7 +1019,7 @@ button span{
     background-color: rgba(0, 0, 0, 0);
     transition: .7s;
 }
-.small-btn1:hover h2::after{
+.small-btn1:hover h2::after, .small-btn2:hover h2::after{
     background-color: var(--first-color);
 }
 .small-btn span::after{
