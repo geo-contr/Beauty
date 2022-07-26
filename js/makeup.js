@@ -377,7 +377,7 @@ $(".backgr-color").click(function(event){
 	}
 
 	$(".search-sign-a").click(function() {
-		$(".langswitcher ").toggleClass('hide');
+		$(".langswitcher").toggleClass('hide');
 	});
 
 	// autofocus - კურსორის ციმციმი search bar-ის გამოჩენისთანავე
@@ -417,3 +417,86 @@ $("#flexSwitchCheckDefault").click(function() {
   $(".form-check-input1").toggleClass("checked");
 });
 // end of type="checkbox" კონფლიქტში მოდის სხვა type="checkbox"-თან ამიტომ ამ შემთხვევაში type="checkbox1"-ად გადაკეთდება და დაჭირდება ჯავაც
+
+
+
+// scroll of indicators
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 1490) {
+        $(".navbutton-ul").addClass("hide");
+    } else {
+        $(".navbutton-ul").removeClass("hide");
+    }
+});
+// end of scroll of indicators
+
+
+// const sections = document.querySelectorAll('#section');
+// const windowHeight = window.innerHeight;
+// const navigation = document.querySelector('.navigation-pr');
+// console.log(windowHeight);
+
+// function reset(){
+// 	for (var i = 0; i < navigation.children.length; i++){
+// 		navigation.children[i].classList.remove('selected');
+// 	}
+// }
+
+// window.addEventListener('scroll', function(){
+// 	const scrollTop = window.scrollY;
+// 	sections.forEach(function(section, i){
+// 		if (section.offsetTop < scrollTop + windowHeight/2 && scrollTop < section.offsetTop + windowHeight/2){
+// 			reset();
+// 			navigation.children[i].classList.add('selected');
+// 		}
+// 	});
+// });
+
+
+// document.querySelectorAll('.navigation-pr li').forEach(function(item, i){
+// 	item.addEventListener('click', function(){
+// 		window.scrollTo({
+// 		top: i * windowHeight,
+// 		behavior: 'smooth'
+// 		})
+// 	})
+// });
+
+
+	// smooth scroll
+	$('#menu-main1').onePageNav({
+		currentClass: 'active',
+		changeHash: false,
+		scrollSpeed: 500,
+		scrollThreshold: 0.5,
+		filter: '',
+		easing: 'swing'
+	});
+
+// const links = document.querySelectorAll('.navlink');
+
+// links.forEach((item)=>{
+// 	item.addEventListener('click',()=>
+// 	{
+// 		let el = document.getElementById(item.getAttribute('href'));
+// 		el.scrollIntoView({behavior:'smooth',block:'start'});
+// 	})
+// })
+
+
+
+
+//  //Resize window
+// function resize() {
+//   if ($(window).width() < 576) {
+//     $('.prd-forChange').removeClass('product-details').addClass('product-details-1');
+//   }
+// }
+
+
+// $(window).on('resize', function() {
+//   resize()
+// });
+
