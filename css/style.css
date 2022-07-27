@@ -3268,6 +3268,9 @@ picture img{
     }
 }
 @media(min-width: 576px){
+    .navbutton-ul.hidden, .navbutton-ul.hidden1, .navbutton-ul.hidden2, .navbutton-ul.hidden3{
+        display: none;
+    }
     .signature-col{
         width: 43.5%;
         align-self: end; 
