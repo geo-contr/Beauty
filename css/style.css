@@ -3528,22 +3528,25 @@ li::marker{
 }
 .slider .slick-dots li{
     list-style: none;
-    margin: 0 5px;
+    margin: 0 10px;
 }
-.slider .slick-dots button{
+.slider .slick-dots li button{
     font-size: 0;
-    /*width: 10px;*/
+    width: 7px;
     height: 7px;
-    transform: scaleX(.5);
+    padding: 0;
     background-color: var(--fifth-color);
     border: 1px solid var(--fifth-color);
     border-radius: 50%;
 }
 .slider .slick-dots li.slick-active button{
-    transform: scale(1, 2.2);
+    transform: scale(2);
     background-color: var(--first-color);
     border-color: var(--fifth-color);
     transition: all .3s;
+}
+.slick-dots li button:before{
+    font-size: 0;
 }
 /* end of slick-slider */
 
