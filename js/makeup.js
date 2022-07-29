@@ -509,3 +509,68 @@ $(window).scroll(function() {
 //   resize()
 // });
 
+
+
+
+// 3 shades available
+$(".shade-img").click(function() {
+  	$(".overlay-sun").addClass("open");
+  	$(".sun-light").addClass("active");
+  	$(".sun-medium, .sun-deep").removeClass("active");
+  	$(".img-medium, .img-deep").removeClass("show");
+  	$(".img-light").removeClass("hide");
+});
+
+$(".shade-img-medium").click(function() {
+  	$(".overlay-sun").addClass("open");
+  	$(".sun-medium").addClass("active");
+  	$(".img-medium").addClass("show");
+  	$(".img-deep").removeClass("show");
+  	$(".img-light").addClass("hide");
+  	$(".sun-light, .sun-deep").removeClass("active");
+});
+
+$(".shade-img-deep").click(function() {
+  	$(".overlay-sun").addClass("open");
+  	$(".sun-deep").addClass("active");
+  	$(".img-medium").removeClass("show");
+  	$(".img-deep").addClass("show");
+  	$(".img-light").addClass("hide");
+  	$(".sun-light, .sun-medium").removeClass("active");
+});
+
+$(".close-button").click(function() {
+  	$(".overlay-sun").removeClass("open");
+});
+
+
+$(".sun-light").click(function() {
+	$(".shade-img").removeClass("hide");
+  	$(".shade-img-medium").removeClass("show");
+  	$(".shade-img-deep").removeClass("show");
+  	$(".overlay-sun").removeClass("open");
+  	$(".slide1-light, .slide2-light, .slide3-light").removeClass("hide");
+  	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep").removeClass("show");
+});
+
+
+$(".sun-medium").click(function() {
+  	$(".shade-img").addClass("hide");
+  	$(".shade-img-medium").addClass("show");
+  	$(".shade-img-deep").removeClass("show");
+  	$(".overlay-sun").removeClass("open");
+  	$(".slide1-medium, .slide2-medium, .slide3-medium").addClass("show");
+  	$(".slide1-deep, .slide2-deep, .slide3-deep").removeClass("show");
+	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
+});
+
+$(".sun-deep").click(function() {
+  	$(".shade-img").addClass("hide");
+  	$(".shade-img-medium").removeClass("show");
+  	$(".shade-img-deep").addClass("show");
+  	$(".overlay-sun").removeClass("open");
+  	$(".slide1-deep, .slide2-deep, .slide3-deep").addClass("show");
+  	$(".slide1-medium, .slide2-medium, .slide3-medium").removeClass("show");
+	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
+});
+// end of 3 shades available
