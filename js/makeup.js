@@ -32,7 +32,8 @@ $(document).ready(function(){
 	$(".bigmenu-overlay").click(function(){
 		$(".bigmenu-overlay").removeClass("menu-overlay-show menu-overlay-show1 menu-overlay-show2 menu-overlay-show3");
 		$(".gallery-drop, .fashion-drop, .about-drop, .contact-drop").slideUp(0);
-		$(".gallery-li, .fashion-li, .about-li, .contact-li").removeClass("active");
+		$(".gallery-li, .about-li, .contact-li").removeClass("active");
+		$(".fashion-li").removeClass("active1");
 		$("html").removeClass("fixed-position fixed-position1 fixed-position2 fixed-position3");
 		$(".langswitcher").removeClass("langswitcher-padding langswitcher-padding1 langswitcher-padding2 langswitcher-padding3");
 	    $(".navbar-brand").removeClass("navbar-brand-padding navbar-brand-padding1 navbar-brand-padding2 navbar-brand-padding3");
