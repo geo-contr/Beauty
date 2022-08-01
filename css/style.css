@@ -608,11 +608,11 @@ a:hover{
         display: block;
     }
     .slide2{
-        padding-top: 242px;
+        padding-top: 15.125rem;
         /*margin-top: -242px;*/
     }
     .slide3{
-        padding-top: 213px;
+        padding-top: 13.3125rem;
         /*margin-top: -213px;*/
     }
 }
@@ -713,11 +713,11 @@ a:hover{
         display: block;
     }
     .slide2{
-        padding-top: 219px!important;
+        padding-top: 13.6875rem!important;
         /*margin-top: -242px;*/
     }
     .slide3{
-        padding-top: 183px!important;
+        padding-top: 11.4375rem!important;
         /*margin-top: -213px;*/
     }
 }
@@ -1041,11 +1041,11 @@ a:hover{
         display: block;
     }
     .slide2{
-        padding-top: 182px;
+        padding-top: 11.375rem;
         /*margin-top: -242px;*/
     }
     .slide3{
-        padding-top: 146px;
+        padding-top: 9.125rem;
         /*margin-top: -213px;*/
     }
 }
@@ -2837,11 +2837,11 @@ picture img{
         display: block;
     }
     .slide2{
-        padding-top: 282px!important;
+        padding-top: 17.625rem!important;
         /*margin-top: -242px;*/
     }
     .slide3{
-        padding-top: 269px!important;
+        padding-top: 16.8125rem!important;
         /*margin-top: -213px;*/
     }
     /* end of input search */
@@ -3223,6 +3223,7 @@ picture img{
     font-family: 'ABChanelCorpoRegular';
     font-size: .75rem;
     font-weight: 600;
+    color: var(--second-color);
 }
 .shade-img,
 .shade-img-medium,
@@ -3544,7 +3545,7 @@ picture img{
         display: none;
     }
     .sun-ul {
-        margin-top: 130px;
+        margin-top: 8.125rem;
         margin-left: 0;
     }
     .slide1-light.hide, 
@@ -3782,7 +3783,7 @@ li::marker{
 .slider .slick-arrow{
     position: absolute;
     top: 50%;
-    margin: -30px 0 0 0;
+    margin: -1.875rem 0 0 0;
     font-size: 0;
     width: 30px;
     height: 56px;
@@ -3806,7 +3807,7 @@ li::marker{
 }
 .slider .slick-dots li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 .slider .slick-dots li button{
     font-size: 0;
