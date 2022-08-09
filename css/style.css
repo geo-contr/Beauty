@@ -190,6 +190,66 @@ a:hover{
 	pointer-events: all;
 }
 
+/* storelocator */
+.boutique-sect{
+    position: relative;
+    background-color: var(--first-color);
+    text-align: center;
+    z-index: 1;
+}
+.boutique-sect h1{
+    font-family: 'ABChanelCorpoRegular';
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--fourth-color);
+}
+.boutique-sect p{
+    font-family: 'HelveticaLt';
+    font-size: .875rem;
+    color: var(--seventh-color);
+}
+.boutique-sect a{
+    font-family: 'ABChanelCorpoRegular';
+    font-weight: 600;
+    font-size: .75rem;
+}
+.boutique-sect svg{
+    width: 5px;
+}
+.map-sect{
+    position: relative;
+    background-color: var(--first-color);
+    z-index: 1;
+}
+iframe{
+    width: 100%;
+    height: 480px;
+    /*min-height: 38.4375rem;*/
+    overflow:hidden;
+    /*clip-path: polygon(0 12.5%, 100% 12.5%, 100% 100%, 0% 100%);*/
+}
+
+#map{
+    width: 100%;
+    height: 615px;
+}
+.gm-style-iw-d h4{
+    font-family: 'ABChanelCorpoRegular';
+    font-size: .9rem;
+    /*font-weight: 600;*/
+    margin-bottom: 0.3rem;
+}
+.gm-style-iw-d img{
+    max-width: 205px!important;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 6px;
+}
+.gm-style-iw-d p{
+    font-family: 'HelveticaLt';
+}
+/* end of storelocator */
+
 /* double navbar */
 #main-bar{
     position: fixed;
@@ -706,10 +766,23 @@ a:hover{
         /*padding-top: 167px!important;
         margin-top: -107px!important;*/
     }
-    .slide1-light.hide, .slide1-medium, .slide1-deep, .slide2-light.hide, .slide2-medium, .slide2-deep, .slide3-light.hide, .slide3-medium, .slide3-deep{
+    .slide1-light.hide, 
+    .slide1-medium, 
+    .slide1-deep, 
+    .slide2-light.hide, 
+    .slide2-medium, 
+    .slide2-deep, 
+    .slide3-light.hide, 
+    .slide3-medium, 
+    .slide3-deep{
         display: none;
     }
-    .slide1-medium.show, .slide1-deep.show, .slide2-medium.show, .slide2-deep.show, .slide3-medium.show, .slide3-deep.show{
+    .slide1-medium.show, 
+    .slide1-deep.show, 
+    .slide2-medium.show, 
+    .slide2-deep.show, 
+    .slide3-medium.show, 
+    .slide3-deep.show{
         display: block;
     }
     .slide2{
@@ -3383,7 +3456,7 @@ picture img{
 }*/
 .st0-sign{
     stroke-width: 1.2px;
-    stroke: #000;
+    stroke: var(--second-color);
 }
 .products-cont .row{
     justify-content: center;
