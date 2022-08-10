@@ -208,6 +208,16 @@ a:hover{
     font-size: .875rem;
     color: var(--seventh-color);
 }
+.book-an{
+    font-family: 'HelveticaLt'!important;
+    font-size: .875rem!important;
+    color: var(--seventh-color);
+    text-decoration: underline;
+    font-weight: 100!important;
+}
+.book-an:hover{
+    text-decoration: underline;
+}
 .boutique-sect a{
     font-family: 'ABChanelCorpoRegular';
     font-weight: 600;
@@ -1246,6 +1256,29 @@ button span{
     background-color: var(--second-color)!important;
     border-radius: 0;
     border-color: var(--second-color);
+}
+.small-btn3{
+    padding: 1.1rem 0!important;
+    width:150px!important;
+    background-color: var(--second-color)!important;
+    border-radius: 0;
+    color: var(--first-color);
+    border-color: var(--second-color);
+}
+.small-btn3:hover{
+    border-color: var(--second-color);
+}
+.small-btn3 h6{
+    font-size: .6875rem;
+    margin-bottom: 0;
+    background-color: var(--second-color)!important;
+    border-radius: 0;
+    border-color: var(--second-color);
+}
+.boutique-sect h4{
+    font-family: 'ABChanelCorpoRegular';
+    font-size: 1.25rem;
+    color: var(--second-color);
 }
 .small-btn2 h2{
     position: relative;
