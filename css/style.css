@@ -3649,6 +3649,9 @@ picture img{
     .container-descr{
         max-width: calc(100% - 50px);
     }
+    .boutique-sect h1{
+        font-size: 1.5rem;
+    }
 }
 .footer-contact ul{
     list-style-type: square;
