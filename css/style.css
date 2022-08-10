@@ -2607,6 +2607,9 @@ picture img{
     .footer-cont{
         transform: translateY(0);
     }
+    .boutique-sect h1{
+        font-size: 1.875rem;
+    }
 
 }
 @keyframes slideLeft{
