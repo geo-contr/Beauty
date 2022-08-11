@@ -1,5 +1,5 @@
 function initMap(){
-	var pos = {lat: 41.72603788426659, lng: 44.75452499744392};
+	var pos = {lat: 41.71990374258761, lng: 44.77593855310735};
 	var opt = {
 		center: pos,
 		zoom: 12,
@@ -8,8 +8,15 @@ function initMap(){
 
 	var myMap = new google.maps.Map(document.getElementById("map"), opt);
 
+	// var marker = new google.maps.Marker({
+	// 	position: pos,
+	// 	map: myMap,
+	// 	title: 'Beauty boutique',
+	// 	icon: './img/marker5.png'
+	// });
+
 	var marker = new google.maps.Marker({
-		position: pos,
+		position: {lat: 41.72603788426659, lng: 44.75452499744392},
 		map: myMap,
 		title: 'Beauty boutique',
 		icon: './img/marker5.png'
@@ -22,8 +29,15 @@ function initMap(){
 		icon: './img/marker4.png'
 	});
 
+	// var marker2 = new google.maps.Marker({
+	// 	position: {lat: 41.71990374258761, lng: 44.77593855310735},
+	// 	map: myMap,
+	// 	title: 'Beauty boutique',
+	// 	icon: './img/marker3.png'
+	// });
+
 	var marker2 = new google.maps.Marker({
-		position: {lat: 41.71990374258761, lng: 44.77593855310735},
+		position: pos,
 		map: myMap,
 		title: 'Beauty boutique',
 		icon: './img/marker3.png'
