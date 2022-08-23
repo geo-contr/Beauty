@@ -2321,9 +2321,11 @@ picture img{
     }
     .img9{
         position: relative;
+        /*background-image: url("../img/9811306217502.webp");*/
         background-image: url("../img/lipstick2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        /*background-position: 0% 50%;*/
         background-position: 50% 50%;
         height: 80vh;
         z-index: 1;
@@ -2609,9 +2611,11 @@ picture img{
     }
     .img9{
         position: relative;
+        /*background-image: url("../img/9811306053662.webp");*/
         background-image: url("../img/lipstick2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        /*background-position: 0% 50%;*/
         background-position: 50% 50%;
         height: 81.9vh;
         z-index: 1;
@@ -3212,16 +3216,16 @@ picture img{
     font-size: .875rem;
     color: var(--seventh-color);
 }
-.bronz-products{
+.bronz-products, .lipstick-products{
     position: relative;
     z-index: 1;
     background-color: var(--first-color);
 }
-.bronz-products a{
+.bronz-products a, .lipstick-products a{
     position: relative;
     text-align: center;
 }
-.bronz-products img{
+.bronz-products img, .lipstick-products img{
     position: relative;
     width: 100%;
 }
@@ -3233,20 +3237,20 @@ picture img{
     opacity: 0;
     transition: .2s ease-out;
 }
-.bronz-products a:hover .line-bottom{
+.bronz-products a:hover .line-bottom, .lipstick-products a:hover .line-bottom{
     height: 4px;
     width: 100%;
     transform: translateY(5px);
     background-color: var(--second-color);
     opacity: 1;
 }
-.bronz-products h5{
+.bronz-products h5, .lipstick-products h5{
    font-family: 'ABChanelCorpoRegular';
    font-size: .75rem;
    font-weight: 600;
    color: var(--fourth-color);
 }
-.bronz-products p{
+.bronz-products p, .lipstick-products p{
    font-family: 'HelveticaLt';
    font-size: .875rem;
    color: var(--second-color);
@@ -3878,7 +3882,504 @@ li::marker{
 .data-slider-mask ul{
     transition: .5s;
 }
+
 /* end of bronzer */
+
+/* lips */
+/* with transition */
+.hover-animation .img-front {
+    position: absolute!important;
+    left: 15%;
+    width: 68%!important;
+    opacity: 0;
+}
+.hover-animation:hover .img-front{
+    opacity: 1;
+    z-index: 1;
+    transition: opacity .2s ease-out;
+}
+/* end of with transition*/
+.rect1{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ee9b93;
+}
+.rect2{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #5b2d28;
+}
+.rect3{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a72128;
+}
+.rect4{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ff1061;
+}
+.rect5{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #dd4a5d;
+}
+.rect6{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #771c2e;
+}
+.rect7, 
+.rect15,
+.rect23,
+.rect31,
+.rect39,
+.rect47,
+.rect5,
+.rect69,
+.rect82{
+    font-family: 'HelveticaLt';
+    font-size: .5625rem;
+    line-height: .6;
+    margin-right: 0.1875rem;
+    font-weight: 600;
+}
+.rect8, 
+.rect16,
+.rect24,
+.rect32,
+.rect40,
+.rect48,
+.rect56,
+.rect70,
+.rect83{
+    font-family: 'HelveticaLt';
+    font-size: .5625rem;
+    line-height: .7;
+    margin-right: 0.1875rem;
+    font-weight: 600;
+    margin-left: -0.0625rem;
+}
+.rect9{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #e7e6e3;
+}
+.rect10{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c17164;
+}
+.rect11{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ec796c;
+}
+.rect12{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #d05462;
+}
+.rect13{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c01029;
+}
+.rect14{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c01029;
+}
+.rect17{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #e6a484;
+}
+.rect18{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #985a53;
+}
+.rect19{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #df635d;
+}
+.rect20{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #eabebe;
+}
+.rect21{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ea5068;
+}
+.rect22{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c93957;
+}
+.rect25{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c07769;
+}
+.rect26{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a84453;
+}
+.rect27{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #933641;
+}
+.rect28{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #bc383d;
+}
+.rect29{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #9f2c3b;
+}
+.rect30{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #572533;
+}
+.rect33{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ba6455;
+}
+.rect34{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #77342c;
+}
+.rect35{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #751c1e;
+}
+.rect36{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #79001e;
+}
+.rect37{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #963e4e;
+}
+.rect38{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #582222;
+}
+.rect41{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #99655c;
+}
+.rect42{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a32d52;
+}
+.rect43{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #9a414e;
+}
+.rect44{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #eda28e;
+}
+.rect45{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #7a1a20;
+}
+.rect46{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #582222;
+}
+.rect49{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #bc7974;
+}
+.rect50{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #bb6f6e;
+}
+.rect51{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #b51a2b;
+}
+.rect52{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c72355;
+}
+.rect53{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #aa2555;
+}
+.rect54{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #910820;
+}
+.rect57{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a91919;
+}
+.rect58{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #863d33;
+}
+.rect59{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #9b3945;
+}
+.rect60{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c84343;
+}
+.rect61{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ad5d53;
+}
+.rect62{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #65000e;
+}
+.rect63{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #bc7974;
+}
+.rect64{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #bb2d2b;
+}
+.rect65{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #9c3332;
+}
+.rect66{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #fe697f;
+}
+.rect67{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #ed71a5;
+}
+.rect68{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #97444a;
+}
+.rect71{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #e75361;
+}
+.rect72{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #e06b74;
+}
+.rect73{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #b42938;
+}
+.rect74{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #72232d;
+}
+.rect75{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #b6454b;
+}
+.rect76{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a4685f;
+}
+.rect77{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #c97a74;
+}
+.rect78{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #8f303c;
+}
+.rect79{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a82d3f;
+}
+.rect80{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #7c3141;
+}
+.rect81{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #573d3e;
+}
+.rect84{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #832a32;
+}
+.rect85{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #a80d19;
+}
+.rect86{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #854842;
+}
+.rect87{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #831b27;
+}
+.rect88{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #df2875;
+}
+.rect89{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #d64039;
+}
+.rect90{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #bb1f35;
+}
+.rect91{
+    width: 7px;
+    height: 7px;
+    margin-right: 0.1875rem;
+    background-color: #7f2831;
+}
+.hover-animation:hover img{
+    /*background-image: url(../img/3847999.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 0;
+    height: 0;
+    padding: 50%;*/
+   /* padding: 27% 51%;
+    margin: 23% 0;*/
+}
+/* end of lips */
 
 
 /* slick-slider */
@@ -4103,7 +4604,7 @@ li::marker{
     margin-left: 0.3125rem;
     margin-top: -0.3125rem;
 }
-.texture{
+/*.categories{
     position: relative;
     font-family: 'ABChanelCorpoRegular';
     font-size: .75rem;
@@ -4112,10 +4613,25 @@ li::marker{
     padding-bottom: 1.25rem;
     font-weight: 600;
 }
-.texture.active{
+.categories.active{
+    padding-bottom: .4rem;
+}*/
+.texture, 
+.categories{
+    position: relative;
+    font-family: 'ABChanelCorpoRegular';
+    font-size: .75rem;
+    color: var(--seventh-color);
+    border-bottom: 1px solid var(--ninth-color);
+    padding-bottom: 1.25rem;
+    font-weight: 600;
+}
+.texture.active, 
+.categories.active{
     padding-bottom: .4rem;
 }
-.texture .texture-text::before{
+.texture .texture-text::before, 
+.categories .categories-text::before{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
@@ -4130,7 +4646,8 @@ li::marker{
     transition: all .2s cubic-bezier(.46,.03,.52,.96);
     width: 0.625rem;
 }
-.texture .texture-text::after{
+.texture .texture-text::after, 
+.categories .categories-text::after{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-color: currentColor;
@@ -4144,10 +4661,12 @@ li::marker{
     transition: all .2s cubic-bezier(.46,.03,.52,.96);
     width: 0.625rem;
 }
-.texture-text.rotate::before{
+.texture-text.rotate::before, 
+.categories-text.rotate::before{
     transform: rotate(-45deg)!important;
 }
-.texture-text.rotate::after{
+.texture-text.rotate::after, 
+.categories-text.rotate::after{
     transform: rotate(45deg)!important;
 }
 .finish{
