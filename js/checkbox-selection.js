@@ -5,7 +5,7 @@ function closeCart() {
 }
 
 
-const openShopCart = document.querySelector('.shoppingCartButton');
+const openShopCart = document.querySelector('.shoppingCartButton, .shoppingCartButton1');
 openShopCart.addEventListener('click', () => {
   const cart = document.querySelector('.producstOnCart');
   cart.classList.toggle('hide');

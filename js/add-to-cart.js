@@ -5,7 +5,7 @@ function closeCart() {
 }
 
 
-const openShopCart = document.querySelector('.shoppingCartButton');
+const openShopCart = document.querySelector('.shoppingCartButton, .shoppingCartButton1');
 openShopCart.addEventListener('click', () => {
 	const cart = document.querySelector('.producstOnCart');
 	cart.classList.toggle('hide');
@@ -146,7 +146,6 @@ $filterCheckboxes.on('change', function() {
 
 
 // How to calculate numbers (total) based on the checked checkboxes
-
 // function calc() {
 //   var tots = 3;
 //   $(".checks:checked").each(function() {
@@ -209,3 +208,4 @@ $(".overlay2, #closeButton1").click(function() {
 // }
 
 // end of How to calculate numbers (total) based on the checked checkboxes
+
