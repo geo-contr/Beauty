@@ -314,13 +314,15 @@ iframe{
     height: 15px;
 }
 .bag-sign .st0{
-    stroke-width: 2px;
+    stroke-width: 3px;
     stroke: var(--second-color);
 }
 .search-sign .st0{
+    stroke-width: 1px;
     stroke: var(--second-color);
 }
 .account-sign .st0{
+    stroke-width: 1.3px;
     stroke: var(--second-color);
 }
 .search-sign-a, .account-sign-a{
