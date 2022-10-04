@@ -4,7 +4,6 @@ function closeCart() {
 	document.querySelector('body').classList.toggle('stopScrolling')
 }
 
-
 const openShopCart = document.querySelector('.shoppingCartButton, .shoppingCartButton1');
 openShopCart.addEventListener('click', () => {
 	const cart = document.querySelector('.producstOnCart');
@@ -34,6 +33,15 @@ $(".shoppingCartButton1").click(function() {
 	$(".overlay1").toggleClass("open");
 });
 
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    $('.producstOnCart').addClass('hide');
+    overlay1.classList.remove('open');
+  }
+});
+// end of close with escape key
 
 
 function closeFilter() {
@@ -71,7 +79,15 @@ $(".productOnfilter").click(function(event){
   // Do something
 });
 
-
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    $('.productOnfilter').addClass('hide');
+    overlay2.classList.remove('open');
+  }
+});
+// end of close with escape key
 
 
 $(".texture-text").click(function() {

@@ -34,7 +34,15 @@ $(".shoppingCartButton1").click(function() {
   $(".overlay1").toggleClass("open");
 });
 
-
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    $('.producstOnCart').addClass('hide');
+    overlay1.classList.remove('open');
+  }
+});
+// end of close with escape key
 
 function closeFilter() {
   const filter = document.querySelector('.productOnfilter');
@@ -71,7 +79,15 @@ $(".productOnfilter").click(function(event){
   // Do something
 });
 
-
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    $('.productOnfilter').addClass('hide');
+    overlay2.classList.remove('open');
+  }
+});
+// end of close with escape key
 
 
 $(".categories-text").click(function() {

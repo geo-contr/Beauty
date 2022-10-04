@@ -29,6 +29,29 @@ $(document).ready(function(){
 
 
 	// mega-menu
+	// close with escape key
+	document.addEventListener("keydown", function (e){
+	  console.log(e);
+	  if (e.key == "Escape"){
+		$(".fashion-drop, .about-drop, .contact-drop, .gallery-drop").slideUp(0);
+	    $(".about-li, .contact-li, .gallery-li").removeClass("active");
+	    $(".fashion-li").removeClass("active1");
+	    $("html").removeClass("fixed-position fixed-position1 fixed-position2 fixed-position3");
+	    $(".bigmenu-overlay").removeClass("menu-overlay-show menu-overlay-show1 menu-overlay-show2 menu-overlay-show3");
+	    $(".footer-footer").removeClass("footer-footer-padding footer-footer-padding1 footer-footer-padding2 footer-footer-padding3");
+	    $(".high-contrast").removeClass("high-contrast-padding high-contrast-padding1 high-contrast-padding2 high-contrast-padding3");
+	    $(".langswitcher").removeClass("langswitcher-padding langswitcher-padding1 langswitcher-padding2 langswitcher-padding3");
+	    $(".navbar-brand").removeClass("navbar-brand-padding navbar-brand-padding1 navbar-brand-padding2 navbar-brand-padding3");
+	    $("#menu-main").removeClass("menu-main-padding menu-main-padding1 menu-main-padding2 menu-main-padding3");
+	    $(".footer-brand-backgr").removeClass("footer-brand-backgr-padding footer-brand-backgr-padding2 footer-brand-backgr-padding3 footer-brand-backgr-padding4");
+	    $(".footer-cont").removeClass("footer-cont-padding footer-cont-padding2 footer-cont-padding3 footer-cont-padding4");
+	    $(".footer-line").removeClass("footer-line-padding footer-line-padding1 footer-line-padding2 footer-line-padding3");
+	    $(".navbutton-ul").removeClass("hidden hidden1 hidden2 hidden3")
+	  }
+	});
+	// end of close with escape key
+
+
 	$(".bigmenu-overlay").click(function(){
 		$(".bigmenu-overlay").removeClass("menu-overlay-show menu-overlay-show1 menu-overlay-show2 menu-overlay-show3");
 		$(".gallery-drop, .fashion-drop, .about-drop, .contact-drop").slideUp(0);
@@ -203,6 +226,17 @@ $(document).ready(function(){
 
 
 // responsive menu
+	// close with escape key
+	document.addEventListener("keydown", function (e){
+	  console.log(e);
+	  if (e.key == "Escape"){
+	    menu.classList.remove("active");
+	    $(".menu-overlay").removeClass("active");
+	  }
+	});
+	// end of close with escape key
+
+
  const menu = document.querySelector(".menu");
  const menuMain = menu.querySelector(".menu-main");
  const goBack = menu.querySelector(".go-back");
@@ -437,7 +471,19 @@ $(".backgr-color").click(function(event){
 // end of modal change language
 
 
-// search bar
+	// search bar
+	// close with escape key
+	document.addEventListener("keydown", function (e){
+	  console.log(e);
+	  if (e.key == "Escape"){
+	    wrapper.classList.remove('active-1');
+	    fullscreen.classList.remove('show');
+	    $(".langswitcher ").removeClass('hide');
+	    $(".search-sign-a1").removeClass('active-1');
+	  }
+	});
+	// end of close with escape key
+
   	// min-width(min-width: 768px)
 	let fullscreen = document.querySelector(".overlay");
 	let wrapper = document.querySelector(".search-sign-a");
@@ -919,3 +965,7 @@ $(".sun-intense-blueberry").click(function() {
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose").removeClass("show");
 });
 // end of 3 shades available
+
+
+
+

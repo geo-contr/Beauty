@@ -29,6 +29,27 @@ $(document).ready(function(){
 
 
 	// mega-menu
+	// close with escape key
+	document.addEventListener("keydown", function (e){
+	  console.log(e);
+	  if (e.key == "Escape"){
+		$(".about-drop, .gallery-drop, .fashion-drop, .contact-drop").slideUp(0);
+		$(".about-li, .gallery-li, .fashion-li, .contact-li").removeClass("active");
+		$("html").removeClass("fixed-position fixed-position1 fixed-position2 fixed-position3");
+		$(".langswitcher").removeClass("langswitcher-padding langswitcher-padding1 langswitcher-padding2 langswitcher-padding3");
+		$(".navbar-brand").removeClass("navbar-brand-padding navbar-brand-padding1 navbar-brand-padding2 navbar-brand-padding3");
+		$("#menu-main").removeClass("menu-main-padding menu-main-padding1 menu-main-padding2 menu-main-padding3");
+		$(".footer-brand-backgr").removeClass("footer-brand-backgr-padding footer-brand-backgr-padding2 footer-brand-backgr-padding3 footer-brand-backgr-padding4");
+	    $(".footer-cont").removeClass("footer-cont-padding footer-cont-padding2 footer-cont-padding3 footer-cont-padding4");
+	    $(".footer-line").removeClass("footer-line-padding footer-line-padding1 footer-line-padding2 footer-line-padding3");
+	    $(".footer-footer").removeClass("footer-footer-padding1 footer-footer-padding footer-footer-padding2 footer-footer-padding3");
+	    $(".high-contrast").removeClass("high-contrast-padding high-contrast-padding1 high-contrast-padding2 high-contrast-padding3");
+	    $(".bigmenu-overlay").removeClass("menu-overlay-show menu-overlay-show1 menu-overlay-show3");
+	    $(".bigmenu-overlay").removeClass("menu-overlay-show menu-overlay-show1 menu-overlay-show2 menu-overlay-show3");
+	  }
+	});
+	// end of close with escape key
+
 	$(".bigmenu-overlay").click(function(){
 		$(".bigmenu-overlay").removeClass("menu-overlay-show menu-overlay-show1 menu-overlay-show2 menu-overlay-show3");
 		$(".gallery-drop, .fashion-drop, .about-drop, .contact-drop").slideUp(0);
@@ -189,6 +210,17 @@ $(document).ready(function(){
 
 
 // responsive menu
+	// close with escape key
+	document.addEventListener("keydown", function (e){
+	  console.log(e);
+	  if (e.key == "Escape"){
+	    menu.classList.remove("active");
+	    $(".menu-overlay").removeClass("active");
+	  }
+	});
+	// end of close with escape key
+
+
  const menu = document.querySelector(".menu");
  const menuMain = menu.querySelector(".menu-main");
  const goBack = menu.querySelector(".go-back");
@@ -415,6 +447,18 @@ $(".backgr-color").click(function(event){
 // end of modal change language
 
   	// search bar
+  	// close with escape key
+	document.addEventListener("keydown", function (e){
+	  console.log(e);
+	  if (e.key == "Escape"){
+	    wrapper.classList.remove('active-1');
+	    fullscreen.classList.remove('show');
+	    $(".langswitcher ").removeClass('hide');
+	    $(".search-sign-a1").removeClass('active-1');
+	  }
+	});
+	// end of close with escape key
+
   	// min-width(min-width: 768px)
 	let fullscreen = document.querySelector(".overlay");
 	let wrapper = document.querySelector(".search-sign-a");
@@ -491,3 +535,4 @@ $(".backgr-color").click(function(event){
 //    document.getElementById("yourSelectComponentID").value = 0;
 // });
 // end of როდესაც ენას შევცვლი select-ით, შესაბამისად გადავდივარ შეცვლილი ენის გვერდზე და მინდა უკან გამოვბრუნდე click to go back-ით. select-ში შევცვლი ენაც მინდა დაბრუნდეს ძველზე
+
