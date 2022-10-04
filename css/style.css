@@ -1209,7 +1209,7 @@ iframe{
 .langswitcher-padding1, 
 .langswitcher-padding2, 
 .langswitcher-padding3{
-    padding-right: calc(1% - 4px);
+    padding-right: calc(1% - 5px);
 }
 .navbar-brand-padding, 
 .navbar-brand-padding1, 
