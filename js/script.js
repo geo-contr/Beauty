@@ -446,52 +446,54 @@ $(".backgr-color").click(function(event){
 });
 // end of modal change language
 
-  	// search bar
-  	// close with escape key
-	document.addEventListener("keydown", function (e){
-	  console.log(e);
-	  if (e.key == "Escape"){
-	    wrapper.classList.remove('active-1');
-	    fullscreen.classList.remove('show');
-	    $(".langswitcher ").removeClass('hide');
-	    $(".search-sign-a1").removeClass('active-1');
-	  }
-	});
-	// end of close with escape key
 
-  	// min-width(min-width: 768px)
-	let fullscreen = document.querySelector(".overlay");
-	let wrapper = document.querySelector(".search-sign-a");
-	wrapper.onclick=function()
-	{
-		fullscreen.classList.toggle("show");
-		wrapper.classList.toggle("active-1");
-	}
 
-	$(".search-sign-a").click(function() {
-		$(".langswitcher ").toggleClass('hide');
-	});
+// search bar
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    wrapper.classList.remove('active-1');
+    fullscreen.classList.remove('show');
+    $(".langswitcher ").removeClass('hide');
+    $(".search-sign-a1").removeClass('active-1');
+  }
+});
+// end of close with escape key
 
-	// autofocus - კურსორის ციმციმი search bar-ის გამოჩენისთანავე
-	$(".search-sign-a").click(function() {
-	  	$(".search-item").focus();
-	});
-	// end of autofocus
+	// min-width(min-width: 768px)
+let fullscreen = document.querySelector(".overlay");
+let wrapper = document.querySelector(".search-sign-a");
+wrapper.onclick=function()
+{
+	fullscreen.classList.toggle("show");
+	wrapper.classList.toggle("active-1");
+}
 
-	// max-width(min-width: 767px)
-	$(".search-sign-a1").click(function() {
-		$(".search-sign-a1").toggleClass('active-1');
-		$(".overlay").toggleClass('show');
-		$(".langswitcher").toggleClass('hide');
-		$(".container-width").toggleClass('container-padding');
-	});
+$(".search-sign-a").click(function() {
+	$(".langswitcher ").toggleClass('hide');
+});
 
-	// autofocus - კურსორის ციმციმი search bar-ის გამოჩენისთანავე
-	$(".search-sign-a1").click(function() {
-	  	$(".search-item").focus();
-	});
-	// end of autofocus
-	// end of search bar
+// autofocus - კურსორის ციმციმი search bar-ის გამოჩენისთანავე
+$(".search-sign-a").click(function() {
+  	$(".search-item").focus();
+});
+// end of autofocus
+
+// max-width(min-width: 767px)
+$(".search-sign-a1").click(function() {
+	$(".search-sign-a1").toggleClass('active-1');
+	$(".overlay").toggleClass('show');
+	$(".langswitcher").toggleClass('hide');
+	$(".container-width").toggleClass('container-padding');
+});
+
+// autofocus - კურსორის ციმციმი search bar-ის გამოჩენისთანავე
+$(".search-sign-a1").click(function() {
+  	$(".search-item").focus();
+});
+// end of autofocus
+// end of search bar
 
 
 	// Toggle Password Visibility
@@ -526,8 +528,6 @@ $(".backgr-color").click(function(event){
             this.classList.toggle("bi-eye");
         });
      // end of Toggle Password Visibility
-
-
 
 
 // როდესაც ენას შევცვლი select-ით, შესაბამისად გადავდივარ შეცვლილი ენის გვერდზე და მინდა უკან გამოვბრუნდე click to go back-ით. select-ში შევცვლი ენაც მინდა დაბრუნდეს ძველზე
