@@ -2851,7 +2851,7 @@ picture img{
         width: 320px;
         height: 100%;
         padding-top: 0;
-        z-index: 1111;
+        z-index: 111111;
         background-color: var(--first-color);
         overflow-y: auto;
         -webkit-transform: translate(-100%);
