@@ -791,8 +791,16 @@
 							</div>
 							<div class="chat-close-div">
 								<svg id="chat_close" class="chat-close" viewBox="0 0 15 15" aria-hidden="true" focusable="false">
-				                  <path d="M14.35 1.25l-.7-.71L7.5 6.69 1.35.54l-.7.71L6.79 7.4.65 13.54l.7.71L7.5 8.1l6.15 6.15.7-.71L8.21 7.4l6.14-6.15z"></path>
+				                  <path class="st0" d="M14.35 1.25l-.7-.71L7.5 6.69 1.35.54l-.7.71L6.79 7.4.65 13.54l.7.71L7.5 8.1l6.15 6.15.7-.71L8.21 7.4l6.14-6.15z"></path>
 				                </svg>
+							</div>
+							<div class="chat-min-div">
+								<svg id="chat_min" class="chat-min" viewBox="0 0 15.3 8.4">
+									<!-- <style type="text/css">
+										.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+									</style> -->
+									<polyline class="st0" points="0.4,0.4 7.6,7.6 14.9,0.4 "/>
+								</svg>
 							</div>
 							<div class="text-center mt-3">
 								<p class="chat-title-p1">To start chatting with a Chanel Advisor, please enter your name and email, or sign in.</p>
@@ -1111,6 +1119,7 @@
 		const chat_open = document.getElementById('chatButton')
 		const chat_overlay = document.getElementById('chat_overlay')
 		const chat_close = document.getElementById('chat_close')
+		const chat_min = document.getElementById('chat_min')
 
 
 		chat_open.addEventListener('click', () => {
@@ -1125,11 +1134,30 @@
 		  chat_dialog.classList.remove('open');
 		});
 
+		chat_min.addEventListener('click', () => {
+		  chat_overlay.classList.remove('show');
+		});
+
+		chat_min.addEventListener('click', () => {
+		  chat_dialog.classList.remove('open');
+		});
 
 		$(".chat-backgr").click(function(event){
 		  event.stopPropagation();
 		  // Do something
 		});
+
+		// close with escape key
+		document.addEventListener("keydown", function (e){
+		  console.log(e);
+		  if (e.key == "Escape"){
+		    chat_overlay.classList.remove("show");
+		    $(".chat-dialog").removeClass("open");
+		    $("#chat_overlay").find('form').trigger('reset');
+		  }
+		});
+		// end of close with escape key
+
 		// reset the modal when it gets closed
 		$("#chat_close").click(function(event){
 			$("#chat_overlay").find('form').trigger('reset');
