@@ -462,6 +462,16 @@ lang_close.addEventListener('click', () => {
   modal_dialog1.classList.remove('open');
 });
 
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+     modal_overlay.classList.remove("show");
+    $("#modal_overlay").removeClass("show");
+    $("#modal_dialog1").removeClass("open");
+  }
+});
+// end of close with escape key
 
 $(".backgr-color").click(function(event){
   event.stopPropagation();
@@ -680,4 +690,13 @@ $(".sun-deep").click(function() {
   	$(".slide1-medium, .slide2-medium, .slide3-medium").removeClass("show");
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
 });
+
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    $(".overlay-sun").removeClass("open");
+  }
+});
+// end of close with escape key
 // end of 3 shades available

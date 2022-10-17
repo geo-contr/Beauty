@@ -439,6 +439,15 @@ lang_close.addEventListener('click', () => {
   modal_dialog1.classList.remove('open');
 });
 
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+     modal_overlay.classList.remove("show");
+    $("#modal_dialog1").removeClass("open");
+  }
+});
+// end of close with escape key
 
 $(".backgr-color").click(function(event){
   event.stopPropagation();

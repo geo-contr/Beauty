@@ -463,6 +463,15 @@ lang_close.addEventListener('click', () => {
   modal_dialog1.classList.remove('open');
 });
 
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+     modal_overlay.classList.remove("show");
+    $("#modal_dialog1").removeClass("open");
+  }
+});
+// end of close with escape key
 
 $(".backgr-color").click(function(event){
   event.stopPropagation();
@@ -964,6 +973,15 @@ $(".sun-intense-blueberry").click(function() {
   	$(".slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose").removeClass("show");
 });
+
+// close with escape key
+document.addEventListener("keydown", function (e){
+  console.log(e);
+  if (e.key == "Escape"){
+    $(".overlay-sun").removeClass("open");
+  }
+});
+// end of close with escape key
 // end of 3 shades available
 
 
