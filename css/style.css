@@ -5984,6 +5984,10 @@ li::marker{
     -webkit-box-shadow: -2px 5px 15px 0 #00000014;
             box-shadow: -2px 5px 15px 0 #00000014;
 }
+.chatButton:focus{
+    /* close button with escape needs outline: 0; otherwise button shows border */
+    outline: 0;
+}
 .chatButton-div svg{
     width: 60px;
     height: 32px;
@@ -6059,16 +6063,34 @@ li::marker{
     margin-left: calc(-0.5 * var(--bs-gutter-x));
     margin-right: calc(-0.5 * var(--bs-gutter-x));
 }
+.chat-min-div{
+    position: absolute;
+    top: 11px;
+    right: 36px;
+    cursor: pointer;
+}
+.chat-min{
+    width: 15px;
+    height: 15px;
+}
+.chat-min .st0{
+    stroke-width: .9px;
+    stroke-linecap: inherit;
+}
 .chat-close-div{
     position: absolute;
     right: 15px;
     top: 10px;
 }
 .chat-close{
-    height: 0.875rem;
-    width: 0.875rem;
+    width: 20px;
+    height: 12px;
     cursor: pointer;
     fill: #313233;
+}
+.chat-close .st0{
+    fill: #000;
+    stroke-width: .1px;
 }
 .chat-title-p1{
     font-family: 'HelveticaLt';
@@ -6116,6 +6138,19 @@ li::marker{
 .chat-backgr .big-btn:hover span::after {
     background-color: #fff;
 }
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/*Change text in autofill textbox*/
+/*input:-webkit-autofill{
+    -webkit-text-fill-color: yellow !important;
+}*/
+
 /*.form-select:focus{
     border-color: #ced4da;
     outline: 0;
