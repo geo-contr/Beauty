@@ -637,7 +637,7 @@ iframe{
         background-color: var(--first-color);
         width: 580px;
         height: 100%;
-        z-index: 11111;
+        z-index: 111111;
         position: fixed;
         top: 0;
         right: 0;
@@ -810,7 +810,7 @@ iframe{
         max-width: 410px;
         height: 100%;
         /*color: #f0f0f0;*/
-        z-index: 11111;
+        z-index: 111111;
         position: fixed;
         top: 0;
         right: 0;
