@@ -1093,6 +1093,111 @@
 			</div>
 		</div>
 	</section>
+	<div id="" class="chatButton-div">
+		<button id="chatButton" class="chatButton">
+			<span>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 30.3" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+						.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+					</style>
+					<g>
+						<path class="st0" d="M11.6,23c0.6,0.7,1.6,1.2,3.1,1.2h8.7l6.1,5.1v-4.9l0-0.3h0.1c3.2,0,5.9-2.6,5.9-5.9v-7c0-3.2-2.6-5.8-5.9-5.8
+							H13.7c-3.2,0-5.8,2.6-5.8,5.8v7c0,1.4,0.5,2.7,1.3,3.7"/>
+						<g>
+							<path class="st1" d="M6.5,19.2H6.3c-3.2,0-5.8-2.6-5.8-5.8v-7c0-3.2,2.6-5.8,5.8-5.8h15.9c3.2,0,5.8,2.6,5.8,5.8v7
+								c0,3.2-2.6,5.8-5.8,5.8h-9.7l-6.1,5.1v-4.9L6.5,19.2z"/>
+							<circle cx="7.7" cy="10.3" r="2.1"/>
+							<circle cx="14.4" cy="10.3" r="2.1"/>
+							<circle cx="21" cy="10.3" r="2.1"/>
+						</g>
+					</g>
+				</svg>
+			</span>
+		</button>
+	</div>
+	<!-- modal chat without bootstrap -->
+	<div id="chat_overlay" class="chat-overlay">
+		<div id="chat_dialog" class="chat-dialog">
+			<div class="chat-content">
+				<div class="container chat-content-width">
+					<div class="row">
+						<div class="chat-backgr">
+							<div class="chat-header">
+								<h5>LIVE CHAT</h5>
+							</div>
+							<div class="chat-close-div">
+								<svg id="chat_close" class="chat-close" viewBox="0 0 15 15" aria-hidden="true" focusable="false">
+				                  <path class="st0" d="M14.35 1.25l-.7-.71L7.5 6.69 1.35.54l-.7.71L6.79 7.4.65 13.54l.7.71L7.5 8.1l6.15 6.15.7-.71L8.21 7.4l6.14-6.15z"></path>
+				                </svg>
+							</div>
+							<div class="chat-min-div">
+								<svg id="chat_min" class="chat-min" viewBox="0 0 15.3 8.4">
+									<!-- <style type="text/css">
+										.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+									</style> -->
+									<polyline class="st0" points="0.4,0.4 7.6,7.6 14.9,0.4 "/>
+								</svg>
+							</div>
+							<div class="text-center mt-3">
+								<p class="chat-title-p1">To start chatting with a Chanel Advisor, please enter your name and email, or sign in.</p>
+							</div>
+							<div class="text-center">
+								<p class="chat-title-p2 mt-3" key="Press the Check Button">All fields are mandatory.</p>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="form-floating">
+											<input type="text" class="form-control validate forName" id="floatingInput" placeholder="text" name="password">
+											<label class="labelName" for="floatingInput">First name</label>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-floating">
+											<input type="text" class="form-control validate forName" id="floatingInput" placeholder="text">
+											<label class="labelName" for="floatingInput">Last name</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-floating mt-3">
+											<input type="email" class="form-control validate forEmail" id="floatingInput" placeholder="Email">
+											<label class="labelEmail" for="floatingInput">Email</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-floating mt-3">
+											<textarea class="form-control forMessage" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+											<label class="labelMessage" for="floatingTextarea">Write a Message</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-check form-check-opt beautyPolicy mt-5">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+											<label class="form-check-label labelPolicy" for="">
+										    I agree to Beauty
+										    <a href="#;">Privacy Policy</a>
+										    and
+										    <a href="#;">Legal Statement</a>
+											</label>
+										</div>
+										<button type="submit" class="btn btn-primary big-btn mt-4 mb-3"><span>START CHAT</span></button>
+									</div>
+								</div>
+							</form>
+							<!-- <div class="d-flex justify-content-center mb-2 mt-5 mb-5">
+								<a href="#;">
+									<button class="btn btn-primary small-btn btn-validate"><span>Validate</span></button>
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="modal_overlay" class="modal-overlay"></div> -->
+	</div>
+	<!-- end of modal chat without bootstrap -->
 	<section class="desript-details pt-5 pb-5">
 		<div class="container container-descr">
 			<div class="row gy-4 gx-5">
@@ -1442,6 +1547,72 @@
 		}
 
 		splitScroll();
+	</script>
+
+	<script>
+		// chat modal without bootstrap
+		var listItem = document.querySelector('#chatButton');
+		listItem.addEventListener('click', function(event) {
+		  chat_overlay.classList.toggle('show');
+		});
+		// var listItem = document.querySelector('#chat_overlay');
+		// listItem.addEventListener('click', function(event) {
+		//   this.classList.remove('show');
+		// });
+		// var listItem = document.querySelector('#chat_overlay');
+		// listItem.addEventListener('click', function(event) {
+		//   chat_dialog.classList.remove('open');
+		// });
+
+
+		const chat_open = document.getElementById('chatButton')
+		const chat_overlay = document.getElementById('chat_overlay')
+		const chat_close = document.getElementById('chat_close')
+		const chat_min = document.getElementById('chat_min')
+
+
+		chat_open.addEventListener('click', () => {
+		  chat_dialog.classList.add('open');
+		});
+
+		chat_close.addEventListener('click', () => {
+		  chat_overlay.classList.remove('show');
+		});
+
+		chat_close.addEventListener('click', () => {
+		  chat_dialog.classList.remove('open');
+		});
+
+		chat_min.addEventListener('click', () => {
+		  chat_overlay.classList.remove('show');
+		});
+
+		chat_min.addEventListener('click', () => {
+		  chat_dialog.classList.remove('open');
+		});
+
+		$(".chat-backgr").click(function(event){
+		  event.stopPropagation();
+		  // Do something
+		});
+
+		// close with escape key
+		document.addEventListener("keydown", function (e){
+		  console.log(e);
+		  if (e.key == "Escape"){
+		    chat_overlay.classList.remove("show");
+		    $(".chat-dialog").removeClass("open");
+		    $("#chat_overlay").find('form').trigger('reset');
+		  }
+		});
+		// end of close with escape key
+
+		// reset the modal when it gets closed
+		$("#chat_close").click(function(event){
+			$("#chat_overlay").find('form').trigger('reset');
+		});
+		// end of reset the modal when it gets closed
+		// end of chat modal without bootstrap
 	</script>
 
 </body>
