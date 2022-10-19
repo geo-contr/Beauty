@@ -5978,6 +5978,9 @@ li::marker{
     background-color: #fff;
     z-index: 11111;
 }
+.chatButton-div.zIndex, .chatButton-div.zIndex1, .chatButton-div.zIndex2, .chatButton-div.zIndex3{
+    z-index: 1;
+}
 .chatButton{
     position: fixed;
     bottom: 5%;
@@ -6035,6 +6038,9 @@ li::marker{
     .chat-overlay.show{
         pointer-events: auto;
         opacity: 1;
+    }
+    .chat-overlay.zIndex, .chat-overlay.zIndex1, .chat-overlay.zIndex2, .chat-overlay.zIndex3{
+        z-index: 1;
     }
     .chat-dialog{
         position: fixed;
