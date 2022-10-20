@@ -162,6 +162,12 @@ a:hover{
     background-color: transparent;
     color: var(--seventh-color);
 }
+.underLine{
+    text-decoration: underline;
+}
+.underLine:hover{
+    text-decoration: underline;
+}
 .img-text h5{
     position: relative;
     font-size: .6875rem;
@@ -6076,6 +6082,31 @@ li::marker{
     }
 }
 @media(max-width: 466px){
+    .chat-overlay{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /*background-color: rgb(42, 42, 42, .8);*/
+        width: 100%;
+        /*height: 100vh;*/
+        opacity: 0;
+        pointer-events: none;
+        z-index: 1111;
+        /*transition: opacity .25s ease;*/
+    }
+    .chat-overlay.show{
+        pointer-events: auto;
+        opacity: 1;
+    }
     .chat-dialog.open{
         overflow: hidden;
         /* overflow-y: scroll; */
