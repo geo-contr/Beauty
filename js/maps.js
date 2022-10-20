@@ -146,14 +146,18 @@ function initMap(){
 		marker2.setIcon('./img/marker3.png');
 	});
 
-	// myMap.addListener('click', function(){
-	// 	info.close(myMap, marker);
-	// 	info1.close(myMap, marker1);
-	// 	info2.close(myMap, marker2);
-	// 	info3.close(myMap, marker3);
-	// 	info4.close(myMap, marker4);
-	// 	marker.setIcon('./img/marker.png');
-	// });
+	myMap.addListener('click', function(){
+		info.close(myMap, marker);
+		info1.close(myMap, marker1);
+		info2.close(myMap, marker2);
+		info3.close(myMap, marker3);
+		info4.close(myMap, marker4);
+		marker4.setIcon('./img/marker1.png');
+		marker3.setIcon('./img/marker2.png');
+		marker1.setIcon('./img/marker4.png');
+		marker.setIcon('./img/marker5.png');
+		marker2.setIcon('./img/marker3.png');
+	});
 
 	google.maps.event.addListener(info, "closeclick", function(){
       marker.setIcon('./img/marker5.png');
