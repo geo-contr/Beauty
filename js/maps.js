@@ -78,8 +78,6 @@ function initMap(){
 	});
 
 
-
-
 	marker.addListener('click', function(){
 		info.open(myMap, marker);
 		info1.close(myMap, marker1);
@@ -92,7 +90,6 @@ function initMap(){
 		marker4.setIcon('./img/marker1.png');
 		marker3.setIcon('./img/marker2.png');
 	});
-
 
 	marker1.addListener('click', function(){
 		info1.open(myMap, marker1);
@@ -157,6 +154,11 @@ function initMap(){
 		marker1.setIcon('./img/marker4.png');
 		marker.setIcon('./img/marker5.png');
 		marker2.setIcon('./img/marker3.png');
+
+		infoWindow.close(); /* not popup maps belonging infoWindow */
+
+	
+		// $(".gm-style-iw-t").toggle('.hide'); /* built-in marker's infoWindow close */
 	});
 
 	google.maps.event.addListener(info, "closeclick", function(){
@@ -178,10 +180,7 @@ function initMap(){
 	google.maps.event.addListener(info4, "closeclick", function(){
       marker4.setIcon('./img/marker1.png');
 	});
-
 }
-
-
 
 
 
