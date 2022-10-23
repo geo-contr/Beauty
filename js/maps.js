@@ -155,7 +155,7 @@ function initMap(){
 		marker.setIcon('./img/marker5.png');
 		marker2.setIcon('./img/marker3.png');
 
-		infoWindow.close(); /* not popup maps belonging infoWindow */
+		infoWindow.close(); /* not popup built-in marker's infoWindow */
 
 	
 		// $(".gm-style-iw-t").toggle('.hide'); /* built-in marker's infoWindow close */
