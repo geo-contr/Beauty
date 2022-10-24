@@ -1,0 +1,51 @@
+.slide{
+    position: absolute;
+    height: 3px;
+    top: 47px;
+    background: var(--second-color);
+    opacity: 1;
+    transition: .2s;
+}
+#menu-main li:nth-child(1).active ~ .slide{
+    left: calc(50% - 282px)!important;
+    width: 50px!important;
+    opacity: 1;
+}
+#menu-main li:nth-child(2).active ~ .slide{
+    left: 445px;
+    opacity: 1;
+}
+#menu-main li:nth-child(3).active ~ .slide{
+    left: calc(50% - 109px)!important;
+    width: 73px!important;
+    opacity: 1;
+}
+#menu-main li:nth-child(4).active ~ .slide {
+    left: calc(50% - 8px)!important;
+    width: 60px!important;
+    opacity: 1;
+}
+#menu-main li:nth-child(5).active ~ .slide{
+    left: 575px;
+    opacity: 1;
+}
+#menu-main li:nth-child(6).active ~ .slide{
+    left: calc(50% + 206px);
+    width: 66px;
+    opacity: 1;
+}
+#menu-main li:nth-child(6).active1 ~ .slide{
+    left: calc(50% + 197px);
+    width: 66px;
+    opacity: 1;
+}
+/* end of undeline with css, js */
+
+
+
+/*.form-switch .form-check-input1.checked{
+    background-position: 9px;
+    background-color: #fff;
+    background-image: url("../img/circle-checked.svg");
+}
+*/
