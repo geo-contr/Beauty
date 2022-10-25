@@ -865,7 +865,7 @@
 					<img class="imghide" src="img/8802700263454.webp">
 					<h5 class="imghide mt-4 productName">ULTRA TENUE</h5>
 					<h6 class="mt-3 cost imghide"><span class="priceValue">42</span></h6>
-					<a href="ultra-tenue.html" class="hover-animation">
+					<a href="ultra-tenue.html"class="hover-animation">
 						<img src="img/8806211518494.webp" class="img-front"> <!-- with transition -->
 						<img src="img/8802700263454.webp" class="img-back">
 						<!-- <div class="line-bottom"></div> -->
@@ -1772,6 +1772,20 @@
 		// end of chat modal without bootstrap
 	</script>
 
-	
+	<!-- ბმულზე დაგვიანებული გადასვლა: 
+	$('.hover-animation').click(function(e) {
+	  e.preventDefault();
+	  setTimeout(function(url) { window.location = url }, 500, this.href);
+	});  
+	ჯავას მოქმედება მხოლოდ მობილურზე:
+	const mediaQuery = window.matchMedia('(max-width: 768px)')
+		
+	if (mediaQuery.matches) {
+	 $('.hover-animation').click(function(e) {
+	 	e.preventDefault();
+	 	setTimeout(function(url) { window.location = url }, 1000, this.href);
+	 });
+	} 
+	-->
 </body>
 </html>
