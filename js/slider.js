@@ -101,7 +101,7 @@ preBtn.addEventListener('click',()=>{
     const priceTag = document.getElementById('price');
     const priceTag1 = document.getElementById('price1');
     currentPrice--;
-    if(currentPrice >= firstPrice){
+    if(currentPrice <= firstPrice){
         currentPrice = 0;
     }
     priceTag.innerText = price[currentPrice];
