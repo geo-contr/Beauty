@@ -63,14 +63,14 @@ if (mediaQuery.matches){
 
 
 // Refresh Page and Keep Scroll Position
-document.addEventListener("DOMContentLoaded", function(event) { 
-    var scrollpos = localStorage.getItem('scrollpos');
-    if (scrollpos) window.scrollTo(0, scrollpos);
-});
+// document.addEventListener("DOMContentLoaded", function(event) { 
+//     var scrollpos = localStorage.getItem('scrollpos');
+//     if (scrollpos) window.scrollTo(0, scrollpos);
+// });
 
-window.onbeforeunload = function(e) {
-    localStorage.setItem('scrollpos', window.scrollY);
-};
+// window.onbeforeunload = function(e) {
+//     localStorage.setItem('scrollpos', window.scrollY);
+// };
 // end of Refresh Page and Keep Scroll Position
 
 
