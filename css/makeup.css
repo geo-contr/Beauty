@@ -57,3 +57,32 @@
     background-color: #fff;
     background-image: url("../img/circle-checked.svg");
 }
+
+
+.chat-backgr .form-check-opt .form-check-input2 {
+    width: .6em;
+    height: .6em;
+    margin-top: 0.4em;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+.form-check-opt{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+}
+.chat-backgr .form-check-opt .form-check-input2.checked {
+    width: .6em;
+    height: .6em;
+    margin-top: 0.4em;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #000;
+    cursor: pointer;
+}
+.form-check-opt .form-check-label{
+    margin-left: .75em;
+}
