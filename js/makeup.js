@@ -557,9 +557,9 @@ $(".backgr-color").click(function(event){
 
 
 // type="checkbox" კონფლიქტში მოდის სხვა type="checkbox"-თან ამიტომ ამ შემთხვევაში type="checkbox1"-ად გადაკეთდება და დაჭირდება ჯავაც
-// $("#flexSwitchCheckDefault").click(function() {
-//   $(".form-check-input1").toggleClass("checked");
-// });
+$("#beautyPolicy").click(function() {
+  $(".form-check-input2").toggleClass("checked");
+});
 // end of type="checkbox" კონფლიქტში მოდის სხვა type="checkbox"-თან ამიტომ ამ შემთხვევაში type="checkbox1"-ად გადაკეთდება და დაჭირდება ჯავაც
 
 
