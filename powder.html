@@ -1173,7 +1173,7 @@
 									</div>
 									<div class="col-12">
 										<div class="form-check form-check-opt beautyPolicy mt-5">
-											<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+											<span class="form-check-input2" id="beautyPolicy"></span>
 											<label class="form-check-label labelPolicy" for="">
 										    I agree to Beauty
 										    <a href="#;">Privacy Policy</a>
@@ -1608,8 +1608,11 @@
 		// end of close with escape key
 
 		// reset the modal when it gets closed
+		// $("#chat_close").click(function(event){
+		// 	$("#chat_overlay").find('form').trigger('reset');
+		// });
 		$("#chat_close").click(function(event){
-			$("#chat_overlay").find('form').trigger('reset');
+			$(".form-check-input2").removeClass('checked');
 		});
 		// end of reset the modal when it gets closed
 		// end of chat modal without bootstrap
