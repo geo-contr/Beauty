@@ -271,6 +271,9 @@
     }
 }
 @media(max-width: 575px){
+    .lipstick-products h1 {
+        font-size: 1.25rem;
+    }
     .swiper-button-prev:after, .swiper-button-next:after,
     .swiper-button-prev1:after, .swiper-button-next1:after {
         font-family: swiper-icons;
