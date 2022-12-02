@@ -133,7 +133,7 @@
 }
 @media(min-width: 768px){
     .lipstick-products h1{
-        padding-top: 4rem;
+        margin-top: 7rem;
         font-family: 'ABChanelCorpoRegular';
         font-size: 1.875rem;
         font-weight: 600;
@@ -196,7 +196,7 @@
         margin-top: 5rem!important;
     }
      .lipstick-products h1{
-        padding-top: 4rem;
+        margin-top: 6rem;
         font-family: 'ABChanelCorpoRegular';
         font-size: 1.5625rem;
         font-weight: 600;
@@ -271,14 +271,6 @@
     }
 }
 @media(max-width: 575px){
-    .lipstick-products h1{
-        padding-top: 4rem;
-        font-family: 'ABChanelCorpoRegular';
-        font-size: 1.25rem;
-        font-weight: 600;
-        text-align: center;
-        color: var(--fourth-color);
-    }
     .swiper-button-prev:after, .swiper-button-next:after,
     .swiper-button-prev1:after, .swiper-button-next1:after {
         font-family: swiper-icons;
@@ -436,6 +428,9 @@
     -webkit-transition: .2s ease-out;
     -o-transition: .2s ease-out;
     transition: .2s ease-out;
+}
+.swiper-sect1-a4{
+    padding-bottom: 0.25rem;
 }
 .swiper-sect1-a1{
     padding-bottom: 1rem;
