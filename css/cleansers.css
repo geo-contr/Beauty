@@ -1,0 +1,462 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.slide{
+    position: absolute;
+    height: 3px;
+    top: 47px;
+    background: var(--second-color);
+    opacity: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+#menu-main li:nth-child(1).active ~ .slide{
+    left: calc(50% - 282px)!important;
+    width: 50px!important;
+    opacity: 1;
+}
+#menu-main li:nth-child(2).active ~ .slide{
+    left: 445px;
+    opacity: 1;
+}
+#menu-main li:nth-child(3).active ~ .slide{
+    left: calc(50% - 109px)!important;
+    width: 73px!important;
+    opacity: 1;
+}
+#menu-main li:nth-child(4).active ~ .slide {
+    left: calc(50% - 99px);
+    width: 71px;
+    opacity: 1;
+}
+#menu-main li:nth-child(4).active1 ~ .slide{
+    left: calc(50% - 8px);
+    width: 60px;
+    opacity: 1;
+}
+#menu-main li:nth-child(5).active ~ .slide{
+    left: 575px;
+    opacity: 1;
+}
+#menu-main li:nth-child(6).active ~ .slide{
+    left: calc(50% + 197px);
+    width: 66px;
+    opacity: 1;
+}
+/* end of undeline with css, js */
+
+
+
+.form-switch .form-check-input1.checked{
+    background-position: 9px;
+    background-color: #fff;
+    background-image: url("../img/circle-checked.svg");
+}
+
+
+.chat-backgr .form-check-opt .form-check-input2 {
+    width: .6em;
+    height: .6em;
+    margin-top: 0.4em;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+.form-check-opt{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+}
+.chat-backgr .form-check-opt .form-check-input2.checked {
+    width: .6em;
+    height: .6em;
+    margin-top: 0.4em;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #000;
+    cursor: pointer;
+}
+.form-check-opt .form-check-label{
+    margin-left: .75em;
+}
+@media(min-width: 991px){
+    .bronzer-back-title{
+        position: absolute;
+        /*min-width: 358px;*/
+        top: 43%;
+        left: 55%;
+        right: 5%;
+        font-family: 'ABChanelCorpoRegular';
+        text-align: center;
+        color: #1d1d1d;
+    }
+    .swiper-sect1 h3{
+        font-family: 'ABChanelCorpoRegular';
+        font-size: 1.875rem;
+        text-align: center;
+        font-weight: 600;
+        padding: 0 1.25rem;
+        color: var(--fourth-color);
+    }
+    .bronzer-back-text p{
+        font-family: 'HelveticaLt';
+        font-size: .875rem;
+        padding-top: 1rem;
+    }
+}
+@media(max-width: 990px){
+    .bronzer-back-text {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: var(--first-color);
+        z-index: 1;
+    }
+    .swiper-sect1 h3{
+        font-family: 'ABChanelCorpoRegular';
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 600;
+        color: var(--fourth-color);
+    }
+}
+@media(min-width: 768px){
+    .lipstick-products h1{
+        padding-top: 4rem;
+        font-family: 'ABChanelCorpoRegular';
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--fourth-color);
+    }
+    .col-text, .col-img{
+        margin-top: 6rem;
+    }
+    .col-img1{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev,
+    .swiper-button-next1, .swiper-rtl .swiper-button-prev1{
+        right: calc(0% - 26px);
+        left: auto;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        top: 44%!important;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+    .swiper-button-prev1, .swiper-button-next1 {
+        position: absolute;
+        top: 46%!important;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+}
+@media(max-width: 767px){
+     .lipstick-products h1{
+        padding-top: 6rem;
+        font-family: 'ABChanelCorpoRegular';
+        font-size: 1.5625rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--fourth-color);
+    }
+    .col-text2 h3{
+        margin-top: 2rem!important;
+    }
+    .swiper-button-prev1, .swiper-button-next1{
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+    .col-text1{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .col-text{
+        margin-top: 4rem;
+    }
+    .col-img{
+        margin-top: 2rem;
+    }
+    .col-img1{
+        margin-top: 6rem;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev,
+    .swiper-button-next1, .swiper-rtl .swiper-button-prev1{
+        right: calc(0% - 26px);;
+        left: auto;
+    }
+    .swiper-sect1 h3{
+        margin-top: 1rem;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        position: absolute;
+        top: 42%;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+}
+@media(min-width: 576px){
+    .swiper-button-prev:after, .swiper-button-next:after,
+    .swiper-button-prev1:after, .swiper-button-next1:after {
+        font-family: swiper-icons;
+        font-size: 27px;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        color: var(--second-color);
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next,
+    .swiper-button-prev1, .swiper-rtl .swiper-button-next1 {
+        left: calc(0% - 28px);
+        right: auto;
+        /* margin-left: calc(10% - 35px); */
+    }
+}
+@media(max-width: 575px){
+    .lipstick-products h1{
+        padding-top: 6rem;
+        font-family: 'ABChanelCorpoRegular';
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--fourth-color);
+    }
+    .swiper-button-prev:after, .swiper-button-next:after,
+    .swiper-button-prev1:after, .swiper-button-next1:after {
+        font-family: swiper-icons;
+        font-size: 27px;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        color: var(--second-color);
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next,
+    .swiper-button-prev1, .swiper-rtl .swiper-button-next1{
+        left: calc(0% - 28px);
+        right: auto;
+        /* margin-left: calc(10% - 35px); */
+    }
+}
+.swiper-sect1{
+    position: relative;
+    background-color: var(--first-color);
+    padding-top: 3rem;
+    z-index: 1;
+}
+.swiper-sect1 .container{
+    max-width: 73%;
+}
+.swiper-slide img, .swiper-slide1 img {
+    /*position: relative;*/
+    width: 100%;
+    left: 0;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+.swiper-sect1 p{
+    padding: 0 2.75rem;
+    font-family: 'HelveticaLt';
+    font-size: .875rem;
+    text-align: center;
+    color: var(--fourth-color);
+}
+.swiper {
+    display: block;
+}
+.swiper-sect1 a{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-family: 'ABChanelCorpoRegular';
+    font-size: .6875rem;
+    font-weight: 600;
+    /*transition: border-bottom .2s ease-out;*/
+}
+.swiper-sect1-a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    max-width: 165px;
+    top: 19px;
+    left: calc(50% - 82px);
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.swiper-sect1-a0::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    max-width: 137px;
+    top: 19px;
+    left: calc(50% - 69px);
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.swiper-sect1-a1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    max-width: 92px;
+    top: 19px;
+    left: calc(50% - 47px);
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.swiper-sect1-a2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    max-width: 122px;
+    top: 19px;
+    left: calc(50% - 60px);
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.swiper-sect1-a3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    max-width: 89px;
+    top: 19px;
+    left: calc(50% - 44px);
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.swiper-sect1-a4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-color);
+    max-width: 122px;
+    top: 19px;
+    left: calc(50% - 62px);
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.swiper-sect1-a1{
+    padding-bottom: 1rem;
+}
+.swiper-sect1-a:hover::after, 
+.swiper-sect1-a0:hover::after, 
+.swiper-sect1-a1:hover::after, 
+.swiper-sect1-a2:hover::after, 
+.swiper-sect1-a3:hover::after,
+.swiper-sect1-a4:hover::after{
+    opacity: 0;
+}
+.swiper-pagination{
+    position: relative;
+    font-family: 'ABChanelCorpoRegular';
+    font-size: 12px;
+    margin-top: 1.875rem;
+    color: var(--second-color);
+}
+.swiper-pagination1{
+    position: relative;
+    font-family: 'ABChanelCorpoRegular';
+    font-size: 12px;
+    margin-top: 1.3rem;
+    color: var(--second-color);
+}
+.col-img img, .col-img1 img{
+    width: 100%;
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+.swiper-button-prev1.swiper-button-disabled, .swiper-button-next1.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+.hover-animation .img-front {
+    position: absolute!important;
+     left: 0%; 
+     width: 100%!important; 
+    opacity: 0;
+}
