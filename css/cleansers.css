@@ -112,6 +112,11 @@
     }
 }
 @media(max-width: 990px){
+    .bronzer-back-title h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--fourth-color);
+    }
     .bronzer-back-text {
         position: relative;
         display: -webkit-box;
@@ -125,13 +130,23 @@
     }
     .swiper-sect1 h3{
         font-family: 'ABChanelCorpoRegular';
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         text-align: center;
         font-weight: 600;
         color: var(--fourth-color);
     }
 }
 @media(min-width: 768px){
+    .swiper-sect1 p{
+        padding: 0 2.75rem;
+        font-family: 'HelveticaLt';
+        font-size: .875rem;
+        text-align: center;
+        color: var(--fourth-color);
+    }
+    .swiper-sect1 .container{
+        max-width: 73%!important;
+    }
     .lipstick-products h1{
         margin-top: 7rem;
         font-family: 'ABChanelCorpoRegular';
@@ -192,6 +207,16 @@
     }
 }
 @media(max-width: 767px){
+    .d-none-picture{
+        display: none;
+    }
+    .swiper-sect1 p{
+        padding: 0 0;
+        font-family: 'HelveticaLt';
+        font-size: .875rem;
+        text-align: center;
+        color: var(--fourth-color);
+    }
     .picture1{
         margin-top: 5rem!important;
     }
@@ -222,7 +247,7 @@
         margin-top: 2rem;
     }
     .col-img1{
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
     .swiper-button-next, .swiper-rtl .swiper-button-prev,
     .swiper-button-next1, .swiper-rtl .swiper-button-prev1{
@@ -253,6 +278,9 @@
     }
 }
 @media(min-width: 576px){
+    .swiper-sect1 .container{
+        max-width: 506px;
+    }
     .swiper-button-prev:after, .swiper-button-next:after,
     .swiper-button-prev1:after, .swiper-button-next1:after {
         font-family: swiper-icons;
@@ -271,6 +299,19 @@
     }
 }
 @media(max-width: 575px){
+    .swiper-sect1-p1{
+        padding: 0 2rem!important;
+    }
+    .swiper-sect1 .container{
+        padding-right: var(--bs-gutter-x, 1.75rem);
+        padding-left: var(--bs-gutter-x, 1.75rem);
+    }
+    .swiper-col{
+        width: 82%;
+    }
+    .swiper-col1{
+        width: 87%;
+    }
     .lipstick-products h1 {
         font-size: 1.25rem;
     }
@@ -292,8 +333,8 @@
     }
 }
 @media(max-width: 460px){
-    .swiper-sect1 p{
-        padding: 0 0.5rem!important;
+    .swiper-sect1-p1 {
+        padding: 0 .5rem!important;
     }
 }
 .swiper-sect1{
@@ -301,9 +342,6 @@
     background-color: var(--first-color);
     padding-top: 3rem;
     z-index: 1;
-}
-.swiper-sect1 .container{
-    max-width: 73%;
 }
 .swiper-slide img, .swiper-slide1 img {
     /*position: relative;*/
@@ -315,13 +353,6 @@
     opacity: 0.35;
     cursor: auto;
     pointer-events: none;
-}
-.swiper-sect1 p{
-    padding: 0 2.75rem;
-    font-family: 'HelveticaLt';
-    font-size: .875rem;
-    text-align: center;
-    color: var(--fourth-color);
 }
 .swiper {
     display: block;
