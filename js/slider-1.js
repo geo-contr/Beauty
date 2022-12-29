@@ -9,24 +9,24 @@ $(document).ready(function(){
         'img/8849829625886.webp'    // index 3 --> images[3]
     ];
     const title2 = [
-    'LES BEIGES',    // index 0 --> images[0]
-    'LE LIFT CRÈME'    // index 2 --> images[2]
+    'THE BEIGE',    // index 0 --> images[0]
+    'UT ENIM CREAM'    // index 2 --> images[2]
     ];
     const title3 = [
-        'LA CRÈME MAIN',    // index 1 --> images[1]
-        'PARIS-PARIS'    // index 3 --> images[3]
+        'ULTRA HOLD',    // index 1 --> images[1]
+        'BEAUTY'    // index 3 --> images[3]
     ];
     const chracter2 = [
-    'Bronzing Cream',    // index 0 --> images[0]
-    'Smooths – Firms'    // index 2 --> images[2]
+    'Dolore Magna',    // index 0 --> images[0]
+    'Esse – Cillum'    // index 2 --> images[2]
     ];
     const chracter3 = [
-        'Nourish - Soften - Brighten',    // index 1 --> images[1]
-        'les eaux'    // index 3 --> images[3]
+        'Minim - Veniam - Quis',    // index 1 --> images[1]
+        'Bath Oil'    // index 3 --> images[3]
     ];
     const price2 = [
-    '$50',    // index 0 --> images[0]
-    '$165'    // index 2 --> images[2]
+        '$50',    // index 0 --> images[0]
+        '$165'    // index 2 --> images[2]
     ];
     const price3 = [
         '$50',    // index 1 --> images[1]

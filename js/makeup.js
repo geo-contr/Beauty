@@ -48,7 +48,9 @@ $(document).ready(function(){
 	    $(".footer-line").removeClass("footer-line-padding footer-line-padding1 footer-line-padding2 footer-line-padding3");
 	    $(".navbutton-ul").removeClass("hidden hidden1 hidden2 hidden3");
 
-	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2 zIndex3')
+	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2 zIndex3');
+
+	    $('.trigger-container').removeClass('zIndex zIndex1 zIndex2 zIndex3')
 	  }
 	});
 	// end of close with escape key
@@ -70,7 +72,9 @@ $(document).ready(function(){
 	    $(".footer-footer").removeClass("footer-footer-padding footer-footer-padding1 footer-footer-padding2 footer-footer-padding3");
 	    $(".navbutton-ul").removeClass("hidden hidden1 hidden2 hidden3");
 
-	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2 zIndex3')
+	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2 zIndex3');
+
+	    $('.trigger-container').removeClass('zIndex zIndex1 zIndex2 zIndex3')
 	});
 
 	$("#mega-one").click(function(){
@@ -104,6 +108,9 @@ $(document).ready(function(){
 
 	    $('.chatButton-div, .chat-overlay').toggleClass('zIndex');
 	    $('.chatButton-div, .chat-overlay').removeClass('zIndex1 zIndex2 zIndex3')
+
+	    $('.trigger-container').toggleClass('zIndex');
+	    $('.trigger-container').removeClass('zIndex1 zIndex2 zIndex3')
 	});
 
 	$(".close-butt, .close-butt-about, .close-butt-contact").click(function(){
@@ -122,7 +129,9 @@ $(document).ready(function(){
 	    $(".footer-footer").removeClass("footer-footer-padding footer-footer-padding1 footer-footer-padding2 footer-footer-padding3");
 	    $(".navbutton-ul").removeClass("hidden hidden1 hidden2 hidden3");
 
-	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2 zIndex3')
+	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2 zIndex3');
+
+	    $('.trigger-container').removeClass('zIndex zIndex1 zIndex2 zIndex3');
 	});
 	
 	$("#mega-two").click(function(){
@@ -154,7 +163,10 @@ $(document).ready(function(){
 	    $(".navbutton-ul").removeClass("hidden hidden2 hidden3");
 
 	    $('.chatButton-div, .chat-overlay').toggleClass('zIndex1');
-	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex2 zIndex3')
+	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex2 zIndex3');
+
+	    $('.trigger-container').toggleClass('zIndex1');
+	    $('.trigger-container').removeClass('zIndex zIndex2 zIndex3')
 	});
 
 	$("#mega-three").click(function(){
@@ -187,7 +199,10 @@ $(document).ready(function(){
 	    $(".navbutton-ul").removeClass("hidden hidden1 hidden3");
 
 	    $('.chatButton-div, .chat-overlay').toggleClass('zIndex2');
-	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex3')
+	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex3');
+
+	    $('.trigger-container').toggleClass('zIndex2');
+	    $('.trigger-container').removeClass('zIndex zIndex1 zIndex3')
 	});
 
 	$("#mega-four").click(function(){
@@ -220,7 +235,10 @@ $(document).ready(function(){
 	    $(".navbutton-ul").removeClass("hidden hidden1 hidden2");
 
 	    $('.chatButton-div, .chat-overlay').toggleClass('zIndex3');
-	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2')
+	    $('.chatButton-div, .chat-overlay').removeClass('zIndex zIndex1 zIndex2');
+
+	    $('.trigger-container').toggleClass('zIndex3');
+	    $('.trigger-container').removeClass('zIndex zIndex1 zIndex2')
 	});
 
 	// end of mega-menu

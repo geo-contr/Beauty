@@ -8,20 +8,20 @@ const images1 = [
     'img/8849829625886.webp'    // index 3 --> images[3]
 ];
 const title = [
-    'LES BEIGES',    // index 0 --> images[0]
-    'LE LIFT CRÈME'    // index 2 --> images[2]
+    'THE BEIGE',    // index 0 --> images[0]
+    'UT ENIM CREAM'    // index 2 --> images[2]
 ];
 const title1 = [
-    'LA CRÈME MAIN',    // index 1 --> images[1]
-    'PARIS-PARIS'    // index 3 --> images[3]
+    'ULTRA HOLD',    // index 1 --> images[1]
+    'BEAUTY'    // index 3 --> images[3]
 ];
 const chracter = [
-    'Bronzing Cream',    // index 0 --> images[0]
-    'Smooths – Firms'    // index 2 --> images[2]
+    'Dolore Magna',    // index 0 --> images[0]
+    'Esse – Cillum'    // index 2 --> images[2]
 ];
 const chracter1 = [
-    'Nourish - Soften - Brighten',    // index 1 --> images[1]
-    'les eaux'    // index 3 --> images[3]
+    'Minim - Veniam - Quis',    // index 1 --> images[1]
+    'Bath Oil'    // index 3 --> images[3]
 ];
 const price = [
     '$50',    // index 0 --> images[0]
