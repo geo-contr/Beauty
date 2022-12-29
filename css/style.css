@@ -3738,11 +3738,15 @@ picture img{
 @media(min-width: 991px){
     .bronzer-back-title{
         position: absolute;
-        top: 43%;
-        left: 18%;
+        top: 14%;
+        left: 4%;
         font-family: 'ABChanelCorpoRegular';
         text-align: center;
         color: #1d1d1d;
+    }
+    .lips-back-title{
+        top: 43%;
+        left: 18%;
     }
     .bronzer-back-text p{
         font-family: 'HelveticaLt';
