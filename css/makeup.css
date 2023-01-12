@@ -86,3 +86,33 @@
 .form-check-opt .form-check-label{
     margin-left: .75em;
 }
+
+@media(min-width: 992px){
+    .bronz-products a:hover .line-bottom, .lipstick-products a:hover .line-bottom{
+        height: 4px;
+        width: 100%;
+        -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+                transform: translateY(5px);
+        background-color: var(--second-color);
+        opacity: 0;
+    }
+}
+@media(max-width: 991px){
+    .bronz-products a:hover .line-bottom, .lipstick-products a:hover .line-bottom{
+        height: 4px;
+        width: 100%;
+        -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+                transform: translateY(5px);
+        background-color: var(--second-color);
+        opacity: 1;
+    }
+}
+
+.shade-img-medium-block, .shade-img-block.hide, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block{
+    display: none;
+}
+.shade-img-medium-block.show, .shade-img-deep-block.show, .shade-img-merry-rose-block.show, .shade-img-intense-brown-block.show, .shade-img-light-brown-block.show, .shade-img-shocking-pink-block.show, .shade-img-daring-red-block.show, .shade-img-passionate-red-block.show, .shade-img-bright-raspberry-block.show, .shade-img-timeless-beige-block.show, .shade-img-light-rose-block.show, .shade-img-burning-red-block.show, .shade-img-soft-coral-block.show, .shade-img-ever-red-block.show, .shade-img-intense-caramel-block.show, .shade-img-soft-rose-block.show, .shade-img-intense-blueberry-block.show{
+    display: block;
+}

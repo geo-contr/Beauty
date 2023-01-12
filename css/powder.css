@@ -1,0 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+.shade-img-medium-block, .shade-img-block.hide, .shade-img-deep-block{
+    display: none;
+}
+.shade-img-medium-block.show, .shade-img-deep-block.show, .shade-img-merry-rose-block.show{
+    display: block;
+}

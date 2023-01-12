@@ -622,6 +622,13 @@ iframe{
     color: var(--third-color);
 }
 @media(min-width: 992px){
+    .hover-animation:hover .img-front{
+        opacity: 1;
+        z-index: 1;
+        -webkit-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;
+        transition: opacity .2s ease-out;
+    }
     .bronzer-back-title h6{
         font-size: .75rem;
         font-weight: 600;
@@ -776,6 +783,9 @@ iframe{
         /*text-align: left;
         padding: 0px 15.5rem;*/
         color: var(--fourth-color);
+    }
+    .buyItem h6:nth-child(2){
+        font-weight: 300;
     }
     .n-help{
         margin: 0px 6.375rem 0 6.375rem;
@@ -2879,6 +2889,9 @@ picture img{
         /*text-align: left;
         padding: 0px calc(50% - 42px);*/
     }
+    .buyItem h6:nth-child(2){
+        font-weight: 300;
+    }
     .n-help{
         /*margin: 0px .8rem 0 .8rem;*/
         padding: 1rem 0.4375rem 1.5625rem 0.4375rem;
@@ -3856,6 +3869,15 @@ picture img{
     -o-transition: .2s ease-out;
     transition: .2s ease-out;
 }
+.bronz-products a:hover .line-bottom-bronz, .lipstick-products a:hover .line-bottom-bronz{
+    height: 4px;
+    width: 100%;
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
+    background-color: var(--second-color);
+    opacity: 1!important;
+}
 .bronz-products a:hover .line-bottom, .lipstick-products a:hover .line-bottom{
     height: 4px;
     width: 100%;
@@ -4263,7 +4285,7 @@ picture img{
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0.0625rem;
+    margin: -0.0625rem;
     background-color: transparent;
     border-radius: 100%;
     -webkit-transition: all;
@@ -4868,13 +4890,6 @@ li::marker{
     width: 68%!important;
     opacity: 0;
 }
-.hover-animation:hover .img-front{
-    opacity: 1;
-    z-index: 1;
-    -webkit-transition: opacity .2s ease-out;
-    -o-transition: opacity .2s ease-out;
-    transition: opacity .2s ease-out;
-}
 /* end of with transition*/
 .rect1{
     width: 7px;
@@ -5345,17 +5360,17 @@ li::marker{
     margin-right: 0.1875rem;
     background-color: #7f2831;
 }
-.hover-animation:hover img{
-    /*background-image: url(../img/3847999.jpg);
+/*.hover-animation:hover img{
+    background-image: url(../img/3847999.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 0;
     height: 0;
-    padding: 50%;*/
-   /* padding: 27% 51%;
-    margin: 23% 0;*/
-}
+    padding: 50%;
+    padding: 27% 51%;
+    margin: 23% 0;
+}*/
 .slide1-merry-rose,
 .slide2-merry-rose,
 .slide3-merry-rose,
