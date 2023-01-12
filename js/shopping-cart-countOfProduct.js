@@ -34,6 +34,7 @@ const updateShoppingCartHTML = function () {  // 3
 					<img src="${product.image}">
 					<div>
 						<h4>${product.name}</h4>
+						<h6>${product.name1}</h6>
 						<h6>$${product.price}</h6>
 						<div>
 							<button class="button-minus" data-id=${product.id}>-</button>
@@ -43,6 +44,8 @@ const updateShoppingCartHTML = function () {  // 3
 					</div>
 				</li>`
 		});
+		// <h6>${product.name1}</h6> დამატებულია პროდუქტის ქვე სახელისთვის
+		
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
 		cartSumPrice.innerHTML = '<bdi>Total</bdi> ' + '$' + countTheSumPrice(); /* როცა არ მინდა cart-ში გამოჩნდეს total (ჯამური თანხა) მაშინ cartSumPrice.innerHTML = 'Total ' + countTheSumPrice() + ' $;'; ვაკომენტარებ */
@@ -72,10 +75,12 @@ products.forEach(item => {   // 1
 		if (e.target.classList.contains('addToCart')) {
 			const productID = e.target.dataset.productId;
 			const productName = item.querySelector('.productName').innerHTML;
+			const productSubName = item.querySelector('.productSubName').innerHTML; /*ეს დამატებულია პროდუქტის ქვე სახელისთვის*/
 			const productPrice = item.querySelector('.priceValue').innerHTML;
 			const productImage = item.querySelector('img').src;
 			let product = {
 				name: productName,
+				name1: productSubName, /*ეს დამატებულია პროდუქტის ქვე სახელისთვის*/
 				image: productImage,
 				id: productID,
 				count: 1,

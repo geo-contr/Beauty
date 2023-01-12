@@ -820,6 +820,11 @@ $(".sun-light").click(function() {
   	$(".overlay-sun").removeClass("open");
   	$(".slide1-light, .slide2-light, .slide3-light").removeClass("hide");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
+  	$(".shade-img-block").removeClass("hide");
+
 });
 
 $(".sun-medium").click(function() {
@@ -830,6 +835,11 @@ $(".sun-medium").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-medium, .slide2-medium, .slide3-medium").addClass("show");
   	$(".slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-medium-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-deep").click(function() {
@@ -840,6 +850,11 @@ $(".sun-deep").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-deep, .slide2-deep, .slide3-deep").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-deep-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-merry-rose").click(function() {
@@ -850,6 +865,11 @@ $(".sun-merry-rose").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-merry-rose-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-intense-brown").click(function() {
@@ -860,6 +880,11 @@ $(".sun-intense-brown").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-intense-brown-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-light-brown").click(function() {
@@ -870,6 +895,11 @@ $(".sun-light-brown").click(function() {
   	$(".slide1-light-brown, .slide2-light-brown, .slide3-light-brown").addClass("show");
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-light-brown-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-shocking-pink").click(function() {
@@ -880,6 +910,11 @@ $(".sun-shocking-pink").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-shocking-pink-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-daring-red").click(function() {
@@ -890,6 +925,11 @@ $(".sun-daring-red").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-daring-red, .slide2-daring-red, .slide3-daring-red").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-daring-red-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-passionate-red").click(function() {
@@ -900,6 +940,11 @@ $(".sun-passionate-red").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-passionate-red-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-bright-raspberry").click(function() {
@@ -910,6 +955,11 @@ $(".sun-bright-raspberry").click(function() {
   	$(".slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry").addClass("show");
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-bright-raspberry-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-timeless-beige").click(function() {
@@ -920,6 +970,11 @@ $(".sun-timeless-beige").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-timeless-beige-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-light-rose").click(function() {
@@ -930,6 +985,11 @@ $(".sun-light-rose").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-light-rose, .slide2-light-rose, .slide3-light-rose").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-light-rose-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-burning-red").click(function() {
@@ -940,6 +1000,11 @@ $(".sun-burning-red").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-burning-red, .slide2-burning-red, .slide3-burning-red").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-burning-red-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-soft-coral").click(function() {
@@ -950,6 +1015,11 @@ $(".sun-soft-coral").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-soft-coral-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-ever-red").click(function() {
@@ -960,6 +1030,11 @@ $(".sun-ever-red").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-ever-red, .slide2-ever-red, .slide3-ever-red").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-ever-red-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-intense-caramel").click(function() {
@@ -970,6 +1045,11 @@ $(".sun-intense-caramel").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-intense-caramel-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-soft-rose-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-soft-rose").click(function() {
@@ -980,6 +1060,11 @@ $(".sun-soft-rose").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").removeClass("show");
+
+
+  	$(".shade-img-soft-rose-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-intense-blueberry-block").removeClass("show");
 });
 
 $(".sun-intense-blueberry").click(function() {
@@ -990,6 +1075,11 @@ $(".sun-intense-blueberry").click(function() {
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
   	$(".slide1-intense-blueberry, .slide2-intense-blueberry, .slide3-intense-blueberry").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep, .slide1-merry-rose, .slide2-merry-rose, .slide3-merry-rose, .slide1-intense-brown, .slide2-intense-brown, .slide3-intense-brown, .slide1-light-brown, .slide2-light-brown, .slide3-light-brown, .slide1-shocking-pink, .slide2-shocking-pink, .slide3-shocking-pink, .slide1-daring-red, .slide2-daring-red, .slide3-daring-red, .slide1-passionate-red, .slide2-passionate-red, .slide3-passionate-red, .slide1-bright-raspberry, .slide2-bright-raspberry, .slide3-bright-raspberry, .slide1-timeless-beige, .slide2-timeless-beige, .slide3-timeless-beige, .slide1-light-rose, .slide2-light-rose, .slide3-light-rose, .slide1-burning-red, .slide2-burning-red, .slide3-burning-red, .slide1-soft-coral, .slide2-soft-coral, .slide3-soft-coral, .slide1-ever-red, .slide2-ever-red, .slide3-ever-red, .slide1-intense-caramel, .slide2-intense-caramel, .slide3-intense-caramel, .slide1-soft-rose, .slide2-soft-rose, .slide3-soft-rose").removeClass("show");
+
+
+  	$(".shade-img-intense-blueberry-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block, .shade-img-deep-block, .shade-img-merry-rose-block, .shade-img-intense-brown-block, .shade-img-light-brown-block, .shade-img-shocking-pink-block, .shade-img-daring-red-block, .shade-img-passionate-red-block, .shade-img-bright-raspberry-block, .shade-img-timeless-beige-block, .shade-img-light-rose-block, .shade-img-burning-red-block, .shade-img-soft-coral-block, .shade-img-ever-red-block, .shade-img-intense-caramel-block, .shade-img-soft-rose-block").removeClass("show");
 });
 
 // close with escape key

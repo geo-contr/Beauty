@@ -10,24 +10,24 @@ const images1 = [
     'img/for-slider-2.webp'    // index 3 --> images[3]
 ];
 const title = [
-    'ROUGE BAUME BALM',    // index 1 --> images[1]
-    'LA SOLUTION 10',    // index 3 --> images[3]
-    'MADEMOISELLE 5'    // index 3 --> images[3]
+    'MOLLIT ANIM',    // index 1 --> images[1]
+    'UT ENIM CREAM',    // index 3 --> images[3]
+    'DESERUNT'    // index 3 --> images[3]
 ];
 const title1 = [
-    'LA CRÈME MAIN',    // index 1 --> images[1]
-    'BEAUTY MADEMOISELLE',    // index 3 --> images[3]
-    'EAU TENDRE'    // index 3 --> images[3]
+    'ULTRA HOLD',    // index 1 --> images[1]
+    'BEAUTY',    // index 3 --> images[3]
+    'FUGIAT NULLA'    // index 3 --> images[3]
 ];
 const chracter = [
     'Lip Balm',    // index 1 --> images[1]
-    'Sensitive Skin Cream',    // index 3 --> images[3]
-    'Parfum Spray'    // index 3 --> images[3]
+    'Esse – Cillum',    // index 3 --> images[3]
+    'Excepteur Colour'    // index 3 --> images[3]
 ];
 const chracter1 = [
-    'Nourish - Soften - Brighten',    // index 1 --> images[1]
-    'Eau de Parfum',    // index 3 --> images[3]
-    'Hair Mist'    // index 3 --> images[3]
+    'Minim - Veniam - Quis',    // index 1 --> images[1]
+    'Bath Oil',    // index 3 --> images[3]
+    'Laboris Nisi'    // index 3 --> images[3]
 ];
 const price = [
     '$42',    // index 1 --> images[1]

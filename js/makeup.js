@@ -704,6 +704,10 @@ $(".sun-light").click(function() {
   	$(".overlay-sun").removeClass("open");
   	$(".slide1-light, .slide2-light, .slide3-light").removeClass("hide");
   	$(".slide1-medium, .slide2-medium, .slide3-medium, .slide1-deep, .slide2-deep, .slide3-deep").removeClass("show");
+
+
+  	$(".shade-img-medium-block, .shade-img-deep-block").removeClass("show");
+  	$(".shade-img-block").removeClass("hide");
 });
 
 
@@ -715,6 +719,11 @@ $(".sun-medium").click(function() {
   	$(".slide1-medium, .slide2-medium, .slide3-medium").addClass("show");
   	$(".slide1-deep, .slide2-deep, .slide3-deep").removeClass("show");
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
+
+
+	$(".shade-img-medium-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-deep-block").removeClass("show");
 });
 
 $(".sun-deep").click(function() {
@@ -725,6 +734,11 @@ $(".sun-deep").click(function() {
   	$(".slide1-deep, .slide2-deep, .slide3-deep").addClass("show");
   	$(".slide1-medium, .slide2-medium, .slide3-medium").removeClass("show");
 	$(".slide1-light, .slide2-light, .slide3-light").addClass("hide");
+
+
+	$(".shade-img-deep-block").addClass("show");
+  	$(".shade-img-block").addClass("hide");
+  	$(".shade-img-medium-block").removeClass("show");
 });
 
 // close with escape key
