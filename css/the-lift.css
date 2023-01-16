@@ -546,8 +546,8 @@
     }
     .video-container{
         margin-top: 0;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .video-js .vjs-big-play-button {
         width: 1.6em;
