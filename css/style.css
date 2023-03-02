@@ -620,6 +620,13 @@ iframe{
     color: var(--third-color);
 }
 @media(min-width: 992px){
+    .navbutton:hover, .navbutton.active{
+        -webkit-transform: scale(2);
+            -ms-transform: scale(2);
+                transform: scale(2);
+        background-color: var(--first-color);
+        border-color: var(--fifth-color);
+    }
     .hover-animation:hover .img-front{
         opacity: 1;
         z-index: 1;
@@ -2512,6 +2519,13 @@ picture img{
         padding-top: 1.875rem;
         height: 100%;
     }
+    .navbutton.active{
+        -webkit-transform: scale(2);
+            -ms-transform: scale(2);
+                transform: scale(2);
+        background-color: var(--first-color);
+        border-color: var(--fifth-color);
+    }
     .bronzer-back-title h6{
         font-size: .75rem;
         font-weight: 600;
@@ -4305,13 +4319,6 @@ picture img{
     -o-transition: all .3s;
     transition: all .3s;
     z-index: 1;
-}
-.navbutton:hover, .navbutton.active{
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2);
-    background-color: var(--first-color);
-    border-color: var(--fifth-color);
 }
 .navbutton-ul.hide{
     visibility: hidden;
