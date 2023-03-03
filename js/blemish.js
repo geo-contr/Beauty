@@ -208,10 +208,10 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
       scrollSpeed: 0,
       scrollThreshold: 0.5,
       filter: '',
-      /*begin: true*/ /* თუ მინდა სიმაღლე ვაკორექტირო begin: true ვწერ, ასევე css-ში html, body scroll-padding-top - ვუთითებ სიმაღლეს */
+      begin: true /* თუ მინდა სიმაღლე ვაკორექტირო begin: true ვწერ, ასევე css-ში html, body scroll-padding-top - ვუთითებ სიმაღლეს */
       // easing: 'swing'
   });
-  
+
 
 // onePageNav on responsive
 // if ($(window).width() < 768) {
