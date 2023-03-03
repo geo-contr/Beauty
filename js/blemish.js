@@ -202,62 +202,37 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
 
 
 
-  // $('#menu-main1').onePageNav({
-  //     currentClass: 'active',
-  //     changeHash: false,
-  //     scrollSpeed: 0,
-  //     scrollThreshold: 0.5,
-  //     filter: '',
-  //     begin: true /* თუ მინდა სიმაღლე ვაკორექტირო begin: true ვწერ, ასევე css-ში html, body scroll-padding-top - ვუთითებ სიმაღლეს */
-  //     // easing: 'swing'
-  // });
-
-if ($(window).width() < 768) {
   $('#menu-main1').onePageNav({
-    currentClass: 'active',
-    changeHash: false,
-    scrollSpeed: 0,
-    scrollThreshold: 0.5,
-    filter: '',
-    begin: true
+      currentClass: 'active',
+      changeHash: false,
+      scrollSpeed: 0,
+      scrollThreshold: 0.5,
+      filter: '',
+      /*begin: true*/ /* თუ მინდა სიმაღლე ვაკორექტირო begin: true ვწერ, ასევე css-ში html, body scroll-padding-top - ვუთითებ სიმაღლეს */
+      // easing: 'swing'
   });
-} else {
-  $('#menu-main1').onePageNav({
-    currentClass: 'active',
-    changeHash: false,
-    scrollSpeed: 750,
-    scrollThreshold: 0.5,
-    filter: '',
-    begin: true
-  });
-}
+  
+
+// onePageNav on responsive
+// if ($(window).width() < 768) {
+//   $('#menu-main1').onePageNav({
+//     currentClass: 'active',
+//     changeHash: false,
+//     scrollSpeed: 0,
+//     scrollThreshold: 0.5,
+//     filter: '',
+//     begin: true
+//   });
+// } else {
+//   $('#menu-main1').onePageNav({
+//     currentClass: 'active',
+//     changeHash: false,
+//     scrollSpeed: 750,
+//     scrollThreshold: 0.5,
+//     filter: '',
+//     begin: true
+//   });
+// }
 
 
-// $(document).ready(function(){
-
-// 	var controller = new ScrollMagic.Controller();
-
-// 	var pinIntroScene = new ScrollMagic.Scene({
-// 		// triggerElement: 'bronzer-back',
-// 		triggerHook: 10,
-// 		duration: '100%'
-// 	})
-// 	.setPin('.blemishText2_svg_div_close')
-// 	.addTo(controller);
-
-// 	$('.project').each(function(){
-		
-// 		var ourScene = new ScrollMagic.Scene({
-// 			triggerElement: this.children[0],
-// 			triggerHook: 0.9
-// 		})
-// 		.setClassToggle(this, 'fade-in')
-// 		.addIndicators({
-// 			name: 'fade scene',
-// 			colorTrigger: 'black',
-// 			colorEnd: 'pink'
-// 		})
-// 		.addTo(controller);
-// 	});
-// });
 
