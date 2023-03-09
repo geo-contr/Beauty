@@ -237,36 +237,3 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
 // }
 
 
-
-const carouselTrack = document.querySelector('.carousel_track');
-const carouselSlides = document.querySelectorAll('.carousel_slide');
-
-let speed = 0;
-const maxSpeed = 30;
-const minSpeed = 0;
-const hoverZone = 100;
-const hoverRange = 400;
-
-function setSpeed(hoverX) {
-  const hoverPosition = hoverX - window.innerWidth / 2;
-  if (hoverPosition < -hoverRange) {
-    speed = -maxSpeed;
-  } else if (hoverPosition > hoverRange) {
-    speed = maxSpeed;
-  } else {
-    speed = maxSpeed * hoverPosition / hoverZone;
-  }
-}
-
-function animateCarousel() {
-  carouselTrack.style.transform = `translateX(${speed}px)`;
-  requestAnimationFrame(animateCarousel);
-}
-
-carouselSlides.forEach(slide => {
-  slide.addEventListener('mousemove', e => {
-    setSpeed(e.clientX);
-  });
-});
-
-animateCarousel();
