@@ -238,17 +238,35 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
 
 
 
-const carouselSlider = document.querySelector(".carousel_track");
-const carouselRect = carouselSlider.getBoundingClientRect();
+const carouselTrack = document.querySelector('.carousel_track');
+const carouselSlides = document.querySelectorAll('.carousel_slide');
 
-carouselSlider.addEventListener("mousemove", (e) => {
-  const mousePosition = e.clientX - carouselRect.left;
-  const hoverAreaWidth = carouselRect.width / 2;
-  const distanceFromCenter = Math.abs(mousePosition - hoverAreaWidth);
-  const animationDuration = (distanceFromCenter / hoverAreaWidth) * 10 + 5;
-  carouselSlider.style.animationDuration = `${animationDuration}s`;
+let speed = 0;
+const maxSpeed = 30;
+const minSpeed = 0;
+const hoverZone = 100;
+const hoverRange = 400;
+
+function setSpeed(hoverX) {
+  const hoverPosition = hoverX - window.innerWidth / 2;
+  if (hoverPosition < -hoverRange) {
+    speed = -maxSpeed;
+  } else if (hoverPosition > hoverRange) {
+    speed = maxSpeed;
+  } else {
+    speed = maxSpeed * hoverPosition / hoverZone;
+  }
+}
+
+function animateCarousel() {
+  carouselTrack.style.transform = `translateX(${speed}px)`;
+  requestAnimationFrame(animateCarousel);
+}
+
+carouselSlides.forEach(slide => {
+  slide.addEventListener('mousemove', e => {
+    setSpeed(e.clientX);
+  });
 });
 
-carouselSlider.addEventListener("mouseleave", () => {
-  carouselSlider.style.animationDuration = "100s";
-});
+animateCarousel();
