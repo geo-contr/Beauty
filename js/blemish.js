@@ -213,6 +213,8 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
   });
 
 
+  
+
 // onePageNav on responsive
 // if ($(window).width() < 768) {
 //   $('#menu-main1').onePageNav({
@@ -236,3 +238,17 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
 
 
 
+const carouselSlider = document.querySelector(".carousel_track");
+const carouselRect = carouselSlider.getBoundingClientRect();
+
+carouselSlider.addEventListener("mousemove", (e) => {
+  const mousePosition = e.clientX - carouselRect.left;
+  const hoverAreaWidth = carouselRect.width / 2;
+  const distanceFromCenter = Math.abs(mousePosition - hoverAreaWidth);
+  const animationDuration = (distanceFromCenter / hoverAreaWidth) * 10 + 5;
+  carouselSlider.style.animationDuration = `${animationDuration}s`;
+});
+
+carouselSlider.addEventListener("mouseleave", () => {
+  carouselSlider.style.animationDuration = "100s";
+});
