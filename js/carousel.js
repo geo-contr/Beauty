@@ -306,30 +306,17 @@ slider.addEventListener('mousemove', (event) => {
   // Calculate the speed based on the distance from the center position
   const speed = Math.abs(mousePosition - centerPosition) / centerPosition * 10000;
 
-  // Calculate the direction and animation progress based on the mouse position
-  let direction, progress;
-  if (mousePosition < centerPosition) {
-    // Mouse is on the left side of the slider
-    direction = 1;
-    progress = mousePosition / centerPosition;
-  } else {
-    // Mouse is on the right side of the slider
-    direction = -1;
-    progress = (mousePosition - centerPosition) / centerPosition;
-  }
+  // Calculate the direction based on the mouse position
+  const direction = mousePosition < centerPosition ? -1 : 1;
 
-  // Update the animation duration and direction based on the speed and progress
+  // Update the animation duration and direction
   const duration = trackWidth / (speed * 0.05);
   track.style.animationDuration = `${duration}s`;
-  track.style.animationDirection = direction > 0 ? 'normal' : 'reverse';
-  track.style.animationPlayState = 'running';
-  track.style.animationDelay = `${-duration * progress}s`;
+  track.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
 });
 
 slider.addEventListener('mouseleave', () => {
   // Reset the animation to its original values
   track.style.animationDuration = '70s';
   track.style.animationDirection = 'reverse';
-  track.style.animationPlayState = 'paused';
-  track.style.animationDelay = '0s';
 });
