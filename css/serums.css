@@ -203,6 +203,9 @@
 .prm_appear2{
     padding-bottom: 6rem;
 }
+.padd_bottom{
+    padding-bottom: 8rem;
+}
 @media(max-width: 991px){
     .prm_intro_imgs {
         height: inherit;
