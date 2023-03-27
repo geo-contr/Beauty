@@ -29,6 +29,8 @@ slider.addEventListener('mouseleave', () => {
 });
 
 
+
+
 // const slider = document.querySelector('.carousel_slider');
 // const track = document.querySelector('.carousel_track');
 // const slides = Array.from(document.querySelectorAll('.carousel_slide'));
@@ -59,6 +61,8 @@ slider.addEventListener('mouseleave', () => {
 //   track.style.animationDuration = '100s';
 //   track.style.animationDirection = 'reverse';
 // });
+
+
 
 // const slider = document.querySelector('.carousel_slider');
 // const track = document.querySelector('.carousel_track');
@@ -199,6 +203,7 @@ slider.addEventListener('mouseleave', () => {
 
 // end fo carousel for large
 
+
 // with slick slider თუ მინდა სლაიდერი მოძრაობდეს მარცხნიდან მარჯვნივ, მაშინ პლაგინის ფაილში slick.js-ში (ამ შემთხვევაში slickForReverse.js-ში) slideTo = _.currentSlide + _.options.slidesToScroll ვცვლი slideTo = _.currentSlide - _.options.slidesToScroll ანუ .currentSlide + ვცვლი .currentSlide - მინუსით.
 $(function () {
   $('.slider_chain').slick({
@@ -207,7 +212,7 @@ $(function () {
        arrows: false,
        autoplay: true,
        autoplaySpeed: 0,
-       speed: 5000,
+       speed: 2000,
        cssEase: 'linear', /*როცა მინდა გაუჩერებლად, ერთი ტემპით მოძრაობდეს სლაიდერი*/
        waitForAnimate: true,
        infinite: true,
