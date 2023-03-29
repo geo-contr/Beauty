@@ -219,7 +219,7 @@ slider1.addEventListener('touchmove', (event) => {
 
 
   // Calculate the direction based on the touch position
-  const direction = touchPosition < centerPosition ? -1 : 1;
+  const direction = touchPosition < centerPosition ? 1 : -1;
 
   // Update the animation duration and direction
   const duration = trackWidth / (speed * 0.05);
