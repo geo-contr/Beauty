@@ -30,7 +30,6 @@ slider.addEventListener('mouseleave', () => {
 
 
 
-
 // const slider = document.querySelector('.carousel_slider');
 // const track = document.querySelector('.carousel_track');
 // const slides = Array.from(document.querySelectorAll('.carousel_slide'));
@@ -204,21 +203,52 @@ slider.addEventListener('mouseleave', () => {
 // end fo carousel for large
 
 
-// with slick slider თუ მინდა სლაიდერი მოძრაობდეს მარცხნიდან მარჯვნივ, მაშინ პლაგინის ფაილში slick.js-ში (ამ შემთხვევაში slickForReverse.js-ში) slideTo = _.currentSlide + _.options.slidesToScroll ვცვლი slideTo = _.currentSlide - _.options.slidesToScroll ანუ .currentSlide + ვცვლი .currentSlide - მინუსით.
-$(function () {
-  $('.slider_chain').slick({
-       slidesToShow: 2,
-       slidesToScroll: 1,
-       arrows: false,
-       autoplay: true,
-       autoplaySpeed: 0,
-       speed: 2000,
-       cssEase: 'linear', /*როცა მინდა გაუჩერებლად, ერთი ტემპით მოძრაობდეს სლაიდერი*/
-       waitForAnimate: true,
-       infinite: true,
-       dots: false,
-       draggable: true,
-       swipe: true
-  });
+// carousel for mobile view
+const slider1 = document.querySelector('.slider_chain');
+const track1 = document.querySelector('.slider_track');
+const slides1 = Array.from(document.querySelectorAll('.slider_item'));
+const slideWidth1 = slides[0].getBoundingClientRect().width;
+
+slider1.addEventListener('touchmove', (event) => {
+  const trackWidth = track1.getBoundingClientRect().width;
+  const touchPosition = event.touches[0].clientX - slider1.getBoundingClientRect().left;
+  const centerPosition = slider1.getBoundingClientRect().width / 2;
+
+  // Calculate the speed based on the distance from the center position
+  const speed = Math.abs(touchPosition - centerPosition) / centerPosition * 2000;
+
+
+  // Calculate the direction based on the touch position
+  const direction = touchPosition < centerPosition ? -1 : 1;
+
+  // Update the animation duration and direction
+  const duration = trackWidth / (speed * 0.05);
+  track1.style.animationDuration = `${duration}s`;
+  track1.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
 });
+
+slider1.addEventListener('touchend', () => {
+  // Reset the animation to its original values
+  track1.style.animationDuration = '70s';
+  track1.style.animationDirection = 'reverse';
+});
+// end of carousel for mobile view
+
+// with slick slider თუ მინდა სლაიდერი მოძრაობდეს მარცხნიდან მარჯვნივ, მაშინ პლაგინის ფაილში slick.js-ში (ამ შემთხვევაში slickForReverse.js-ში) slideTo = _.currentSlide + _.options.slidesToScroll ვცვლი slideTo = _.currentSlide - _.options.slidesToScroll ანუ .currentSlide + ვცვლი .currentSlide - მინუსით.
+// $(function () {
+//   $('.slider_chain').slick({
+//        slidesToShow: 2,
+//        slidesToScroll: 1,
+//        arrows: false,
+//        autoplay: true,
+//        autoplaySpeed: 0,
+//        speed: 2000,
+//        cssEase: 'linear', /*როცა მინდა გაუჩერებლად, ერთი ტემპით მოძრაობდეს სლაიდერი*/
+//        waitForAnimate: true,
+//        infinite: true,
+//        dots: false,
+//        draggable: true,
+//        swipe: true
+//   });
+// });
 // end of with slick slider
