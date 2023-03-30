@@ -229,7 +229,7 @@ slider1.addEventListener('touchmove', (event) => {
 
 slider1.addEventListener('touchend', () => {
   // Reset the animation to its original values
-  track1.style.animationDuration = '70s';
+  track1.style.animationDuration = '30s';
   track1.style.animationDirection = 'reverse';
 });
 
