@@ -212,7 +212,7 @@ const slideWidth1 = slides[0].getBoundingClientRect().width;
 slider1.addEventListener('touchmove', (event) => {
   const trackWidth = track1.getBoundingClientRect().width;
   const touchPosition = event.touches[0].clientX - slider1.getBoundingClientRect().left;
-  const centerPosition = slider1.getBoundingClientRect().width / 1;
+  const centerPosition = slider1.getBoundingClientRect().width / 2;
 
   // Calculate the speed based on the distance from the center position
   const speed = Math.abs(touchPosition - centerPosition) / centerPosition * 2000;
