@@ -215,14 +215,14 @@ slider1.addEventListener('touchmove', (event) => {
   const centerPosition = slider1.getBoundingClientRect().width / 2;
 
   // Calculate the speed based on the distance from the center position
-  const speed = Math.abs(touchPosition - centerPosition) / centerPosition * 2000;
+  const speed = Math.abs(touchPosition - centerPosition) / centerPosition + 500;
 
 
   // Calculate the direction based on the touch position
   const direction = touchPosition < centerPosition ? 1 : -1;
 
   // Update the animation duration and direction
-  const duration = trackWidth / (speed * 0.05);
+  const duration = trackWidth / (speed + 0.05);
   track1.style.animationDuration = `${duration}s`;
   track1.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
 });
@@ -232,6 +232,47 @@ slider1.addEventListener('touchend', () => {
   track1.style.animationDuration = '70s';
   track1.style.animationDirection = 'reverse';
 });
+
+
+// const slider1 = document.querySelector('.slider_chain');
+// const track1 = document.querySelector('.slider_track');
+// const slides1 = Array.from(document.querySelectorAll('.slider_item'));
+// const slideWidth1 = slides[0].getBoundingClientRect().width;
+// let speed1 = 2000; // initial speed
+// let direction1 = -1; // initial direction
+
+// slider1.addEventListener('touchstart', (event) => {
+//   const touchPosition = event.touches[0].clientX - slider1.getBoundingClientRect().left;
+//   const centerPosition = slider1.getBoundingClientRect().width / 2;
+
+//   // Calculate the direction based on the touch position
+//   direction1 = touchPosition < centerPosition ? 1 : -1;
+
+//   // Set a fixed animation speed
+//   speed1 = 2000;
+
+//   // Update the animation duration and direction
+//   const duration = track1.getBoundingClientRect().width / (speed1 * 0.3);
+//   track1.style.animationDuration = `${duration}s`;
+//   track1.style.animationDirection = direction1 > 0 ? 'reverse' : 'normal';
+// });
+
+// slider1.addEventListener('touchmove', (event) => {
+//   // Prevent default touchmove behavior
+//   event.preventDefault();
+
+//   // Update the animation duration and direction
+//   const duration = track1.getBoundingClientRect().width / (speed1 * 0.3);
+//   track1.style.animationDuration = `${duration}s`;
+//   track1.style.animationDirection = direction1 > 0 ? 'reverse' : 'normal';
+// });
+
+// slider1.addEventListener('touchend', () => {
+//   // Reset the animation to its original values
+//   track1.style.animationDuration = '70s';
+//   track1.style.animationDirection = 'reverse';
+// });
+
 // end of carousel for mobile view
 
 // with slick slider თუ მინდა სლაიდერი მოძრაობდეს მარცხნიდან მარჯვნივ, მაშინ პლაგინის ფაილში slick.js-ში (ამ შემთხვევაში slickForReverse.js-ში) slideTo = _.currentSlide + _.options.slidesToScroll ვცვლი slideTo = _.currentSlide - _.options.slidesToScroll ანუ .currentSlide + ვცვლი .currentSlide - მინუსით.
