@@ -342,7 +342,7 @@
         display: -ms-flexbox;
         display: flex;
         width: calc(50vw * 18);
-        animation: scroll 100s linear infinite reverse;
+        animation: scroll 30s linear infinite reverse;
     }
     @-webkit-keyframes scroll {
         from {
