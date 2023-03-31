@@ -215,21 +215,21 @@ slider1.addEventListener('touchmove', (event) => {
   const centerPosition = slider1.getBoundingClientRect().width / 2;
 
   // Calculate the speed based on the distance from the center position
-  const speed = Math.abs(touchPosition - centerPosition) / centerPosition + 500;
+  const speed = Math.abs(touchPosition - centerPosition) / centerPosition * 2000;
 
 
   // Calculate the direction based on the touch position
   const direction = touchPosition < centerPosition ? 1 : -1;
 
   // Update the animation duration and direction
-  const duration = trackWidth / (speed + 0.05);
+  const duration = trackWidth / (speed * 0.05);
   track1.style.animationDuration = `${duration}s`;
   track1.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
 });
 
 slider1.addEventListener('touchend', () => {
   // Reset the animation to its original values
-  track1.style.animationDuration = '30s';
+  track1.style.animationDuration = '100s';
   track1.style.animationDirection = 'reverse';
 });
 
