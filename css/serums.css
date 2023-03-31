@@ -213,6 +213,21 @@
     }
 }
 @media(min-width: 768px){
+    .reveal{
+    -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    }
+    .reveal.active{
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
     /*slider for large view*/
     .carousel_sect{
         position: relative;
@@ -499,24 +514,4 @@
                 align-items: center;
         padding: 1vw;
     }
-}
-
-
-
-
-
-.reveal{
-    -webkit-transform: translateY(100px);
-        -ms-transform: translateY(100px);
-            transform: translateY(100px);
-    opacity: 0;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.reveal.active{
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
 }
