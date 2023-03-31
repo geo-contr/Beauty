@@ -459,7 +459,7 @@
         font-size: 1.8vw;
     }
     .slider_sect {
-        padding-top: calc(50% - 194px);
+        padding-top: calc(30% - 80px);
     }
     .slider_track{
         display: -webkit-box;
