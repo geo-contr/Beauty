@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Highlighter - Makeup | BEAUTY</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle1.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle2.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/makeup.css">
+	<link rel="stylesheet" type="text/css" href="css/highlighter.css">
+</head>
+<body>
+	<div class="overlay1"></div>
+	<div class="producstOnCart hide">
+		<div id="closeButton">
+			<span>×</span>
+		</div>
+		<div class="content-div">
+			<div class="top">
+				<h3>shopping bag</h3>
+			</div>
+			<ul id="buyItems">
+				<h4 class="empty mt-4">Your bag is empty.</h4>
+				<!-- <li class="buyItem">
+					<img src="img/">
+					<div>
+						<h5>Products Name</h5>
+						<h6>12.50 &#8382;</h6>
+						<div>
+							<button>-</button>
+							<span class="countOfProduct"></span>
+							<button>+</button>
+						</div>
+					</div>
+				</li> -->
+	        </ul>
+	        <h6 class="mt-4 sum-price" id="sum-prices"></h6> <!-- როცა მინდა cart-ში გამოჩნდეს total (თანხის ჯამი). თუ არა, მაშინ ამ tag-ს ვაუქმებ. იხ. js -->
+			<div class="mt-5 shop-onl">
+				<h5>shop online</h5>
+			</div>
+			<ul class="mt-5">
+				<li>
+					<a href="bodycare.html">
+						<h5>Bodycare</h5>
+						<svg class="bodycare" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+							<g>
+								<line class="st0-sign" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+								<line class="st0-sign" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#;">
+						<h5>Skincare</h5>
+						<svg class="skincare" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+							<g>
+								<line class="st0-sign" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+								<line class="st0-sign" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#;">
+						<h5>Makeup</h5>
+						<svg class="makeup" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+							<g>
+								<line class="st0-sign" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+								<line class="st0-sign" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="ingredients.html">
+						<h5>Ingredients</h5>
+						<svg class="ingred" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+							<g>
+								<line class="st0-sign" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+								<line class="st0-sign" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+							</g>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<div class="art-detail mt-5">
+				<h3>THE ART OF DETAIL</h3>
+				<img src="img/9089543208990.jpg">
+				<p class="mt-2">Enjoy complimentary overnight shipping with every order.</p>
+				<a href="#;">View all shipping rules</a>
+			</div>
+			<div class="mt-5 n-help">
+				<h4 class="pt-5">NEED HELP?</h4>
+				<p class="mt-3">You can find information in our
+					<a href="#;">FAQs</a>
+				</p>
+				<h5 class="mt-4">CONTACT US</h5>
+				<p class="mt-3">Available 24/7.</p>
+				<a href="#;">E-mail</a>
+				<p class="mt-2">
+					<a href="#;">
+						Chat
+					</a>
+					or
+					<a href="tel:+1589785324896">call (+158)9785324896</a>
+				</p>
+			</div>
+		</div>
+		<a href="#;">
+			<span class="btn btn-primary small-btn2 mt-5 mb-3 product-details-btn checkout hidden">
+				<h2>CHECKOUT</h2>
+			</span>
+		</a>
+    </div>
+
+
+    <div class="overlay2"></div>
+	<div class="productOnfilter hide">
+		<div id="closeButton1">
+			<span>×</span>
+		</div>
+		<div class="form-check form-check-opt1 mt-4 mx-5">
+			<input class="form-check-input checkbox checks" type="checkbox" value="powder1" id="flexCheckDefault" data-price="1">
+			<label class="form-check-label" for="flexCheckDefault">
+		    New
+			</label>
+		</div>
+		<div class="texture mt-4 mx-5">
+			<div class="texture-text" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Textures
+			</div>
+			<ul class="dropdown-menu dropd-menu">
+				<li class="form-check form-check-opt2 dropdown-item">
+					<input class="form-check-input checkbox checks" type="checkbox" value="liquid" id="flexCheckDefault1" data-price="1">
+					<label class="form-check-label" for="flexCheckDefault1">
+				    Liquid
+					</label>
+				</li>
+				<li class="form-check form-check-opt2 dropdown-item">
+					<input class="form-check-input checkbox checks" type="checkbox" value="cream" id="flexCheckDefault2" data-price="1">
+					<label class="form-check-label" for="flexCheckDefault2">
+				    Cream
+					</label>
+				</li>
+				<li class="form-check form-check-opt2 dropdown-item">
+					<input class="form-check-input checkbox checks" type="checkbox" value="powder" id="flexCheckDefault3" data-price="1">
+					<label class="form-check-label" for="flexCheckDefault3">
+				    Powder
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="finish mt-4 mx-5">
+			<div class="finish-text" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Finish
+			</div>
+			<ul class="dropdown-menu dropd-menu">
+				<li class="form-check form-check-opt2 dropdown-item">
+					<input class="form-check-input checkbox checks" type="checkbox" value="powder" id="flexCheckDefault4" data-price="1" disabled="">
+					<label class="form-check-label" for="flexCheckDefault4">
+				    Matte
+					</label>
+				</li>
+				<li class="form-check form-check-opt2 dropdown-item">
+					<input class="form-check-input checkbox checks" type="checkbox" value="liquid" id="flexCheckDefault5" data-price="1" disabled="">
+					<label class="form-check-label" for="flexCheckDefault5">
+				    Glowing
+					</label>
+				</li>
+				<li class="form-check form-check-opt2 dropdown-item">
+					<input class="form-check-input checkbox checks" type="checkbox" value="cream" id="flexCheckDefault6" data-price="1" disabled="">
+					<label class="form-check-label" for="flexCheckDefault6">
+				    Tan
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<header class="fixed-top">
+		<nav id="navigation" class="navbar navbar-expand-lg container-fluid navbar navbar-light">
+			<div class="container navbar-cont">
+				<a class="navbar-brand" href="index.html">
+					<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 174.3 27.1" xml:space="preserve">
+						<g>
+							<path d="M0,0h12.3c6.8,0,9.6,3.2,9.6,6.7c0,3-1.8,5-3.9,5.7c2,0.6,4.8,2.5,4.8,6.1c0,4.7-4,7.9-10.1,7.9H0V0z M11.6,10.6
+								c3.4,0,4.8-1.3,4.8-3.4c0-2.1-1.7-3.3-4.5-3.3H5.4v6.7H11.6z M5.4,22.5h6.3c3.5,0,5.4-1.4,5.4-4.1c0-2.4-1.7-3.9-5.7-3.9h-6V22.5z"
+								/>
+							<path d="M48.9,14.7H35.5v7.6h15.7l-0.7,4.1H30.2V0h20.3v4.1H35.5v6.5h13.4V14.7z"/>
+							<path d="M64.2,19.7l-2.6,6.7h-5.4L66.3,0h6.9l10.6,26.4H78l-2.7-6.7H64.2z M74,15.6c-2.3-6-3.7-9.7-4.4-11.9h0
+								c-0.7,2.5-2.3,6.7-4.2,11.9H74z"/>
+							<path d="M94.3,0v15.8c0,5.5,3.2,7,6.6,7c3.9,0,6.5-1.8,6.5-7V0h5.5v15.5c0,8.9-5.7,11.2-12.1,11.2c-6.5,0-12-2.5-12-11.1V0H94.3z"
+								/>
+							<path d="M128.4,4.1h-9.1V0h23.8v4.1H134v22.3h-5.5V4.1z"/>
+							<path d="M158,26.4V17c0-0.3-0.1-0.6-0.2-0.8L147.6,0h6.3c2.4,4.1,5.8,9.9,7.2,12.6C162.4,10,166,4,168.4,0h5.8l-10.4,16.1
+								c-0.1,0.2-0.2,0.3-0.2,0.8v9.5H158z"/>
+						</g>
+					</svg>
+				</a>
+				<nav class="social-toggler me-auto togglerlangswitcher d-flex align-items-end">
+					<a class="search-sign-a1" href="#;" title="Search">
+						<svg class="search-sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15.8" xml:space="preserve">
+							<style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+							</style>
+							<g>
+								<circle class="st0" cx="7" cy="7" r="6.6"/>
+								<line class="st0" x1="15.7" y1="15.5" x2="11.7" y2="11.5"/>
+							</g>
+						</svg>
+					</a>
+				</nav>
+				<!-- <nav class="social-toggler togglerlangswitcher togglerlang d-flex align-items-end">
+					<a class="bag-sign-a1" href="#;">
+						<svg class="account-sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.4 23.7" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+							</style>
+							<g>
+								<path class="st0" d="M12.7,12C1,12,0.5,23.2,0.5,23.2h24.3C24.8,23.2,24.4,12,12.7,12z"/>
+								<line class="st0" x1="12.7" y1="12" x2="12.7" y2="9.4"/>
+								<circle class="st0" cx="12.7" cy="5" r="4.5"/>
+							</g>
+						</svg>
+					</a>
+					<a href="#;" class="bag-sign-a11 shoppingCartButton1" title="Shopping Bag">
+						<svg class="bag-sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 62.1 55.6" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+							</style>
+							<g>
+								<polygon class="st0" points="53.7,55.1 8.3,55.1 0.6,21 61.4,21 	"/>
+								<line class="st0" x1="17.7" y1="28.2" x2="17.7" y2="14"/>
+								<line class="st0" x1="44.7" y1="28.2" x2="44.7" y2="14"/>
+								<path class="st0" d="M17.7,14c0-7.5,6-13.5,13.5-13.5c7.4,0,13.5,6,13.5,13.5"/>
+							</g>
+						</svg>
+					</a>
+					<div class="dropdown lang-switcher order-first">
+						<a class="lang-sign1" href="javascript:void(0)" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><h6>EN</h6></a>
+						<ul class="dropdown-menu lang-switcher-menu" aria-labelledby="dropdownMenuLink">
+		    				<li><a href="javascript:void(0)" class="dropdown-item">GEO</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">UKR</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">FR</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">IT</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">SP</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">TU</a></li>
+		    			</ul>
+	    			</div>
+				</nav> -->
+		    	<nav class="social-toggler langswitcher ms-auto d-flex align-items-end">
+					<a class="search-sign-a" href="#;" title="Search">
+						<svg class="search-sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15.8" xml:space="preserve">
+							<style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+							</style>
+							<g>
+								<circle class="st0" cx="7" cy="7" r="6.6"/>
+								<line class="st0" x1="15.7" y1="15.5" x2="11.7" y2="11.5"/>
+							</g>
+						</svg>
+					</a>
+					<a class="account-sign-a" href="login.html" title="Account">
+						<svg class="account-sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.4 23.7" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+							</style>
+							<g>
+								<path class="st0" d="M12.7,12C1,12,0.5,23.2,0.5,23.2h24.3C24.8,23.2,24.4,12,12.7,12z"/>
+								<line class="st0" x1="12.7" y1="12" x2="12.7" y2="9.4"/>
+								<circle class="st0" cx="12.7" cy="5" r="4.5"/>
+							</g>
+						</svg>
+					</a>
+					<a class="bag-sign-a shoppingCartButton d-flex" href="#;" title="Shopping Bag">
+						<svg class="bag-sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 62.1 55.6" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+							</style>
+							<g>
+								<polygon class="st0" points="53.7,55.1 8.3,55.1 0.6,21 61.4,21 	"/>
+								<line class="st0" x1="17.7" y1="28.2" x2="17.7" y2="14"/>
+								<line class="st0" x1="44.7" y1="28.2" x2="44.7" y2="14"/>
+								<path class="st0" d="M17.7,14c0-7.5,6-13.5,13.5-13.5c7.4,0,13.5,6,13.5,13.5"/>
+							</g>
+						</svg>
+						<!-- <h6 class="sum-price" id="sum-prices"></h6> -->
+						<h6 class="sum-product" id="sum-products"></h6>
+					</a>
+					<div class="dropdown lang-switcher order-first">
+						<a class="lang-sign" href="javascript:void(0)" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" title="Language Bar"><h6>EN</h6></a>
+						<ul class="dropdown-menu lang-switcher-menu" aria-labelledby="dropdownMenuLink">
+		    				<li><a href="javascript:void(0)" class="dropdown-item">GEO</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">UKR</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">FR</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">IT</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">SP</a></li>
+		    				<li><a href="javascript:void(0)" class="dropdown-item">TU</a></li>
+		    			</ul>
+	    			</div>
+				</nav>
+				<div id="myoverlay" class="overlay">
+					<div class="overlay-content">
+						<div class="container container-width">
+							<div class="row justify-content-center">
+								<div class="col-12 col-sm-12 col-md-6 col-lg-6 overlay-col mt-4 position-relative">
+									<input class="form-control search-item" type="search" placeholder="Search" name="search">
+									<svg class="search-sign-input" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15.8" xml:space="preserve">
+										<style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+										</style>
+										<g>
+											<circle class="st0" cx="7" cy="7" r="6.6"></circle>
+											<line class="st0" x1="15.7" y1="15.5" x2="11.7" y2="11.5"></line>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="navbar-toggler collapsed ml-auto order-first mobile-menu-trigger" type="button">
+					<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 16"xml:space="preserve">
+						<g>
+							<rect class="st0-burg" width="17" height="2"/>
+							<rect y="7" class="st0-burg" width="17" height="2"/>
+							<rect y="14" class="st0-burg" width="17" height="2"/>
+						</g>
+					</svg>
+					<!-- <span class="toggler-icon top-bar"></span>
+					<span class="toggler-icon middle-bar"></span>
+					<span class="toggler-icon bottom-bar"></span> -->
+			    </button>
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg big-menu" id="main-bar">
+			<div class="container mob-menu-margin">
+		    	<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+		    		<ul id="menu-main" class="navbar-nav navigation d-flex">
+		    			<li class="nav-item navigation-li px-1 about-li">
+		    				<button type="button" id="mega-three" class="btn nav-link navigation-a dropdowntoggle about-a">About</button>
+		    				<div class="dropdown-menu mega-area about-drop" aria-labelledby="mega-three">
+			    				<div class="container toggleClass">
+			    					<h4 class="close-butt-about" type="button">&times;</h4>
+				    				<div class="row mega-one-cont pt-5">
+				    					<div class="col-sm-12 col-lg-3">
+				    						<h5>Inside Beauty</h5>
+						    				<a class="dropdown-item branding" href="founder.html">The Founder</a>
+								            <a class="dropdown-item branding" href="#;">The History</a>
+								            <a class="dropdown-item branding" href="#;">The Stories</a>
+							            </div>
+							            <div class="col-sm-12 col-lg-3">
+				    						<h5>Corporate <br>Sustainability</h5>
+						    				<a class="dropdown-item branding" href="climate-report.html">Climate Report</a>
+							            </div>
+							            <div class="col-sm-12 col-lg-3">
+				    						<h5>Fondation Beauty</h5>
+				    						<a class="dropdown-item branding" href="foundation.html">Discover the Foundation</a>
+				    						<h5 class="pt-4">Careers</h5>
+				    						<a class="dropdown-item branding" href="#;">Working at Beauty</a>
+							            </div>
+							            <div class="col-sm-12 col-lg-3">
+				    						<h5>Beauty Culture Fund</h5>
+				    						<a class="dropdown-item branding" href="#;">Discover the Fund</a>
+				    						<h5 class="pt-4">Beauty Next Prize</h5>
+				    						<a class="dropdown-item branding" href="#;">Win the Prize</a>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+		    			</li>
+		    			<li class="nav-item navigation-li px-1">
+		    				<a class="nav-link navigation-a" href="bodycare.html">Bodycare</a>
+		    			</li>
+			    		<li class="nav-item dropdown navigation-li px-1 menu-area gallery-li">
+			    			<button type="button" id="mega-one" class="btn nav-link navigation-a dropdowntoggle gallery-a">Skincare</button>
+			    			<div class="dropdown-menu mega-area gallery-drop" aria-labelledby="mega-one">
+			    				<div class="container toggleClass">
+			    					<h4>Shop Skincare online</h4>
+			    					<h4 class="close-butt" type="button">&times;</h4>
+				    				<div class="row mega-one-cont">
+				    					<div class="col-sm-12 col-lg-2 img-text">
+				    						<img src="img/skincare-3.jpg" style="width: 100%">
+				    						<a href="#;" class="d-flex"><h5 class="mt-3">Skincare Home</h5>
+					    						<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+					    							<g>
+														<line class="st0-2" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+														<line class="st0-2" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+													</g>
+												</svg>
+											</a>
+							            </div>
+				    					<div class="col-sm-12 col-lg-2">
+				    						<h5>view the latest</h5>
+						    				<a class="dropdown-item branding" href="#;">New Arrivals</a>
+								            <a class="dropdown-item branding" href="#;">New and Now</a>
+								            <a class="dropdown-item branding" href="blemish.html">Blemish Prone</a>
+								            <a class="dropdown-item branding" href="#;">Exclusives</a>
+								            <a class="dropdown-item branding" href="#;">Gift Sets</a>
+								            <h5 class="pt-4">Featured</h5>
+								            <a class="dropdown-item branding" href="#;">Lorem Collection</a>
+								            <a class="dropdown-item branding" href="the-lift.html">Lift Your Face</a>
+								            <a class="dropdown-item branding" href="#;">Tempor Collection</a>
+							            </div>
+							            <div class="col-sm-12 col-lg-2">
+				    						<h5>Category</h5>
+						    				<a class="dropdown-item branding" href="cleansers.html">Cleansers</a>
+						    				<a class="dropdown-item branding" href="#;">Skin Tone</a>
+								            <a class="dropdown-item branding" href="serums.html">Serums</a>
+								            <a class="dropdown-item branding" href="#;">Moisturizers</a>
+								            <a class="dropdown-item branding" href="#;">Eye & Lip Care</a>
+								            <a class="dropdown-item branding" href="#;">Sun Protection</a>
+								            <a class="dropdown-item branding" href="#;">Oils</a>
+							            </div>
+							            <div class="col-sm-12 col-lg-2">
+				    						<h5>Line</h5>
+				    						<a class="dropdown-item branding" href="#;">Lorem</a>
+								            <a class="dropdown-item branding" href="#;">All Lines</a>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+			    		</li>
+			    		<li class="nav-item dropdown navigation-li px-1 menu-area fashion-li active">
+			    			<button type="button" id="mega-two" class="btn nav-link navigation-a dropdowntoggle fashion-a">Makeup</button>
+			    			<div class="dropdown-menu mega-area fashion-drop" aria-labelledby="mega-two">
+			    				<div class="fashion-drop-height">
+				    				<div class="container toggleClass">
+				    					<h4>Shop Makeup online</h4>
+				    					<h4 class="close-butt" type="button">&times;</h4>
+					    				<div class="row">
+					    					<div class="col-sm-12 col-lg-2 img-text">
+					    						<img src="img/Header-Large.jpg" style="width: 100%">
+					    						<a href="#;" class="d-flex"><h5 class="mt-3">Makeup Home</h5>
+					    							<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+						    							<g>
+															<line class="st0-2" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+															<line class="st0-2" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+														</g>
+													</svg>
+												</a>
+								            </div>
+								            <div class="col-sm-12 col-lg-2">
+					    						<h5>view the latest</h5>
+							    				<a class="dropdown-item branding" href="#;">New Arrivals</a>
+									            <a class="dropdown-item branding" href="#;">New and Now</a>
+									            <a class="dropdown-item branding" href="#;">Exclusives</a>
+									            <a class="dropdown-item branding" href="#;">Gift Sets</a>
+								            </div>
+								            <div class="col-sm-12 col-lg-2">
+					    						<h5>Face</h5>
+					    						<a class="dropdown-item branding" href="face-foundation.html">Foundation</a>
+									            <a class="dropdown-item branding" href="bronzer.html">Bronzer</a>
+									            <a class="dropdown-item branding underLine" href="highlighter.html">Highlighter</a>
+									            <a class="dropdown-item branding" href="#;">Blush</a>
+									            <a class="dropdown-item branding" href="#;">Powder</a>
+									            <a class="dropdown-item branding" href="#;">Primer</a>
+									            <a class="dropdown-item branding" href="#;">Concealer</a>
+									            <a class="dropdown-item branding" href="#;">All Face</a>
+								            </div>
+								            <div class="col-sm-12 col-lg-2">
+					    						<h5>Eyes</h5>
+					    						<a class="dropdown-item branding" href="#;">Mascara</a>
+									            <a class="dropdown-item branding" href="#;">Eyeshadow</a>
+									            <a class="dropdown-item branding" href="#;">Eyeliner</a>
+									            <a class="dropdown-item branding" href="#;">Brow</a>
+									            <a class="dropdown-item branding" href="#;">All Eyes</a>
+									            <h5 class="pt-4">Lips</h5>
+									            <a class="dropdown-item branding" href="#;">Lipstick</a>
+									            <a class="dropdown-item branding" href="#;">Liquid lipsticks</a>
+									            <a class="dropdown-item branding" href="#;">Lipgloss</a>
+									            <a class="dropdown-item branding" href="#;">Lip Liner</a>
+									            <a class="dropdown-item branding" href="#;">Lip Care</a>
+									            <a class="dropdown-item branding" href="lips.html">All Lips</a>
+								            </div>
+								            <div class="col-sm-12 col-lg-2">
+					    						<h5>Nails</h5>
+					    						<a class="dropdown-item branding" href="#;">Mascara</a>
+									            <a class="dropdown-item branding" href="#;">Eyeshadow</a>
+									            <a class="dropdown-item branding" href="#;">Eyeliner</a>
+									            <a class="dropdown-item branding" href="#;">Brow</a>
+									            <a class="dropdown-item branding" href="#;">All Eyes</a>
+									            <h5 class="pt-4">Brushes and tools</h5>
+									            <a class="dropdown-item branding" href="#;">Face</a>
+									            <a class="dropdown-item branding" href="#;">Eyes</a>
+									            <a class="dropdown-item branding" href="#;">Lips</a>
+									            <a class="dropdown-item branding" href="#;">Accessories</a>
+									            <a class="dropdown-item branding" href="#;">All Brushes & Tools</a>
+								            </div>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+			    		</li>
+		    			<li class="nav-item navigation-li px-1">
+		    				<a class="nav-link navigation-a" href="ingredients.html">Ingredients</a>
+		    			</li>
+		    			<li class="nav-item dropdown navigation-li px-1 menu-area contact-li">
+			    			<button type="button" id="mega-four" class="btn nav-link navigation-a dropdowntoggle contact-a">Contact</button>
+			    			<div class="dropdown-menu mega-area contact-drop" aria-labelledby="mega-four">
+			    				<div class="fashion-drop-height">
+				    				<div class="container toggleClass">
+				    					<h4 class="close-butt-contact" type="button">&times;</h4>
+					    				<div class="row pt-5">
+								            <div class="col-sm-12 col-lg-3 offset-lg-2">
+					    						<h5>House of Beauty</h5>
+							    				<a class="dropdown-item branding" href="#;">Inside BEAUTY</a>
+									            <a class="dropdown-item branding" href="#;">Careers</a>
+									            <a class="dropdown-item branding" href="#;">Fondation BEAUTY</a>
+								            </div>
+								            <div class="col-sm-12 col-lg-3">
+					    						<h5>Services</h5>
+					    						<a class="dropdown-item branding" href="#;">Find a store</a>
+									            <a class="dropdown-item branding" href="#;">Contact</a>
+									            <a class="dropdown-item branding" href="#;">FAQ</a>
+								            </div>
+								            <div class="col-sm-12 col-lg-3">
+					    						<h5>Legal</h5>
+					    						<a class="dropdown-item branding" href="#;">Legal Statement</a>
+									            <a class="dropdown-item branding" href="#;">Privacy Policy</a>
+									            <a class="dropdown-item branding" href="storelocator.html">Location</a>
+								            </div>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+			    		</li>
+		    			<li class="slide"></li>
+		    		</ul>
+		    	</div>
+			</div>
+			<div class="bigmenu-overlay"></div>
+		</nav>
+	</header>
+	
+	<div class="header-item">
+		<div class="menu-overlay"></div>
+		<nav class="navbar navbar-expand-lg menu">
+			<div class="mobile-menu-head">
+				<div class="go-back"><!-- <i class="fa fa-angle-left"></i> -->
+					<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+						<style type="text/css"> .st0{fill:#FFFFFF;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-miterlimit:10;}
+						</style>
+						<g>
+							<line class="st0-mob" x1="7.5" y1="0.6" x2="0.6" y2="7.5"/>
+							<line class="st0-mob" x1="7.5" y1="14.3" x2="0.6" y2="7.5"/>
+						</g>
+					</svg>
+				</div>
+	 			<div class="current-menu-title"></div>
+	 			<div class="mobile-menu-close">&times;</div>
+			</div>
+			<div class="container mob-menu-margin">
+				<nav class="social-toggler ml-auto togglerlangswitcher">
+				</nav>
+		    	<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+		    		<ul class="navbar-nav navigation d-flex menu-main">
+		    			<li class="nav-item dropdown navigation-li px-1 menu-area menu-item-has-children">
+		    				<button class="btn nav-link navigation-a dropdowntoggle about-a">About<i></i>
+				    			<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+									<g>
+										<line class="st0-1" x1="0.6" y1="0.6" x2="7.5" y2="7.5"/>
+										<line class="st0-1" x1="0.6" y1="14.3" x2="7.5" y2="7.5"/>
+									</g>
+								</svg>
+							</button>
+							<div class="dropdown-menu mega-area sub-menu">
+			    				<div class="container toggleClass">
+				    				<div class="row mega-one-cont">
+										<div class="col-12">
+											<h5 class="pt-4 ins">Inside Beauty</h5>
+						    				<a class="dropdown-item branding" href="founder.html">The Founder</a>
+							            	<a class="dropdown-item branding" href="#;">The History</a>
+							            	<a class="dropdown-item branding" href="#;">The Stories</a>
+								        </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Corporate<br>Sustainability</h5>
+						    				<a class="dropdown-item branding" href="climate-report.html">Climate Report</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Fondation Beauty</h5>
+				    						<a class="dropdown-item branding" href="foundation.html">Discover the Foundation</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Careers</h5>
+				    						<a class="dropdown-item branding" href="#;">Working at Beauty</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Beauty Culture Fund</h5>
+				    						<a class="dropdown-item branding" href="#;">Discover the Fund</a>
+			    							<h5 class="pt-4">Beauty Next Prize</h5>
+			    							<a class="dropdown-item branding" href="#;">Win the Prize</a>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+		    			</li>
+		    			<li class="nav-item navigation-li px-1">
+		    				<a class="nav-link navigation-a" href="bodycare.html">Bodycare</a>
+		    			</li>
+			    		<li class="nav-item dropdown navigation-li px-1 menu-area menu-item-has-children">
+			    			<button class="btn nav-link navigation-a dropdowntoggle gallery-a">Skincare<i></i>
+				    			<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+									<g>
+										<line class="st0-1" x1="0.6" y1="0.6" x2="7.5" y2="7.5"/>
+										<line class="st0-1" x1="0.6" y1="14.3" x2="7.5" y2="7.5"/>
+									</g>
+								</svg>
+							</button>
+			    			<div class="dropdown-menu mega-area sub-menu">
+			    				<div class="container toggleClass">
+			    					<h4>Shop Skincare online</h4>
+				    				<div class="row mega-one-cont">
+				    					<div class="col-12 img-text">
+				    						<img src="img/skincare-3.jpg" style="width: 100%">
+				    						<a href="#;" class="d-flex">
+				    							<h5 class="mt-3">Skincare Home</h5>
+					    						<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+					    							<g>
+														<line class="st0-2" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+														<line class="st0-2" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+													</g>
+												</svg>
+											</a>
+										</div>
+										<div class="col-12">
+											<h5 class="pt-4">view the latest</h5>
+						    				<a class="dropdown-item branding" href="#;">New Arrivals</a>
+								            <a class="dropdown-item branding" href="#;">New and Now</a>
+								            <a class="dropdown-item branding" href="blemish.html">Blemish Prone</a>
+								            <a class="dropdown-item branding" href="#;">Exclusives</a>
+								            <a class="dropdown-item branding" href="#;">Gift Sets</a>
+								            <h5 class="pt-4">Featured</h5>
+								            <a class="dropdown-item branding" href="#;">Lorem Collection</a>
+								            <a class="dropdown-item branding" href="the-lift.html">Lift Your Face</a>
+								            <a class="dropdown-item branding" href="#;">Tempor Collection</a>
+								        </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Category</h5>
+						    				<a class="dropdown-item branding" href="cleansers.html">Cleansers</a>
+						    				<a class="dropdown-item branding" href="#;">Skin Tone</a>
+							            	<a class="dropdown-item branding" href="serums.html">Serums</a>
+							            	<a class="dropdown-item branding" href="#;">Moisturizers</a>
+							            	<a class="dropdown-item branding" href="#;">Eye & Lip Care</a>
+							            	<a class="dropdown-item branding" href="#;">Sun Protection</a>
+							            	<a class="dropdown-item branding" href="#;">Oils</a>
+							            </div>
+							            <div class="col-12 col-lg-2">
+				    						<h5 class="pt-4">Line</h5>
+				    						<a class="dropdown-item branding" href="#;">Lorem</a>
+								            <a class="dropdown-item branding" href="#;">All Lines</a>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+			    		</li>
+			    		<li class="nav-item dropdown navigation-li px-1 menu-area menu-item-has-children">
+			    			<button type="button" id="" class="btn nav-link navigation-a dropdowntoggle fashion-a">Makeup<i></i>
+			    				<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+									<g>
+										<line class="st0-1" x1="0.6" y1="0.6" x2="7.5" y2="7.5"/>
+										<line class="st0-1" x1="0.6" y1="14.3" x2="7.5" y2="7.5"/>
+									</g>
+								</svg>
+							</button>
+			    			<div class="dropdown-menu mega-area sub-menu" aria-labelledby="mega-two">
+			    				<div class="container toggleClass">
+			    					<h4>Shop Makeup online</h4>
+				    				<div class="row">
+				    					<div class="col-12 img-text">
+				    						<img src="img/Header-Large.jpg" style="width: 100%">
+				    						<a href="#;" class="d-flex">
+				    							<h5 class="mt-3">Makeup Home</h5>
+				    							<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+					    							<g>
+														<line class="st0-2" x1="0.6" y1="0.6" x2="7.5" y2="7.5"></line>
+														<line class="st0-2" x1="0.6" y1="14.3" x2="7.5" y2="7.5"></line>
+													</g>
+												</svg>
+											</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">view the latest</h5>
+					    					<a class="dropdown-item branding" href="#;">New Arrivals</a>
+							            	<a class="dropdown-item branding" href="#;">New and Now</a>
+							            	<a class="dropdown-item branding" href="#;">Exclusives</a>
+							            	<a class="dropdown-item branding" href="#;">Gift Sets</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Face</h5>
+			    							<a class="dropdown-item branding" href="face-foundation.html">Foundation</a>
+							            	<a class="dropdown-item branding" href="bronzer.html">Bronzer</a>
+							            	<a class="dropdown-item branding underLine" href="highlighter.html">Highlighter</a>
+							            	<a class="dropdown-item branding" href="#;">Blush</a>
+							            	<a class="dropdown-item branding" href="#;">Powder</a>
+							            	<a class="dropdown-item branding" href="#;">Primer</a>
+							            	<a class="dropdown-item branding" href="#;">Concealer</a>
+							            	<a class="dropdown-item branding" href="#;">All Face</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Eyes</h5>
+			    							<a class="dropdown-item branding" href="#;">Mascara</a>
+							            	<a class="dropdown-item branding" href="#;">Eyeshadow</a>
+							            	<a class="dropdown-item branding" href="#;">Eyeliner</a>
+							            	<a class="dropdown-item branding" href="#;">Brow</a>
+							            	<a class="dropdown-item branding" href="#;">All Eyes</a>
+							            	<h5 class="pt-4">Lips</h5>
+							            	<a class="dropdown-item branding" href="#;">Lipstick</a>
+							            	<a class="dropdown-item branding" href="#;">Liquid lipsticks</a>
+							            	<a class="dropdown-item branding" href="#;">Lipgloss</a>
+							            	<a class="dropdown-item branding" href="#;">Lip Liner</a>
+							            	<a class="dropdown-item branding" href="#;">Lip Care</a>
+							            	<a class="dropdown-item branding" href="lips.html">All Lips</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Nails</h5>
+				    						<a class="dropdown-item branding" href="#;">Mascara</a>
+								            <a class="dropdown-item branding" href="#;">Eyeshadow</a>
+								            <a class="dropdown-item branding" href="#;">Eyeliner</a>
+								            <a class="dropdown-item branding" href="#;">Brow</a>
+								            <a class="dropdown-item branding" href="#;">All Eyes</a>
+								            <h5 class="pt-4">Brushes and tools</h5>
+								            <a class="dropdown-item branding" href="#;">Face</a>
+								            <a class="dropdown-item branding" href="#;">Eyes</a>
+								            <a class="dropdown-item branding" href="#;">Lips</a>
+								            <a class="dropdown-item branding" href="#;">Accessories</a>
+								            <a class="dropdown-item branding" href="#;">All Brushes & Tools</a>
+						            	</div>
+						            </div>
+					            </div>
+					        </div>
+			    		</li>
+		    			<li class="nav-item navigation-li px-1">
+		    				<a class="nav-link navigation-a" href="ingredients.html">Ingredients</a>
+		    			</li>
+		    			<li class="nav-item dropdown navigation-li px-1 menu-area menu-item-has-children">
+		    				<button class="btn nav-link navigation-a dropdowntoggle contact-a">Contact<i></i>
+				    			<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.1 15" xml:space="preserve">
+									<g>
+										<line class="st0-1" x1="0.6" y1="0.6" x2="7.5" y2="7.5"/>
+										<line class="st0-1" x1="0.6" y1="14.3" x2="7.5" y2="7.5"/>
+									</g>
+								</svg>
+							</button>
+							<div class="dropdown-menu mega-area sub-menu">
+			    				<div class="container toggleClass">
+				    				<div class="row mega-one-cont">
+										<div class="col-12">
+											<h5 class="pt-4 ins">House of Beauty</h5>
+						    				<a class="dropdown-item branding" href="#;">Inside BEAUTY</a>
+								            <a class="dropdown-item branding" href="#;">Careers</a>
+								            <a class="dropdown-item branding" href="#;">Fondation BEAUTY</a>
+								        </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Services</h5>
+				    						<a class="dropdown-item branding" href="#;">Find a store</a>
+								            <a class="dropdown-item branding" href="#;">Contact</a>
+								            <a class="dropdown-item branding" href="#;">FAQ</a>
+							            </div>
+							            <div class="col-12">
+				    						<h5 class="pt-4">Legal</h5>
+				    						<a class="dropdown-item branding" href="#;">Legal Statement</a>
+								            <a class="dropdown-item branding" href="#;">Privacy Policy</a>
+								            <a class="dropdown-item branding" href="storelocator.html">Location</a>
+							            </div>
+						            </div>
+					            </div>
+					        </div>
+		    			</li>
+		    		</ul>
+		    	</div>
+			</div>
+		</nav>
+	</div>
+	<section class="bronzer-back-sect">
+		<div class="bronzer-back">
+			<picture>
+				<source  media="(min-width:600px)" srcset="img/red_big.webp">
+				<!-- <source  media="(min-width:465px)" srcset="img/bronzer-1.webp"> -->
+				<img src="img/red_small.webp">
+			</picture>
+			<div class="logo_white">
+				<a class="navbar-brand" href="index.html">
+					<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 174.3 27.1" xml:space="preserve">
+						<g>
+							<path d="M0,0h12.3c6.8,0,9.6,3.2,9.6,6.7c0,3-1.8,5-3.9,5.7c2,0.6,4.8,2.5,4.8,6.1c0,4.7-4,7.9-10.1,7.9H0V0z M11.6,10.6
+								c3.4,0,4.8-1.3,4.8-3.4c0-2.1-1.7-3.3-4.5-3.3H5.4v6.7H11.6z M5.4,22.5h6.3c3.5,0,5.4-1.4,5.4-4.1c0-2.4-1.7-3.9-5.7-3.9h-6V22.5z"
+								/>
+							<path d="M48.9,14.7H35.5v7.6h15.7l-0.7,4.1H30.2V0h20.3v4.1H35.5v6.5h13.4V14.7z"/>
+							<path d="M64.2,19.7l-2.6,6.7h-5.4L66.3,0h6.9l10.6,26.4H78l-2.7-6.7H64.2z M74,15.6c-2.3-6-3.7-9.7-4.4-11.9h0
+								c-0.7,2.5-2.3,6.7-4.2,11.9H74z"/>
+							<path d="M94.3,0v15.8c0,5.5,3.2,7,6.6,7c3.9,0,6.5-1.8,6.5-7V0h5.5v15.5c0,8.9-5.7,11.2-12.1,11.2c-6.5,0-12-2.5-12-11.1V0H94.3z"
+								/>
+							<path d="M128.4,4.1h-9.1V0h23.8v4.1H134v22.3h-5.5V4.1z"/>
+							<path d="M158,26.4V17c0-0.3-0.1-0.6-0.2-0.8L147.6,0h6.3c2.4,4.1,5.8,9.9,7.2,12.6C162.4,10,166,4,168.4,0h5.8l-10.4,16.1
+								c-0.1,0.2-0.2,0.3-0.2,0.8v9.5H158z"/>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="bronzer-back-text pt-3">
+			<h1>NEW PRODUCTS</h1>
+			<p class="pb-4">
+				BEAUTY bronzers dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat duis aute.
+			</p>
+		</div>
+	</section>
+	<section class="filter-sect">
+		<h1>THE BLURRED <br>RED LOOK</h1>
+		<div class="red_photos">
+			<div>
+				<picture>
+					<img src="img/d404189.webp">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="img/EPbw4IlV.webp">
+				</picture>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do EIUSMOD TEMPOR INCIDIDUNT UT LABORE et dolore magna aliqua. Ut enim ad minim veniam, QUIS NOSTRUD EXERCITATION ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				<a href="#;">
+					<button class="btn btn-primary small-btn">
+						<span>
+							<img src="img/tryon.svg">
+							<span class="text_span">Try On</span>
+						</span>
+					</button>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="filter-sect">
+		<div class="red_photos red_photos1">
+			<div>
+				<picture class="red_photos1_picture">
+					<img src="img/45654.webp">
+				</picture>
+				<h3>SIT 4, IN CONSECTETUR ELIT</h3>
+				<p>Sed do Eiusmod Nisi Tempor</p>
+				<a href="#;">
+					<button class="btn btn-primary small-btn small-btn_white">
+						<span>
+							<img src="img/tryon_white.svg">
+							<span class="text_span">Try On</span>
+						</span>
+					</button>
+				</a>
+			</div>
+			<div>
+				<picture>
+					<img src="img/3765.webp">
+				</picture>
+			</div>
+		</div>
+	</section>
+	<section class="filter-sect">
+		<div class="red_photos red_photos2">
+			<div class="swiper-col">
+				<span class="swiper-button-next"></span>
+				<span class="swiper-button-prev"></span>
+				<!-- <div class="swiper-pagination"></div> -->
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/12122.webp">
+						</div>
+						<div class="swiper-slide swiper-slide_2">
+							<img src="img/d404189111.webp" class="swiper-slide-2">
+						</div>
+					</div>
+					<!-- <div class="swiper-pagination"></div> -->
+				    <!-- Add Arrows -->
+				</div>
+			</div>
+			<div class="nonswiper-col">
+				<picture class="red_photos1_picture">
+					<img src="img/8829647749150_red.webp">
+				</picture>
+				<h3>ROUGE MINIM VENIAM</h3>
+				<p>Luminous Irure Sit Dolor</p>
+				<a href="#;">
+					<button class="btn btn-primary small-btn small-btn_white">
+						<span>
+							<img src="img/tryon_white.svg">
+							<span class="text_span">Try On</span>
+						</span>
+					</button>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="filter-sect">
+		<div class="red_photos red_photos2">
+			<div class="nonswiper-col nonswiper1">
+				<picture class="red_photos1_picture">
+					<img src="img/gfd453.webp">
+				</picture>
+				<h3>ALLURE BLACK</h3>
+				<p>Mascara</p>
+				<a href="#;">
+					<button class="btn btn-primary small-btn small-btn_white">
+						<span>
+							<img src="img/tryon_white.svg">
+							<span class="text_span">Try On</span>
+						</span>
+					</button>
+				</a>
+			</div>
+			<div class="swiper-col swiper-col1">
+				<span class="swiper-button-next1"></span>
+				<span class="swiper-button-prev1"></span>
+				<div class="swiper1">
+					<div class="swiper-wrapper1">
+						<div class="swiper-slide1">
+							<img src="img/DximAe8V4AE.webp">
+						</div>
+						<div class="swiper-slide1 swiper-slide_2">
+							<img src="img/d404189lk.webp" class="swiper-slide-2 swiper-slide1-2">
+						</div>
+					</div>
+					<!-- <div class="swiper-pagination"></div> -->
+				    <!-- Add Arrows -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="filter-sect">
+		<h1>THE PENCIL <br>RED LOOK</h1>
+		<div class="red_photos">
+			<div>
+				<picture>
+					<img src="img/hgfy.webp">
+				</picture>
+			</div>
+			<div>
+				<picture>
+					<img src="img/EPbw4IlV1.webp">
+				</picture>
+				<p>Ut enim ad MINIM VENIAM, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis AUTE IRURE DOLOR in reprehenderit in voluptate velit esse cillum dolore eu FUGIAT NULLA PARIATUR. Excepteur sint.</p>
+				<a href="#;">
+					<button class="btn btn-primary small-btn">
+						<span>
+							<img src="img/tryon.svg">
+							<span class="text_span">Try On</span>
+						</span>
+					</button>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="filter-sect">
+		<div class="red_photos red_photos1">
+			<div>
+				<picture class="red_photos1_picture">
+					<img src="img/456kk.webp">
+				</picture>
+				<h3>SED EIUSMOD ESSE</h3>
+				<p>Duis Aute Irure Dolor</p>
+				<a href="#;">
+					<button class="btn btn-primary small-btn small-btn_white">
+						<span>
+							<img src="img/tryon_white.svg">
+							<span class="text_span">Try On</span>
+						</span>
+					</button>
+				</a>
+			</div>
+			<div>
+				<picture>
+					<img src="img/45kl.webp">
+				</picture>
+			</div>
+		</div>
+	</section>
+	<section class="filter-sect filter-sect1">
+		<h1>THE LOOKS</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 2023 Collection.</p>
+		<div class="wrapper">
+			<div class="image-slider swiper-container">
+				<div class="swiper-button-next2"></div>
+				<div class="swiper-button-prev2"></div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper2">
+					<div class="swiper-wrapper2">
+						<div class="swiper-slide2">
+							<div class="image-slider_image">
+								<img src="img/multi_img.webp">
+							</div>
+						</div>
+						<div class="swiper-slide2">
+							<div class="image-slider_image">
+								<img src="img/multi_img1.webp">
+							</div>
+						</div>
+						<div class="swiper-slide2">
+							<div class="image-slider_image">
+								<img src="img/multi_img2.webp">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <div class="chatButton-div">
+		<button id="chatButton" class="chatButton">
+			<span>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 30.3" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+						.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+					</style>
+					<g>
+						<path class="st0" d="M11.6,23c0.6,0.7,1.6,1.2,3.1,1.2h8.7l6.1,5.1v-4.9l0-0.3h0.1c3.2,0,5.9-2.6,5.9-5.9v-7c0-3.2-2.6-5.8-5.9-5.8
+							H13.7c-3.2,0-5.8,2.6-5.8,5.8v7c0,1.4,0.5,2.7,1.3,3.7"/>
+						<g>
+							<path class="st1" d="M6.5,19.2H6.3c-3.2,0-5.8-2.6-5.8-5.8v-7c0-3.2,2.6-5.8,5.8-5.8h15.9c3.2,0,5.8,2.6,5.8,5.8v7
+								c0,3.2-2.6,5.8-5.8,5.8h-9.7l-6.1,5.1v-4.9L6.5,19.2z"/>
+							<circle cx="7.7" cy="10.3" r="2.1"/>
+							<circle cx="14.4" cy="10.3" r="2.1"/>
+							<circle cx="21" cy="10.3" r="2.1"/>
+						</g>
+					</g>
+				</svg>
+			</span>
+		</button>
+	</div> -->
+	<!-- modal chat without bootstrap -->
+	<div id="chat_overlay" class="chat-overlay">
+		<div id="chat_dialog" class="chat-dialog">
+			<div class="chat-content">
+				<div class="container chat-content-width">
+					<div class="row">
+						<div class="chat-backgr">
+							<div class="chat-header">
+								<h5>LIVE CHAT</h5>
+							</div>
+							<div class="chat-close-div">
+								<svg id="chat_close" class="chat-close" viewBox="0 0 15 15" aria-hidden="true" focusable="false">
+				                  <path class="st0" d="M14.35 1.25l-.7-.71L7.5 6.69 1.35.54l-.7.71L6.79 7.4.65 13.54l.7.71L7.5 8.1l6.15 6.15.7-.71L8.21 7.4l6.14-6.15z"></path>
+				                </svg>
+							</div>
+							<div class="chat-min-div">
+								<svg id="chat_min" class="chat-min" viewBox="0 0 15.3 8.4">
+									<!-- <style type="text/css">
+										.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+									</style> -->
+									<polyline class="st0" points="0.4,0.4 7.6,7.6 14.9,0.4 "/>
+								</svg>
+							</div>
+							<div class="text-center mt-3">
+								<p class="chat-title-p1">To start chatting with a Beauty Advisor, please enter your name and email, or sign in.</p>
+							</div>
+							<div class="text-center">
+								<p class="chat-title-p2 mt-3" key="Press the Check Button">All fields are mandatory.</p>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="form-floating">
+											<input type="text" class="form-control validate forName" id="floatingInput" placeholder="text" name="password">
+											<label class="labelName" for="floatingInput">First name</label>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-floating">
+											<input type="text" class="form-control validate forName" id="floatingInput" placeholder="text">
+											<label class="labelName" for="floatingInput">Last name</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-floating mt-3">
+											<input type="email" class="form-control validate forEmail" id="floatingInput" placeholder="Email">
+											<label class="labelEmail" for="floatingInput">Email</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-floating mt-3">
+											<textarea class="form-control forMessage" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+											<label class="labelMessage" for="floatingTextarea">Write a Message</label>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-check form-check-opt beautyPolicy mt-5">
+											<span class="form-check-input2" id="beautyPolicy"></span>
+											<label class="form-check-label labelPolicy" for="">
+										    I agree to Beauty
+										    <a href="#;">Privacy Policy</a>
+										    and
+										    <a href="#;">Legal Statement</a>
+											</label>
+										</div>
+										<button type="submit" class="btn btn-primary big-btn mt-4 mb-3"><span>START CHAT</span></button>
+									</div>
+								</div>
+							</form>
+							<!-- <div class="d-flex justify-content-center mb-2 mt-5 mb-5">
+								<a href="#;">
+									<button class="btn btn-primary small-btn btn-validate"><span>Validate</span></button>
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="modal_overlay" class="modal-overlay"></div> -->
+	</div>
+	<!-- end of modal chat without bootstrap -->
+	<section class="contact-div">
+		<div class="container pt-5">
+			<div class="row gx-5 pb-5">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<h5>contact an advisor</h5>
+					<p>Available 24/7.</p>
+					<p class="mb-3">To speak with Customer Care, call <a href="tel:+1589785324896">(+158)9785324896</a> or use the chat and email services below.</p>
+					<a href="#;">Chat</a>
+					<a href="#;" class="mx-3">Email</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 searchBy">
+					<h5>find a store</h5>
+					<p>Enter a location to find the closest BEAUTY stores</p>
+					<div class="form-floating mt-4">
+						<input type="search" class="form-control validate forSearch" id="floatingInput" placeholder="Search by town or zipcode">
+						<label class="labelSearch" for="floatingInput">Search by town or zipcode</label>
+						<a class="search-sign-a2" href="#;">
+							<svg class="search-sign1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15.8" xml:space="preserve">
+								<style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+								</style>
+								<g>
+									<circle class="st0" cx="7" cy="7" r="6.6"/>
+									<line class="st0" x1="15.7" y1="15.5" x2="11.7" y2="11.5"/>
+								</g>
+							</svg>
+						</a>
+						<span class="span-007C">|</span>
+						<a href="storelocator.html" class="a-location" title="Location">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 						viewBox="0 0 16.8 16.8" xml:space="preserve">
+								<style type="text/css">
+									.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+								</style>
+								<g>
+									<circle class="st0" cx="8.4" cy="8.4" r="7.2"/>
+									<circle class="circle-fill"	cx="8.4" cy="8.4" r="3.6"/>
+									<rect x="7.8" width="1" height="1"/>
+									<rect x="15.8" y="7.8" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 24.6 -7.9342)" width="1" height="1"/>
+									<rect x="7.9" y="15.8" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 16.8711 32.5342)" width="1" height="1"/>
+									<rect x="0" y="7.9" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -7.9342 8.9368)" width="1" height="1"/>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 newsLetter">
+					<h5>newsletter</h5>
+					<p>Subscribe to receive news from BEAUTY</p>
+					<div class="form-floating mt-4">
+						<input type="email" class="form-control validate forEmail" id="floatingInput" placeholder="Enter your email address">
+						<label class="labelEmail" for="floatingInput">Enter your email address</label>
+						<a class="search-sign-a3" href="#;">
+							OK
+						</a>
+					</div>
+					<div class="mt-5 span-div">
+						<p>By providing my information, I agree to BEAUTY's</p>
+						<span><a href="#;">Privacy Policy</a> and <a href="#;">Legal Statement</a></span>
+					</div>
+				</div>
+			</div>
+			<footer class="footer-contact mt-5 pb-3">
+				<ul class="d-flex">
+					<li>
+						<span>
+							<a href="#;">
+								<svg class="logo-small" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 174.3 27.1" xml:space="preserve">
+									<g>
+										<path d="M0,0h12.3c6.8,0,9.6,3.2,9.6,6.7c0,3-1.8,5-3.9,5.7c2,0.6,4.8,2.5,4.8,6.1c0,4.7-4,7.9-10.1,7.9H0V0z M11.6,10.6
+											c3.4,0,4.8-1.3,4.8-3.4c0-2.1-1.7-3.3-4.5-3.3H5.4v6.7H11.6z M5.4,22.5h6.3c3.5,0,5.4-1.4,5.4-4.1c0-2.4-1.7-3.9-5.7-3.9h-6V22.5z"
+											/>
+										<path d="M48.9,14.7H35.5v7.6h15.7l-0.7,4.1H30.2V0h20.3v4.1H35.5v6.5h13.4V14.7z"/>
+										<path d="M64.2,19.7l-2.6,6.7h-5.4L66.3,0h6.9l10.6,26.4H78l-2.7-6.7H64.2z M74,15.6c-2.3-6-3.7-9.7-4.4-11.9h0
+											c-0.7,2.5-2.3,6.7-4.2,11.9H74z"/>
+										<path d="M94.3,0v15.8c0,5.5,3.2,7,6.6,7c3.9,0,6.5-1.8,6.5-7V0h5.5v15.5c0,8.9-5.7,11.2-12.1,11.2c-6.5,0-12-2.5-12-11.1V0H94.3z"
+											/>
+										<path d="M128.4,4.1h-9.1V0h23.8v4.1H134v22.3h-5.5V4.1z"/>
+										<path d="M158,26.4V17c0-0.3-0.1-0.6-0.2-0.8L147.6,0h6.3c2.4,4.1,5.8,9.9,7.2,12.6C162.4,10,166,4,168.4,0h5.8l-10.4,16.1
+											c-0.1,0.2-0.2,0.3-0.2,0.8v9.5H158z"/>
+									</g>
+								</svg>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span>
+							<a href="#;">Makeup</a>
+						</span>
+					</li>
+					<li>
+						<span>
+							<a href="#;">Face</a>
+						</span>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</section>
+	<section class="section-backgr">
+		<div class="footer-brand-backgr">
+			<div class="container footer-cont">
+				<div class="row gy-5">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						<div>
+							<h5>explore beauty.com</h5>
+							<ul>
+								<li><a href="#;">Haute Couture</a></li>
+								<li><a href="#;">Fashion</a></li>
+								<li><a href="#;">Ullamco Laboris</a></li>
+								<li><a href="#;">Mollit Laboris</a></li>
+								<li><a href="#;">Watches</a></li>
+								<li><a href="#;">Eyewear</a></li>
+								<li><a href="#;">Fragrance</a></li>
+								<li><a href="#;">Makeup</a></li>
+								<li><a href="#;">Skincare</a></li>
+								<li><a href="#;">Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						<div>
+							<h5>online services</h5>
+							<ul>
+								<li><a href="#;">Payment Methods</a></li>
+								<li><a href="#;">Shipping Options</a></li>
+								<li><a href="login.html">My Account</a></li>
+								<li><a href="#;">Returns</a></li>
+								<li><a href="#;">FAQ</a></li>
+								<li><a href="#;">Care & Services</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						<div>
+							<h5>boutique services</h5>
+							<ul>
+								<li><a href="storelocator.html">Store Locator</a></li>
+								<li><a href="#;">Book an Appointment</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+						<div>
+							<h5>the house of beauty</h5>
+							<ul>
+								<li><a href="#;">Careers</a></li>
+								<li><a href="#;">Legal</a></li>
+								<li><a href="#;">Privacy</a></li>
+								<li><a href="#;">Information About CCPA Do Not Sell</a></li>
+								<li><a href="#;">Report to Society</a></li>
+								<li><a href="#;">Fighting Fakes</a></li>
+								<li><a href="#;">Accessibility</a></li>
+								<li><a href="#;">California Transparency in Supply Chains</a></li>
+								<li><a href="#;">BEAUTY Dolore Magna Aliqua</a></li>
+								<li><a href="#;">BEAUTY COVID-19 Relief Efforts</a></li>
+								<li><a href="#;">BEAUTY Labore et Dolore</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container form-check mt-5 high-contrast">
+				<div class="row">
+					<div class="col form-switch dark-mode-toggler"> <!-- type="checkbox" კონფლიქტში მოდის სხვა type="checkbox"-თან ამიტომ ამ შემთხვევაში type="checkbox1"-ად გადაკეთდება და დაჭირდება ჯავაც -->
+					  	<label id="label" class="form-check-label" for="flexSwitchCheckDefault">Enable high contrast</label>
+					  	<input  id="flexSwitchCheckDefault" class="form-check-input form-check-input1" type="checkbox1" role="switch" readonly="">
+					</div>
+			  	</div>
+			</div>
+			<footer>
+				<div class="container pb-3 footer-footer">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-line"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-6 mt-4">
+							<div class="d-flex">
+								<h6 class="pe-3 footer-first">Change language</h6>
+								<h6 id="lang_open" class="footer-first1"type="button">United States - English (US)</h6>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 mt-3">
+							<ul class="d-flex footer-second">
+								<li><a href="#;"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#;"><i class="fa-brands fa-facebook"></i></a></li>
+								<li><a href="#;"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="#;"><i class="fa-brands fa-youtube"></i></a></li>
+								<li><a href="#;"><i class="fa-brands fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</section>
+	<div id="modal_overlay" class="modal-overlay">
+		<div id="modal_dialog1" class="modal-dialog1">
+			<div class="modal-content1">
+				<div class="container modal-content1-width">
+					<div class="row">
+						<div class="backgr-color">
+							<div class="lang-close-div">
+								<svg id="lang_close" class="lang-close" viewBox="0 0 15 15" aria-hidden="true" focusable="false">
+				                  <path d="M14.35 1.25l-.7-.71L7.5 6.69 1.35.54l-.7.71L6.79 7.4.65 13.54l.7.71L7.5 8.1l6.15 6.15.7-.71L8.21 7.4l6.14-6.15z"></path>
+				                </svg>
+							</div>
+							<div class="text-center mt-5 pt-4">
+								<p class="modal-title-p1 lang1" key="Enter ID from your Security Label">you are visiting the beauty united states website</p>
+							</div>
+							<div class="d-flex justify-content-center">
+								<hr>
+							</div>
+							<div class="text-center">
+								<p class="modal-title-p2 lang1 mt-3" key="Press the Check Button">change your language</p>
+							</div>
+							<div class="d-flex justify-content-center mb-5">
+								<select id="yourSelectComponentID" class="form-select mb-5" aria-label="Default select example" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+								  <option value="#;" selected>English (US)</option>
+								  <option value="#;">Georgia</option>
+								  <option value="#;">Ukraine</option>
+								  <option value="#;">France</option>
+								  <option value="#;">Italy</option>
+								  <option value="#;">Spain</option>
+								  <option value="#;">Turkey</option>
+								</select>
+							</div>
+							<!-- <div class="d-flex justify-content-center mb-2 mt-5 mb-5">
+								<a href="#;">
+									<button class="btn btn-primary small-btn btn-validate"><span>Validate</span></button>
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="modal_overlay" class="modal-overlay"></div> -->
+	</div>
+	
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- თუ მინდა, რომ იმუშაოს toggler-მა bootstrap 5-ში, bootstrap.min.js უნდა გავთიშო -->
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="js/simpleParallax.min.js"></script>
+	<!-- <script type="text/javascript" src="js/script.js"></script> -->
+	<script type="text/javascript" src="js/add-to-cart.js"></script>
+	<script type="text/javascript" src="js/shopping-cart-countOfProduct.js"></script>
+	<script type="text/javascript" src="js/makeup.js"></script>
+	<script type="text/javascript" src="js/swiper-bundle.js"></script>
+	<script type="text/javascript" src="js/swiper-bundle1.js"></script>
+	<script type="text/javascript" src="js/swiper-bundle2.js"></script>
+
+	<script>
+		// chat modal without bootstrap
+		var listItem = document.querySelector('#chatButton');
+		listItem.addEventListener('click', function(event) {
+		  chat_overlay.classList.toggle('show');
+		});
+		// var listItem = document.querySelector('#chat_overlay');
+		// listItem.addEventListener('click', function(event) {
+		//   this.classList.remove('show');
+		// });
+		// var listItem = document.querySelector('#chat_overlay');
+		// listItem.addEventListener('click', function(event) {
+		//   chat_dialog.classList.remove('open');
+		// });
+
+
+		const chat_open = document.getElementById('chatButton')
+		const chat_overlay = document.getElementById('chat_overlay')
+		const chat_close = document.getElementById('chat_close')
+		const chat_min = document.getElementById('chat_min')
+
+
+		chat_open.addEventListener('click', () => {
+		  chat_dialog.classList.add('open');
+		});
+
+		chat_close.addEventListener('click', () => {
+		  chat_overlay.classList.remove('show');
+		});
+
+		chat_close.addEventListener('click', () => {
+		  chat_dialog.classList.remove('open');
+		});
+
+		chat_min.addEventListener('click', () => {
+		  chat_overlay.classList.remove('show');
+		});
+
+		chat_min.addEventListener('click', () => {
+		  chat_dialog.classList.remove('open');
+		});
+
+		$(".chat-backgr").click(function(event){
+		  event.stopPropagation();
+		  // Do something
+		});
+
+		// close with escape key
+		document.addEventListener("keydown", function (e){
+		  console.log(e);
+		  if (e.key == "Escape"){
+		    chat_overlay.classList.remove("show");
+		    $(".chat-dialog").removeClass("open");
+		    $("#chat_overlay").find('form').trigger('reset');
+		  }
+		});
+		// end of close with escape key
+
+		// reset the modal when it gets closed
+		// $("#chat_close").click(function(event){
+		// 	$("#chat_overlay").find('form').trigger('reset');
+		// });
+		$("#chat_close").click(function(event){
+			$(".form-check-input2").removeClass('checked');
+		});
+		// end of reset the modal when it gets closed
+		// end of chat modal without bootstrap
+	</script>
+
+	<script>
+		$(window).scroll(function(){
+			$(".fixed-top").toggleClass("scrolled", $(this).scrollTop() > 500);
+		});
+	</script>
+
+	<script type="module">
+	    var swiper = new Swiper('.swiper', {
+	      pagination: {
+	        el: '.swiper-pagination',
+	        // type: 'fraction',
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	      speed: 500,
+	      simulateTouch: true,
+	      // loop: true,
+	    });
+	  </script>
+
+	  <script type="module">
+	    var swiper1 = new Swiper1('.swiper1', {
+
+	      navigation: {
+	        nextEl: '.swiper-button-next1',
+	        prevEl: '.swiper-button-prev1',
+	      },
+	      speed: 500,
+	      simulateTouch: true,
+	      // loop: true,
+	    });
+	  </script>
+
+	  <script type="module">
+	  	var swiper2 = new Swiper2('.swiper2', {
+		  navigation: {
+	        nextEl: '.swiper-button-next2',
+	        prevEl: '.swiper-button-prev2',
+	      },
+	      speed: 300,
+
+	      pagination: {
+	        el: '.swiper-pagination',
+	        // clickable: true,
+	      },
+
+	      breakpoints: {
+	      	992: {
+	      		slidesPerView: 3,
+	      		slidesPerGroup: 1,
+	      		centeredSlides: true,
+	      	}
+	      },
+
+	      spaceBetween: 200,
+	  	});
+	  </script>
+
+</body>
+</html>
