@@ -198,10 +198,12 @@ html, body {
         text-align: center;
     }
     .swiper-button-next2, .swiper-rtl .swiper-button-prev2 {
+        top: calc((100% / 2) + 77px);
         right: calc((100% / 8)); 
         left: auto;
     }
     .swiper-button-prev2, .swiper-rtl .swiper-button-next2 {
+        top: calc((100% / 2) + 77px);
         left: calc((100% / 8));
         right: auto;
     }
@@ -244,6 +246,9 @@ html, body {
         width: 100%;
         padding: 3.25rem 6.25rem 6.25rem 6.25rem;
     }
+    .swiper2{
+        width: 88%;
+    }
 }
 .bronzer-back-text {
     position: relative;
@@ -266,6 +271,7 @@ html, body {
 .bronzer-back-text h1{
     font-family: 'ABChanelCorpoRegular';
     font-size: 2.5rem;
+    text-align: center;
     color: #fff;
 }
 .bronzer-back-text p{
