@@ -16,8 +16,35 @@
          url('../fonts/HelveticaLt.ttf') format('truetype'),
          url('../fonts/HelveticaLt.svg#HelveticaLt') format('svg');
 }
-/*@font-face {
-    font-family: 'Font Awesome Free';
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url('../fonts/FuturaPTMedium.eot');
+    src: url('../fonts/FuturaPTMedium.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTMedium.woff2') format('woff2'),
+         url('../fonts/FuturaPTMedium.woff') format('woff'),
+         url('../fonts/FuturaPTMedium.ttf') format('truetype'),
+         url('../fonts/FuturaPTMedium.svg#FuturaPTMedium') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTLight';
+    src: url('../fonts/FuturaPTLight.eot');
+    src: url('../fonts/FuturaPTLight.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTLight.woff2') format('woff2'),
+         url('../fonts/FuturaPTLight.woff') format('woff'),
+         url('../fonts/FuturaPTLight.ttf') format('truetype'),
+         url('../fonts/FuturaPTLight.svg#FuturaPTLight') format('svg');
+}
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url('../fonts/FuturaPTBook.eot');
+    src: url('../fonts/FuturaPTBook.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTBook.woff2') format('woff2'),
+         url('../fonts/FuturaPTBook.woff') format('woff'),
+         url('../fonts/FuturaPTBook.ttf') format('truetype'),
+         url('../fonts/FuturaPTBook.svg#FuturaPTBook') format('svg');
+}
+@font-face {
+    font-family: 'Font Awesome 6 Free';
     src: url('../webfonts/fa-brands-400.eot');
     src: url('../webfonts/fa-brands-400.eot') format('embedded-opentype'),
          url('../webfonts/fa-brands-400.woff2') format('woff2'),
@@ -27,7 +54,7 @@
 }
 
 @font-face {
-    font-family: 'Font Awesome Free';
+    font-family: 'Font Awesome 6 Free';
     src: url('../webfonts/fa-regular-400.eot');
     src: url('../webfonts/fa-regular-400.eot') format('embedded-opentype'),
          url('../webfonts/fa-regular-400.woff2') format('woff2'),
@@ -37,14 +64,14 @@
 }
 
 @font-face {
-    font-family: 'Font Awesome Free';
+    font-family: 'Font Awesome 6 Free';
     src: url('../webfonts/fa-solid-900.eot');
     src: url('../webfonts/fa-solid-900.eot') format('embedded-opentype'),
          url('../webfonts/fa-solid-900.woff2') format('woff2'),
          url('../webfonts/fa-solid-900.woff') format('woff'),
          url('../webfonts/fa-solid-900.ttf') format('truetype'),
          url('../webfonts/fa-solid-900.svg') format('svg');
-}*/
+}
 
 /*@font-face {
     font-family: 'bodonistditalic';
