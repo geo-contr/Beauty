@@ -22,6 +22,9 @@
     --fourteenth-color: #f6f6f6;
     --fiteenth-color: #ced4da;
     --sixteenth-color: #333;
+    --seventeenth-color: #961014;
+    --eighteenth-color: #cdb181;
+    --nineteenth-color: rgba(255,255,255,1);
 }
 .dark-theme{
     --first-color: #000;
@@ -40,6 +43,9 @@
     --fourteenth-color: #1e1e1e;
     --fiteenth-color: #383838;
     --sixteenth-color: #fff;
+    --seventeenth-color: #fff;
+    --eighteenth-color: #fff;
+    --nineteenth-color: rgba(255,255,255,0);
 }
 /* dark mode */
 /* ფერის შეცვლის შემთხვევაში ობიექტს ვუნიშნავ მაგ.: var(--first-color) */
@@ -161,6 +167,14 @@ a:hover{
 .branding:focus{
     background-color: transparent;
     color: var(--seventh-color);
+}
+.branding.bold{
+    color: var(--seventeenth-color);
+    font-weight: 600;
+}
+.branding.bold:focus{
+    color: var(--seventeenth-color);
+    font-weight: 600;
 }
 .underLine{
     text-decoration: underline;
@@ -1173,7 +1187,6 @@ iframe{
 .fixed-position1, 
 .fixed-position2, 
 .fixed-position3{
-    /*position: fixed;*/
     padding-right: 1rem;
     height: 100%;
     overflow: hidden;
@@ -1279,10 +1292,6 @@ iframe{
      .slide1{
         padding-top: 29vh;
         margin-top: -50%;
-        /*padding-top: 50%;
-        margin-top: -50%; */
-        /*padding-top: 167px;
-        margin-top: -200px;*/
     }
     .slide1-light.hide, 
     .slide1-medium, 
@@ -1350,11 +1359,9 @@ iframe{
     }
     .slide2{
         padding-top: 11.375rem;
-        /*margin-top: -242px;*/
     }
     .slide3{
         padding-top: 9.125rem;
-        /*margin-top: -213px;*/
     }
     .merch-item-title{
         display: block;
