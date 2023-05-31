@@ -613,7 +613,7 @@ html, body{
         top: 1400px;
     }
 }
-@media(max-height: 720px){
+@media(max-height: 780px){
     .sommeil .sommeil_wrapper.sblmg-sommeil-fixed-bottom{
         height: 37%;
         top: 1200px;
