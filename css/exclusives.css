@@ -710,10 +710,11 @@ html, body{
         width: 100%;
     }
     .restorative_content h2 {
-        margin-top: 6.25rem;
+        margin-top: 9.25rem;
         font-size: 1.125rem;
     }
     .restorative_content p {
+        margin-bottom: 2rem;
         font-size: 1.125rem;
     }
     .footer-brand-backgr {
