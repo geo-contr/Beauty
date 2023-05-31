@@ -615,7 +615,7 @@ html, body{
 }
 @media(max-height: 780px){
     .sommeil .sommeil_wrapper.sblmg-sommeil-fixed-bottom{
-        height: 37%;
+        height: 38%;
         top: 1200px;
     }
     .reparation {
@@ -703,6 +703,7 @@ html, body{
         padding: 0 3.125rem;
     }
     .restorative_content {
+        width: 100%;
         padding: 0;
     }
     .restorative_picture {
