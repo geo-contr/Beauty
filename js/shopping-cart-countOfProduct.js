@@ -6,6 +6,7 @@ if(!productsInCart){
 const parentElement = document.querySelector('#buyItems');
 const cartSumPrice = document.querySelector('#sum-prices');
 const countProduct = document.querySelector('#sum-products'); /*ეს დამატებულია პროდუქტის ჯამისთვის*/
+const countProduct1 = document.querySelector('#sum-products1'); /*ეს დამატებულია პროდუქტის ჯამისთვის Scincare/Exclusives*/
 const products = document.querySelectorAll('.product-under');
 
 
@@ -50,12 +51,14 @@ const updateShoppingCartHTML = function () {  // 3
 		document.querySelector('.checkout').classList.remove('hidden');
 		cartSumPrice.innerHTML = '<bdi>Total</bdi> ' + '$' + countTheSumPrice(); /* როცა არ მინდა cart-ში გამოჩნდეს total (ჯამური თანხა) მაშინ cartSumPrice.innerHTML = 'Total ' + countTheSumPrice() + ' $;'; ვაკომენტარებ */
 		countProduct.innerHTML = countTheProduct(); /*ეს დამატებულია პროდუქტის ჯამისთვის*/
+		countProduct1.innerHTML = countTheProduct(); /*ეს დამატებულია პროდუქტის ჯამისთვის Scincare/Exclusives*/
 	}
 	else {
 		document.querySelector('.checkout').classList.add('hidden');
 		parentElement.innerHTML = '<h4 class="empty mt-4">Your bag is empty.</h4>';
 		cartSumPrice.innerHTML = '';
 		countProduct.innerHTML = ''; /*ეს დამატებულია პროდუქტის ჯამისთვის*/
+		countProduct1.innerHTML = ''; /*ეს დამატებულია პროდუქტის ჯამისთვის Scincare/Exclusives*/
 	}
 }
 
