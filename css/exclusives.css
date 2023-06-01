@@ -816,9 +816,9 @@ html, body{
 }
 
 
-.fixed-top:hover .navbar-light{
+/*.fixed-top:hover .navbar-light{
     background-color: var(--nineteenth-color);
-}
+}*/
 .fixed-top:hover .logo{
     background-color: transparent;
     fill: var(--second-color);
@@ -855,7 +855,19 @@ html, body{
 .fixed-top:hover .search-sign .st0, .fixed-top:hover .account-sign .st0, .fixed-top:hover .bag-sign .st0{
     stroke: var(--second-color);
 }
-
+.sum-product {
+    font-family: 'HelveticaLt';
+    font-size: .7rem;
+    margin-left: 0.125rem;
+    margin-bottom: 0;
+    color: var(--eighteenth-color);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.fixed-top:hover .sum-product{
+    color: var(--second-color);
+}
 
 
 .hand_gbl_wrapper{
