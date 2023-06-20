@@ -294,6 +294,9 @@ button, input, select, textarea {
         width: 80%!important;
         margin-top: 0!important;
     }
+    #summer-xxl-content {
+        padding-bottom: 1rem;
+    }
 }
 @media(max-width: 991px){
     #pink-square{
