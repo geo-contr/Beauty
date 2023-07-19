@@ -480,7 +480,8 @@
     }
     .nails-intro img {
         height: 58%;
-        top: 31%;
+        top: 40%;
+        /*top: 31%;*/
     }
 }
 @media(max-width: 767px){
