@@ -176,6 +176,25 @@ a:hover{
     color: var(--seventeenth-color);
     font-weight: 600;
 }
+.img-text h5.undelineForHome{
+    color: var(--seventeenth-color);
+    font-weight: 600;
+}
+.img-text h5.undelineForHome::after{
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+.img-text h5.undelineForHome:hover::after {
+    background-color: var(--seventeenth-color);
+}
 .underLine{
     text-decoration: underline;
 }
@@ -195,7 +214,7 @@ a:hover{
     content: "";
     top: 18px;
     left: 0px;
-    width: 112px;
+    width: 100%;
     height: 1px;
     background-color: rgba(0, 0, 0, 0);
     -webkit-transition: .7s;
