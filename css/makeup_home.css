@@ -466,6 +466,9 @@
     -o-transition: .7s;
     transition: .7s;
 }
+.img-text h5.undelineForHome:hover::after {
+    background-color: rgba(0, 0, 0, 0);
+}
 @media(max-width: 991px){
     .nails-intro h1{
         font-size: 2rem;
