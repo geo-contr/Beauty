@@ -6573,3 +6573,38 @@ input:-webkit-autofill:active{
 .about-beauty-sect img{
     width: 100%;
 }
+
+
+
+
+
+.navbar-toggler{
+    padding-left: 0.25rem;
+}
+.social-toggler{
+    margin-left: 0.4rem;
+}
+@media(max-width: 991px){
+    .navbar-brand {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-right: -1rem;
+        left: calc(50% - 46px);
+        /*left: 45.4%;*/
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+}
+@media(max-width: 767px){
+    .navbar-brand {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-right: -1rem;
+        left: calc(50% - 14px);
+        /*left: 45.4%;*/
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+}
