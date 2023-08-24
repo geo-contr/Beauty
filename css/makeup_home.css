@@ -4,7 +4,9 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
+.pin-spacer{
+    background-color: #fff;
+}
 .nails-intro {
     display: -webkit-box;
     display: -ms-flexbox;
