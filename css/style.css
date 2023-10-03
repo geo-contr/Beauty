@@ -1911,6 +1911,9 @@ button span{
     font-family: 'HelveticaLt';
     color: var(--sixth-color);
 }
+.footer-cont ul li a:hover{
+    text-decoration: underline;
+}
 .form-switch{
     display: -webkit-box;
     display: -ms-flexbox;
