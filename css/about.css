@@ -65,6 +65,7 @@
 }
 */
 
+
 .swiper-slide-active p{
     -webkit-animation: FadeIn ease-in-out 1.2s forwards;
             animation: FadeIn ease-in-out 1.2s forwards;
@@ -125,4 +126,188 @@
         -webkit-transform: translateX(0);
                 transform: translateX(0);
     }
+}
+
+.fund_section{
+    position: relative;
+    background-color: var(--first-color);
+    z-index: 1;
+}
+.bauty-fund .row div p{
+    font-family: 'HelveticaLt';
+    font-size: .875rem;
+    text-align: left;
+}
+.bauty-fund .row div:nth-child(2) p{
+    margin-top: 1.5rem;
+}
+.bauty-fund div h2{
+    margin-top: 5rem;
+    font-size: 1rem;
+    text-align: left;
+}
+.bauty-fund .container:nth-child(2){
+    margin-top: 5rem;
+}
+.bauty-fund .container:nth-child(3){
+    margin-top: 3.5rem;
+}
+.bauty-fund .container:nth-child(3) p{
+    margin-top: .5rem!important;
+}
+.bauty-fund h3{
+    font-family: 'ABChanelCorpoRegular';
+    font-size: .75rem;
+    padding: 0 7rem;
+    font-weight: 600;
+}
+.pomp{
+    margin-top: 1.5rem;
+}
+@media(min-width: 576px){
+    .container-bacgr span, .cont_win span{
+        font-size: .6875rem;
+    }
+    .container-bacgr{
+        margin-top: 160px;
+    }
+}
+@media(min-width: 768px){
+    .bauty-fund div p{
+        padding: 0 7rem;
+    }
+    .bauty-fund div h2{
+        padding: 0 7rem;
+    }
+    .container-bacgr .container-md, .cont_win.container-md{
+        max-width: 1040px;
+    }
+}
+@media(min-width: 992px){
+    .bauty-fund .container:nth-child(2){
+        max-width: 1040px;
+    }
+    .container-bacgr h2{
+        font-size: 1.875rem!important;
+    }
+    .container-bacgr .container-md, .cont_win.container-md{
+        max-width: 1040px;
+    }
+    .cont_win{
+        margin-top: 10.125rem;
+    }
+    .container-bacgr button:hover, .container-bacgr button:active, .cont_win button:hover, .cont_win button:active{
+        background-color: var(--twentieth-color)!important;
+        border: 1px solid var(--twentieth-color);
+        -webkit-transition: .1s;
+        -o-transition: .1s;
+        transition: .1s;
+    }
+}
+@media(min-width: 1200px){
+    .bauty-fund .container:nth-child(2){
+        max-width: 1240px;
+    }
+    .container-bacgr .container-md, .cont_win.container-md{
+        max-width: 1040px;
+    }
+}
+@media(min-width: 1400px){
+    .bauty-fund .container:nth-child(2){
+        max-width: 1440px;
+    }
+    .container-bacgr .container-md, .cont_win.container-md{
+        max-width: 1040px;
+    }
+}
+@media(max-width: 575px){
+    .film_btn{
+        padding: .6rem 1.1rem!important;
+    }
+    .container-bacgr span, .cont_win span{
+        font-size: .5rem;
+    }
+    .container-bacgr{
+        margin-top: 100px;
+    }
+}
+@media(max-width: 767px){
+    .bauty-fund h3{
+        padding: 0 0;
+    }
+}
+@media(max-width: 991px){
+    .container-bacgr h2{
+        font-size: 1.5625rem!important;
+    }
+    .cont_win {
+        margin-top: 6.125rem;
+    }
+}
+.bauty-prize h1, .end_section .cont_win h1{
+    font-family: 'ABChanelCorpoRegular';
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--second-color);
+    font-weight: 600;
+}
+.bauty-prize p{
+    text-align: center!important;
+}
+.container-bacgr{
+    padding-top: 80px;
+    padding-bottom: 72px;
+    background-color: var(--twentyfirst-color);
+}
+.container-bacgr h6{
+    margin-bottom: 0.75rem;
+    font-family: 'ABChanelCorpoRegular';
+    font-size: .75rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--second-color);
+}
+.container-bacgr h2{
+    margin-top: .5rem!important;
+    padding: 0!important;
+    text-align: center!important;
+}
+.p_div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.container-bacgr p{
+    max-width: 590px;
+    margin-top: .5rem!important;
+    padding: 0!important;
+    text-align: center!important;
+}
+.film_btn{
+    position: absolute;
+    left: 50%;
+    bottom: 13.5%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.container-bacgr span, .cont_win span{
+    font-family: 'ABChanelCorpoRegular';
+}
+
+.small-btn:hover span::after {
+    background-color: transparent;
+}
+.container-bacgr span svg, .cont_win span svg{
+    height: 12px;
+    margin-right: 7px;
+    width: 10px;
+    fill: var(--second-color);
 }

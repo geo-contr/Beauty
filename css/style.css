@@ -25,6 +25,8 @@
     --seventeenth-color: #961014;
     --eighteenth-color: #cdb181;
     --nineteenth-color: rgba(255,255,255,1);
+    --twentieth-color: #f1f1f1;
+    --twentyfirst-color: #f9f9f9;
 }
 .dark-theme{
     --first-color: #000;
@@ -46,6 +48,8 @@
     --seventeenth-color: #fff;
     --eighteenth-color: #fff;
     --nineteenth-color: rgba(255,255,255,0);
+    --twentieth-color: #000;
+    --twentyfirst-color: #000;
 }
 /* dark mode */
 /* ფერის შეცვლის შემთხვევაში ობიექტს ვუნიშნავ მაგ.: var(--first-color) */
@@ -170,11 +174,11 @@ a:hover{
 }
 .branding.bold{
     color: var(--seventeenth-color);
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 .branding.bold:focus{
     color: var(--seventeenth-color);
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 .img-text h5.undelineForHome{
     color: var(--seventeenth-color);
@@ -2076,7 +2080,6 @@ button span{
         -ms-transform: rotate(0);
             transform: rotate(0);
 }
-
 /*end of ანიმირებული ბურგერი*/
 
 
@@ -6576,7 +6579,6 @@ input:-webkit-autofill:active{
 .about-beauty-sect img{
     width: 100%;
 }
-
 
 
 
