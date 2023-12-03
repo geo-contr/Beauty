@@ -472,6 +472,15 @@
     }
 }
 @media(max-width: 400px){
+    .img {
+        position: relative;
+        height: 85vh;
+        background-image: url("../img/wallhaven-nz7m8y.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        z-index: 1;
+    }
     .parallax-sect .div-footer-img {
         margin-top: 718px;
     }
