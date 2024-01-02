@@ -1,4 +1,3 @@
-
     window.addEventListener("load", function (event) {
         isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
 
@@ -82,6 +81,9 @@
         //         .addTo(controller);
         // };
 
+        const mediaQuery = window.matchMedia('(min-width: 992px)')
+        if (mediaQuery.matches) {
+
 
         if (!isMobile) {
             var scene = new ScrollMagic.Scene({
@@ -161,7 +163,8 @@
                 })
                 .setPin("#summer-xxl-intro2")
                 .addTo(controller);
-        }
+        };
+    }
 
         
 
@@ -378,27 +381,7 @@
             else{
                 reveals[i].classList.remove('active');
             }
-        }
-    }
-
-    window.addEventListener('scroll', reveal1);
-
-    function reveal2(){
-        var reveals = document.querySelectorAll('.reveal3');
-
-        for(var i = 0; i < reveals.length; i++){
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 0;
-
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-            else{
-                reveals[i].classList.remove('active');
-            }
-        }
+        };
     }
     // end of animation on scroll
 
