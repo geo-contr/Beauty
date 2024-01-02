@@ -369,7 +369,7 @@ html.fixed{
     }
     .content{
         margin-top: 1rem;
-        transform: translateY(-310px);
+        transform: translateY(-294px);
     }
 }
 @media(max-width: 991px){
