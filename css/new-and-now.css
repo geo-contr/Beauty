@@ -66,12 +66,6 @@ html.fixed{
         -ms-transform-origin: top;
             transform-origin: top;
 }
-.is-centered{
-    min-height: 100vh;
-    margin-bottom: -457vh!important;
-    /*margin-bottom: -4200px!important;*/
-}
-
 .navbar-light{
     border-top: 8px solid #291c0e;
 }
@@ -416,6 +410,10 @@ html.fixed{
     #sblmg1 {
         margin-bottom: -157vh;
     }
+    .is-centered{
+        min-height: 100vh;
+        margin-bottom: -457vh!important;
+    }
     .sblmg1-text {
         position: relative;
         display: -webkit-box;
@@ -551,6 +549,23 @@ html.fixed{
     }
     .scrll{
         display: none;
+    }
+}
+@media(max-width: 480px){
+    .intro {
+        top: 37%;
+    }
+    .intro_wrapper {
+        max-width: 150px;
+    }
+    .content {
+        position: absolute;
+        top: 166px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        opacity: 1;
     }
 }
 @media(max-width: 767px){
