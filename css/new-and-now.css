@@ -551,23 +551,6 @@ html.fixed{
         display: none;
     }
 }
-@media(max-width: 480px){
-    .intro {
-        top: 37%;
-    }
-    .intro_wrapper {
-        max-width: 150px;
-    }
-    .content {
-        position: absolute;
-        top: 166px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-        opacity: 1;
-    }
-}
 @media(max-width: 767px){
     .reparation-content{
         width: 100%;
@@ -596,6 +579,38 @@ html.fixed{
     }
     .content{
         width: 88%;
+    }
+}
+@media(max-width: 480px){
+    .intro {
+        top: 37%;
+    }
+    .intro_wrapper {
+        max-width: 150px;
+    }
+    .content {
+        position: absolute;
+        top: 166px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+@media(max-width: 390px){
+    .sblmg1-text {
+        top: 25%;
+    }
+    .intro {
+        top: 35%;
+    }
+    .oc-futura-pt {
+        max-width: 300px;
+        font-family: 'HelveticaLt';
+        font-size: 1rem;
+        text-align: center;
+        color: #f2cb89;
     }
 }
 /*@media(max-width: 712px){
