@@ -1824,7 +1824,7 @@ button span{
   color: #222;
 }
 
-.forSearch[type="search"]::-webkit-search-cancel-button{
+/*.forSearch[type="search"]::-webkit-search-cancel-button{
   -webkit-appearance: none;
   position: relative;
   height: 1em;
@@ -1849,7 +1849,7 @@ button span{
 .forSearch[type="search"].dark::-webkit-search-cancel-button {
   -webkit-filter: invert(1);
           filter: invert(1);
-}
+}*/
 /* end of input search */
 
 /*.searchBy{
@@ -3270,7 +3270,7 @@ picture img{
       -webkit-appearance: none;
       position: relative;
       height: 2em;
-      width: 1.5em;
+      width: 1.6em;
       border-radius: 50em;
       background: url(../img/clear.svg) no-repeat 50% 55%;
       background-size: contain;
@@ -3286,6 +3286,8 @@ picture img{
     .search-item[type="search"]:focus::-webkit-search-cancel-button {
         opacity: 1;
         pointer-events: all;
+        -webkit-transition: .3s;
+        transition: .3s;
     }
 
     .search-item[type="search"].dark::-webkit-search-cancel-button {
@@ -3467,7 +3469,7 @@ picture img{
     .search-item:focus {
         color: var(--seventh-color);
         background-color: var(--thirteenth-color);
-        padding-right: 1.75rem!important;
+        padding-right: .3rem!important;
         outline: 0;
         -webkit-box-shadow: none;
                 box-shadow: none;
@@ -3508,36 +3510,42 @@ picture img{
       padding: .2em .4em;
       border-radius: .2em;
     }*/
-    .search-item[type="search"].dark {
-      background: #222;
-      color: #fff;
+    .search-item[type="search"].dark{
+        color: #fff;
     }
 
-    .search-item[type="search"].light {
-      background: #fff;
-      color: #222;
+    .search-item[type="search"].light{
+        background: #fff;
+        color: #222;
     }
 
     .search-item[type="search"]::-webkit-search-cancel-button{
-      -webkit-appearance: none;
-      position: relative;
-      height: 1em;
-      width: 1em;
-      border-radius: 50em;
-      background: url(../img/times-circle.svg) no-repeat 50% 50%;
-      background-size: contain;
-      opacity: 0;
-      pointer-events: none;
-      cursor: pointer;
+        -webkit-appearance: none;
+        position: relative;
+        height: 1em;
+        width: 2em;
+        border-radius: 50em;
+        background: url(../img/times-circle.svg) no-repeat 50% 50%;
+        background-size: contain;
+        opacity: 0;
+        pointer-events: none;
+        cursor: pointer;
     }
 
     .search-item-dark[type="search"]::-webkit-search-cancel-button{
         background: url(../img/times-circle-dark.svg) no-repeat 50% 50%;
     }
+    
 
     .search-item[type="search"]:focus::-webkit-search-cancel-button {
         opacity: .3;
         pointer-events: all;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .search-item-dark:focus[type="search"]::-webkit-search-cancel-button{
+        opacity: 1;
     }
 
     .search-item[type="search"].dark::-webkit-search-cancel-button {
