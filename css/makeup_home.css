@@ -541,6 +541,9 @@
     }
     .nails-intro img {
         height: 58%;
-        top: 49%;
+        top: 56%;
+    }
+    .scrolldown-arrow {
+        top: 90%;
     }
 }
