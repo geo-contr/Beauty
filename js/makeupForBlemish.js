@@ -268,10 +268,12 @@ $(document).ready(function(){
 	  if (e.key == "Escape"){
 	    menu.classList.remove("active");
 	    $(".menu-overlay").removeClass("active");
+	    hideSubMenu();
 	  }
 	});
 	// end of close with escape key
-	
+
+
  const menu = document.querySelector(".menu");
  const menuMain = menu.querySelector(".menu-main");
  const goBack = menu.querySelector(".go-back");
@@ -301,6 +303,7 @@ $(document).ready(function(){
  })
  closeMenu.addEventListener("click",() =>{
  	 toggleMenu();
+ 	 hideSubMenu();
  	 // for fixed background
  	 // $("html").removeClass("fixed-position-mob");
  	 // $(".navbar-brand").removeClass("navbar-brand-mob");
@@ -310,6 +313,7 @@ $(document).ready(function(){
  })
  document.querySelector(".menu-overlay").addEventListener("click",() =>{
  	toggleMenu();
+ 	hideSubMenu();
  	// for fixed background
  	// $("html").removeClass("fixed-position-mob");
  	// $(".navbar-brand").removeClass("navbar-brand-mob");

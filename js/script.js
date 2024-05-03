@@ -25,7 +25,7 @@ $(document).ready(function(){
 	  
 	  lastScrollTop = scrollTop; //New Position Stored
 	});
-// end of navbar-ის დამალვა scroll-ზე
+	// end of navbar-ის დამალვა scroll-ზე
 
 
 	// mega-menu
@@ -234,6 +234,7 @@ $(document).ready(function(){
 	  if (e.key == "Escape"){
 	    menu.classList.remove("active");
 	    $(".menu-overlay").removeClass("active");
+	    hideSubMenu();
 	  }
 	});
 	// end of close with escape key
@@ -268,6 +269,7 @@ $(document).ready(function(){
  })
  closeMenu.addEventListener("click",() =>{
  	 toggleMenu();
+ 	 hideSubMenu();
  	 // for fixed background
  	 // $("html").removeClass("fixed-position-mob");
  	 // $(".navbar-brand").removeClass("navbar-brand-mob");
@@ -277,6 +279,7 @@ $(document).ready(function(){
  })
  document.querySelector(".menu-overlay").addEventListener("click",() =>{
  	toggleMenu();
+ 	hideSubMenu();
  	// for fixed background
  	// $("html").removeClass("fixed-position-mob");
  	// $(".navbar-brand").removeClass("navbar-brand-mob");
