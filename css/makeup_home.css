@@ -533,3 +533,14 @@
         top: -29px;
     }
 }
+
+
+@media(max-width: 414px) and (max-height: 640px){
+    .nails-intro span {
+        top: -66px;
+    }
+    .nails-intro img {
+        height: 58%;
+        top: 49%;
+    }
+}
