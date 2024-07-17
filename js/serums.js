@@ -1,32 +1,157 @@
 // carousel for large
-const slider = document.querySelector('.carousel_slider');
-const track = document.querySelector('.carousel_track');
-const slides = Array.from(document.querySelectorAll('.carousel_slide'));
-const slideWidth = slides[0].getBoundingClientRect().width;
+// const slider = document.querySelector('.carousel_slider');
+// const track = document.querySelector('.carousel_track');
+// const slides = Array.from(document.querySelectorAll('.carousel_slide'));
+// const slideWidth = slides[0].getBoundingClientRect().width;
 
-slider.addEventListener('mousemove', (event) => {
-  const trackWidth = track.getBoundingClientRect().width;
-  const mousePosition = event.clientX - slider.getBoundingClientRect().left;
-  const centerPosition = slider.getBoundingClientRect().width / 2;
+// slider.addEventListener('mousemove', (event) => {
+//   const trackWidth = track.getBoundingClientRect().width;
+//   const mousePosition = event.clientX - slider.getBoundingClientRect().left;
+//   const centerPosition = slider.getBoundingClientRect().width / 2;
 
-  // Calculate the speed based on the distance from the center position
-  const speed = Math.abs(mousePosition - centerPosition) / centerPosition * 10000;
+//   // Calculate the speed based on the distance from the center position
+//   const speed = Math.abs(mousePosition - centerPosition) / centerPosition * 10000;
 
 
-  // Calculate the direction based on the mouse position
-  const direction = mousePosition < centerPosition ? 1 : -1;
+//   // Calculate the direction based on the mouse position
+//   const direction = mousePosition < centerPosition ? 1 : -1;
 
-  // Update the animation duration and direction
-  const duration = trackWidth / (speed * 0.05);
-  track.style.animationDuration = `${duration}s`;
-  track.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
+//   // Update the animation duration and direction
+//   const duration = trackWidth / (speed * 0.05);
+//   track.style.animationDuration = `${duration}s`;
+//   track.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
+// });
+
+// slider.addEventListener('mouseleave', () => {
+//   // Reset the animation to its original values
+//   track.style.animationDuration = '70s';
+//   track.style.animationDirection = 'reverse';
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const carouselSlider = document.querySelector('.carousel_slider');
+    const carouselTrack = document.querySelector('.carousel_track');
+    let isDragging = false;
+    let startX, currentX;
+    let animationId;
+    let speed = 0.7; // Adjust speed as needed
+    let isPaused = false;
+
+    function startDrag(e) {
+        isDragging = true;
+        startX = e.pageX || e.touches[0].pageX;
+        currentX = startX;
+        cancelAnimationFrame(animationId);
+        carouselSlider.classList.add('disable-select');
+
+        // Attach move and end listeners
+        document.addEventListener('mousemove', moveDrag);
+        document.addEventListener('touchmove', moveDrag);
+        document.addEventListener('mouseup', endDrag);
+        document.addEventListener('touchend', endDrag);
+    }
+
+    function endDrag() {
+        isDragging = false;
+        carouselSlider.classList.remove('disable-select');
+
+        // Remove move and end listeners
+        document.removeEventListener('mousemove', moveDrag);
+        document.removeEventListener('touchmove', moveDrag);
+        document.removeEventListener('mouseup', endDrag);
+        document.removeEventListener('touchend', endDrag);
+
+        if (!isPaused) {
+            requestAnimationFrame(animate);
+        }
+    }
+
+    function moveDrag(e) {
+        if (!isDragging) return;
+        const newX = e.pageX || e.touches[0].pageX;
+        const diffX = newX - currentX;
+        currentX = newX;
+
+        carouselTrack.style.transform = `translateX(${parseFloat(carouselTrack.style.transform.replace('translateX(', '').replace('px)', '')) + diffX}px)`;
+        handleInfiniteScroll();
+    }
+
+    function handleInfiniteScroll() {
+        const trackRect = carouselTrack.getBoundingClientRect();
+        const trackWidth = trackRect.width;
+        let currentTranslateX = parseFloat(carouselTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
+
+        if (currentTranslateX < -trackWidth / 2) {
+            currentTranslateX += trackWidth;
+        } else if (currentTranslateX > 0) {
+            currentTranslateX -= trackWidth / 2;
+        }
+
+        carouselTrack.style.transform = `translateX(${currentTranslateX}px)`;
+    }
+
+    function animate() {
+        if (isPaused || isDragging) return;
+
+        let currentTranslateX = parseFloat(carouselTrack.style.transform.replace('translateX(', '').replace('px)', '')) || 0;
+        currentTranslateX += speed;
+
+        carouselTrack.style.transform = `translateX(${currentTranslateX}px)`;
+        handleInfiniteScroll();
+
+        animationId = requestAnimationFrame(animate);
+    }
+
+    // Prevent images from interfering with dragging
+    const images = document.querySelectorAll('.carousel_slide');
+    images.forEach(image => {
+        image.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+
+        image.addEventListener('mouseenter', function() {
+            isPaused = true;
+            cancelAnimationFrame(animationId);
+        });
+
+        image.addEventListener('mouseleave', function() {
+            isPaused = false;
+            if (!isDragging) {
+                requestAnimationFrame(animate);
+            }
+        });
+    });
+
+    carouselSlider.addEventListener('mousedown', startDrag);
+    carouselSlider.addEventListener('touchstart', startDrag);
+
+    // Start the animation
+    requestAnimationFrame(animate);
 });
 
-slider.addEventListener('mouseleave', () => {
-  // Reset the animation to its original values
-  track.style.animationDuration = '70s';
-  track.style.animationDirection = 'reverse';
-});
+
+
+  // Scroll reveal
+  window.addEventListener('scroll', reveal);
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 0;
+
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+  // End of scroll reveal
+
 
 
 
@@ -204,34 +329,34 @@ slider.addEventListener('mouseleave', () => {
 
 
 // carousel for mobile view
-const slider1 = document.querySelector('.slider_chain');
-const track1 = document.querySelector('.slider_track');
-const slides1 = Array.from(document.querySelectorAll('.slider_item'));
-const slideWidth1 = slides[0].getBoundingClientRect().width;
+// const slider1 = document.querySelector('.slider_chain');
+// const track1 = document.querySelector('.slider_track');
+// const slides1 = Array.from(document.querySelectorAll('.slider_item'));
+// const slideWidth1 = slides[0].getBoundingClientRect().width;
 
-slider1.addEventListener('touchmove', (event) => {
-  const trackWidth = track1.getBoundingClientRect().width;
-  const touchPosition = event.touches[0].clientX - slider1.getBoundingClientRect().left;
-  const centerPosition = slider1.getBoundingClientRect().width / 2;
+// slider1.addEventListener('touchmove', (event) => {
+//   const trackWidth = track1.getBoundingClientRect().width;
+//   const touchPosition = event.touches[0].clientX - slider1.getBoundingClientRect().left;
+//   const centerPosition = slider1.getBoundingClientRect().width / 2;
 
-  // Calculate the speed based on the distance from the center position
-  const speed = Math.abs(touchPosition - centerPosition) / centerPosition * 2000;
+//   // Calculate the speed based on the distance from the center position
+//   const speed = Math.abs(touchPosition - centerPosition) / centerPosition * 2000;
 
 
-  // Calculate the direction based on the touch position
-  const direction = touchPosition < centerPosition ? 1 : -1;
+//   // Calculate the direction based on the touch position
+//   const direction = touchPosition < centerPosition ? 1 : -1;
 
-  // Update the animation duration and direction
-  const duration = trackWidth / (speed * 0.05);
-  track1.style.animationDuration = `${duration}s`;
-  track1.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
-});
+//   // Update the animation duration and direction
+//   const duration = trackWidth / (speed * 0.05);
+//   track1.style.animationDuration = `${duration}s`;
+//   track1.style.animationDirection = direction > 0 ? 'reverse' : 'normal';
+// });
 
-slider1.addEventListener('touchend', () => {
-  // Reset the animation to its original values
-  track1.style.animationDuration = '100s';
-  track1.style.animationDirection = 'reverse';
-});
+// slider1.addEventListener('touchend', () => {
+//   // Reset the animation to its original values
+//   track1.style.animationDuration = '100s';
+//   track1.style.animationDirection = 'reverse';
+// });
 
 
 // const slider1 = document.querySelector('.slider_chain');
@@ -297,23 +422,23 @@ slider1.addEventListener('touchend', () => {
 
 
 // animation on scroll
-window.addEventListener('scroll', reveal);
+// window.addEventListener('scroll', reveal);
 
-function reveal(){
-  var reveals = document.querySelectorAll('.reveal');
+// function reveal(){
+//   var reveals = document.querySelectorAll('.reveal');
 
-  for(var i = 0; i < reveals.length; i++){
+//   for(var i = 0; i < reveals.length; i++){
 
-    var windowheight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 0;
+//     var windowheight = window.innerHeight;
+//     var revealtop = reveals[i].getBoundingClientRect().top;
+//     var revealpoint = 0;
 
-    if(revealtop < windowheight - revealpoint){
-      reveals[i].classList.add('active');
-    }
-    else{
-      reveals[i].classList.remove('active');
-    }
-  }
-}
+//     if(revealtop < windowheight - revealpoint){
+//       reveals[i].classList.add('active');
+//     }
+//     else{
+//       reveals[i].classList.remove('active');
+//     }
+//   }
+// }
 // end of animation on scroll
