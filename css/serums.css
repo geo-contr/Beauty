@@ -239,8 +239,8 @@
         z-index: 1;
     }
     .carousel_slider{
-        margin: auto;
         position: relative;
+        margin: auto;
         width: 100%;
         display: -ms-grid;
         display: grid;
@@ -251,29 +251,19 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: calc(536px * 18);
-        animation: scroll 100s linear infinite reverse;
+        cursor: pointer;
+        /*width: calc(33.75vh * 12 * 2);*/
+        /*width: calc(536px * 12);*/
+        /*animation: scroll 100s linear infinite reverse;*/
     }
-    @-webkit-keyframes scroll {
+    /*@keyframes scroll {
         from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
+            transform: translateX(0);
         }
         to {
-            -webkit-transform: translateX(calc(-536px * 8));
-                    transform: translateX(calc(-536px * 8));
+            transform: translateX(calc(-536px * 8));
         }
-    }
-    @keyframes scroll {
-        from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-        to {
-            -webkit-transform: translateX(calc(-536px * 8));
-                    transform: translateX(calc(-536px * 8));
-        }
-    }
+    }*/
     .carousel_slide {
         height: 624px;
         width: 536px;
@@ -288,31 +278,18 @@
     .carousel_slide img {
         width: 100%;
     }
-    .carousel_track:hover{
+    /*.carousel_track:hover{
         width: calc(536px * 18);
-        -webkit-animation: hoverSroll 20s linear infinite;
-                animation: hoverSroll 20s linear infinite;
-    }
-    @-webkit-keyframes hoverSroll {
-        from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-        to {
-            -webkit-transform: translateX(calc(-536px * 8));
-                    transform: translateX(calc(-536px * 8));
-        }
+        animation: hoverSroll 20s linear infinite;
     }
     @keyframes hoverSroll {
         from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
+            transform: translateX(0);
         }
         to {
-            -webkit-transform: translateX(calc(-536px * 8));
-                    transform: translateX(calc(-536px * 8));
+            transform: translateX(calc(-536px * 8));
         }
-    }
+    }*/
     /*end of slider for large view*/
     .slider_sect{
         display: none;
@@ -339,50 +316,28 @@
     }
 }
 @media(max-width: 767px){
-    /*slider for mobile view*/
-    .slider_sect{
+    .carousel_sect{
         position: relative;
         padding-top: calc(30% - 38px);
         background-color: #fff;
         z-index: 1;
     }
-    .slider_chain{
-        margin: auto;
+    .carousel_slider{
         position: relative;
+        margin: auto;
         width: 100%;
         display: -ms-grid;
         display: grid;
         place-items: center;
         overflow: hidden;
     }
-    .slider_track{
+    .carousel_track{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: calc(50vw * 18);
-        animation: scroll 100s linear infinite reverse;
+        cursor: pointer;
     }
-    @-webkit-keyframes scroll {
-        from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-        to {
-            -webkit-transform: translateX(calc(-50vw * 8));
-                    transform: translateX(calc(-50vw * 8));
-        }
-    }
-    @keyframes scroll {
-        from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-        to {
-            -webkit-transform: translateX(calc(-50vw * 8));
-                    transform: translateX(calc(-50vw * 8));
-        }
-    }
-    .slider_item {
+    .carousel_slide {
         height: 424px;
         width: 50vw;
         display: -webkit-box;
@@ -393,9 +348,47 @@
                 align-items: center;
         padding: 10px;
     }
-    .slider_item img {
+    .carousel_slide img {
         width: 100%;
     }
+    /*slider for mobile view*/
+    /*.slider_sect{
+        position: relative;
+        padding-top: calc(30% - 38px);
+        background-color: #fff;
+        z-index: 1;
+    }
+    .slider_chain{
+        margin: auto;
+        position: relative;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    .slider_track{
+        display: flex;
+        width: calc(50vw * 18);
+        animation: scroll 100s linear infinite reverse;
+    }
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-50vw * 8));
+        }
+    }
+    .slider_item {
+        height: 424px;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .slider_item img {
+        width: 100%;
+    }*/
     /*end of slider for mobile view*/
 
 
@@ -432,9 +425,9 @@
     }*/
     /*end of slider with slick slider*/
 
-    .carousel_sect{
+    /*.carousel_sect{
         display: none;
-    }
+    }*/
     .prm_intro_imgs {
         margin-top: 4.375rem;
     }
@@ -477,37 +470,23 @@
     .text_smal_title {
         font-size: 1.8vw;
     }
-    .slider_sect {
+    .carousel_sect {
         padding-top: calc(30% - 80px);
     }
-    .slider_track{
-        display: -webkit-box;
-        display: -ms-flexbox;
+    /*.slider_track{
         display: flex;
         width: calc(70vw * 18);
         animation: scroll 100s linear infinite reverse;
     }
-    @-webkit-keyframes scroll {
-        from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-        to {
-            -webkit-transform: translateX(calc(-70vw * 8));
-                    transform: translateX(calc(-70vw * 8));
-        }
-    }
     @keyframes scroll {
         from {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
+            transform: translateX(0);
         }
         to {
-            -webkit-transform: translateX(calc(-70vw * 8));
-                    transform: translateX(calc(-70vw * 8));
+            transform: translateX(calc(-70vw * 8));
         }
-    }
-    .slider_item {
+    }*/
+    .carousel_slide {
         height: 424px;
         width: 70vw;
         display: -webkit-box;
